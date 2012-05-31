@@ -1,0 +1,9 @@
+project_type = :stand_alone
+http_path = "/"
+css_dir = "css"
+sass_dir = "scss"
+images_dir = "images"
+javascripts_dir = "javascript"
+output_style = :expanded
+relative_assets = true
+line_comments = false

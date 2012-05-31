@@ -1,0 +1,20 @@
+/**
+ * Layout stylesheet.
+ *
+ * The rule of thumb is that the styles from here will not be needed for the CMS editor.
+ * Styles related to content editing should go into typography.[s]css.
+ *
+ * *** ATTENTION SCSS DEVELOPER ***
+ *
+ * If you are working with SCSS, please do not import other top-level stylesheets here such
+ * as typography.scss. We want to be able to generate clean CSS for the third-party dev to
+ * work with directly, and this will result in code duplication between generated css files!
+ *
+ */
+
+// Requires bootstrap to be placed in the project directory
+@import '../../_bootstrap/lib/bootstrap.scss';
+
+body {
+	background: red;
+}
