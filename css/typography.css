@@ -5,6 +5,3 @@
  * with .typography class. If the style is not typography-related, it needs to
  * go into another file - for example layout.[s]css
  */
-.typography {
-  color: red;
-}
