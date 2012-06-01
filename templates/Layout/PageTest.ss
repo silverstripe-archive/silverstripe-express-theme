@@ -1,8 +1,35 @@
-<div class="page-header">
-    <h1>Typography <small>Headings, paragraphs, lists, and other inline type elements</small></h1>
-</div>
+<!-- This page is purely for testing typography styles and shroud not be sent to production -->
+
+
 <div class="row">
+	<div class="span3">
+		<div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Sidebar</li>
+              <li class="active"><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">Sidebar</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">Sidebar</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+         </div>
+   	</div>
+
 	<div class="span9">
+		<div class="page-header">
+		    <h1>Typography <small>Headings, paragraphs, lists, and other inline type elements</small></h1>
+		</div>
+
 		<!-- $Content start -->
 	
 		<h2>Headings &amp; body copy</h2>
@@ -19,67 +46,69 @@
 		
 		<h6>Example header 6</h6>
 		<p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		
+		<div class="row">
+			
+			<div class="span3">
+		      <h3>Unordered lists</h3>
+		      <p><code>&lt;ul&gt;</code></p>
+		      <ul>
+		        <li>Lorem ipsum dolor sit amet</li>
+		        <li>Consectetur adipiscing elit</li>
+		        <li>Integer molestie lorem at massa</li>
+		        <li>Facilisis in pretium nisl aliquet</li>
+		        <li>Nulla volutpat aliquam velit
+		          <ul>
+		            <li>Phasellus iaculis neque</li>
+		            <li>Purus sodales ultricies</li>
+		            <li>Vestibulum laoreet porttitor sem</li>
+		            <li>Ac tristique libero volutpat at</li>
+		          </ul>
+		        </li>
+		        <li>Faucibus porta lacus fringilla vel</li>
+		        <li>Aenean sit amet erat nunc</li>
+		        <li>Eget porttitor lorem</li>
+		      </ul>
+		    </div>
+			<div class="span3">
+		      <h3>Unstyled lists</h3>
+		      <p><code>&lt;ul class="unstyled"&gt;</code></p>
+		      <ul class="unstyled">
+		        <li>Lorem ipsum dolor sit amet</li>
+		        <li>Consectetur adipiscing elit</li>
+		        <li>Integer molestie lorem at massa</li>
+		        <li>Facilisis in pretium nisl aliquet</li>
+		        <li>Nulla volutpat aliquam velit
+		          <ul>
+		            <li>Phasellus iaculis neque</li>
+		            <li>Purus sodales ultricies</li>
+		            <li>Vestibulum laoreet porttitor sem</li>
+		            <li>Ac tristique libero volutpat at</li>
+		          </ul>
+		        </li>
+		        <li>Faucibus porta lacus fringilla vel</li>
+		        <li>Aenean sit amet erat nunc</li>
+		        <li>Eget porttitor lorem</li>
+		      </ul>
+		    </div>
+			<div class="span3">
+		      <h3>Ordered lists</h3>
+		      <p><code>&lt;ol&gt;</code></p>
+		      <ol>
+		        <li>Lorem ipsum dolor sit amet</li>
+		        <li>Consectetur adipiscing elit</li>
+		        <li>Integer molestie lorem at massa</li>
+		        <li>Facilisis in pretium nisl aliquet</li>
+		        <li>Nulla volutpat aliquam velit</li>
+		        <li>Faucibus porta lacus fringilla vel</li>
+		        <li>Aenean sit amet erat nunc</li>
+		        <li>Eget porttitor lorem</li>
+		      </ol>
+		    </div>
+		</div>
 	</div>
 </div>
-<h2>Example lists</h2>
-<div class="row">
-	<div class="span3">
-      <h3>Unordered</h3>
-      <p><code>&lt;ul&gt;</code></p>
-      <ul>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Consectetur adipiscing elit</li>
-        <li>Integer molestie lorem at massa</li>
-        <li>Facilisis in pretium nisl aliquet</li>
-        <li>Nulla volutpat aliquam velit
-          <ul>
-            <li>Phasellus iaculis neque</li>
-            <li>Purus sodales ultricies</li>
-            <li>Vestibulum laoreet porttitor sem</li>
-            <li>Ac tristique libero volutpat at</li>
-          </ul>
-        </li>
-        <li>Faucibus porta lacus fringilla vel</li>
-        <li>Aenean sit amet erat nunc</li>
-        <li>Eget porttitor lorem</li>
-      </ul>
-    </div>
-	<div class="span3">
-      <h3>Unstyled</h3>
-      <p><code>&lt;ul class="unstyled"&gt;</code></p>
-      <ul class="unstyled">
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Consectetur adipiscing elit</li>
-        <li>Integer molestie lorem at massa</li>
-        <li>Facilisis in pretium nisl aliquet</li>
-        <li>Nulla volutpat aliquam velit
-          <ul>
-            <li>Phasellus iaculis neque</li>
-            <li>Purus sodales ultricies</li>
-            <li>Vestibulum laoreet porttitor sem</li>
-            <li>Ac tristique libero volutpat at</li>
-          </ul>
-        </li>
-        <li>Faucibus porta lacus fringilla vel</li>
-        <li>Aenean sit amet erat nunc</li>
-        <li>Eget porttitor lorem</li>
-      </ul>
-    </div>
-	<div class="span3">
-      <h3>Ordered</h3>
-      <p><code>&lt;ol&gt;</code></p>
-      <ol>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Consectetur adipiscing elit</li>
-        <li>Integer molestie lorem at massa</li>
-        <li>Facilisis in pretium nisl aliquet</li>
-        <li>Nulla volutpat aliquam velit</li>
-        <li>Faucibus porta lacus fringilla vel</li>
-        <li>Aenean sit amet erat nunc</li>
-        <li>Eget porttitor lorem</li>
-      </ol>
-    </div>
-</div>
+
 <h2>Example tables</h2>
 <h3>1. Default table styles</h3>
 <div class="row">

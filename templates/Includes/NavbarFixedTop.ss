@@ -9,7 +9,11 @@
       <a class="brand" href="#">$SiteConfig.Title</a>
       <div class="nav-collapse">
 
-           <ul class="nav pull-right">
+		  <form action="" class="navbar-search pull-right">
+            <input type="text" placeholder="Search" class="search-query span2">
+          </form>
+
+          <ul class="nav pull-right">
         	<% loop Menu(1) %>
         		<% if Children %>
         			<li class="$LinkingMode dropdown">
@@ -29,7 +33,8 @@
 	          		</li>
 	          	<% end_if %>
 	        <% end_loop %>
-        </ul>
+          </ul>
+          
       </div><!--/.nav-collapse -->
     </div>
   </div>

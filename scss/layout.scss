@@ -17,7 +17,51 @@
 @import '../../module_bootstrap/lib/responsive.scss';
 
 body {
-
+	.sidebar-nav {
+	    padding: 9px 0;
+	    .nav-list {
+	    	.nav-list li { /* third level */
+		    	a {
+		    		padding-left: 30px;
+		    		padding-right: 30px;
+		    	}
+		    	a, .nav-header {
+				    margin-left: -30px;
+				    margin-right: -30px;
+				}
+				.nav-list li {  /* forth level */
+			    	a {
+			    		padding-left: 45px;
+			    		padding-right: 45px;
+			    	}
+			    	a, .nav-header {
+					    margin-left: -45px;
+					    margin-right: -45px;
+					}
+					.nav-list li { /* fifth level */
+				    	a {
+				    		padding-left: 60px;
+				    		padding-right: 60px;
+				    	}
+				    	a, .nav-header {
+						    margin-left: -60px;
+						    margin-right: -60px;
+						}
+						.nav-list li { /* sixth level */
+					    	a {
+					    		padding-left: 75px;
+					    		padding-right: 75px;
+					    	}
+					    	a, .nav-header {
+							    margin-left: -75px;
+							    margin-right: -75px;
+							}
+					    }
+				    }
+			    }
+		    }
+	    }
+	}
 }
 
 

@@ -5,3 +5,9 @@
  * with .typography class. If the style is not typography-related, it needs to
  * go into another file - for example layout.[s]css
  */
+.typography h2, .typography h3 {
+  margin: 18px 0 9px;
+}
+.typography p {
+  margin-bottom: 18px;
+}
