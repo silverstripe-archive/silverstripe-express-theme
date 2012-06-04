@@ -5627,3 +5627,6 @@ body .sidebar-nav .nav-list .nav-list li .nav-list li .nav-list li .nav-list li 
   margin-left: -75px;
   margin-right: -75px;
 }
+body iframe {
+  border: 0;
+}
