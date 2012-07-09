@@ -8,7 +8,8 @@
 	<% base_tag %>
 	<title>$SiteConfig.Title | $Title</title>
 	$MetaTags(false)
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
+
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
@@ -58,7 +59,7 @@
 	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-transition.js"></script>
 	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-alert.js"></script>
 	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-modal.js"></script>
-	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-dropdown.js"></script>
+	<!-- <script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-dropdown.js"></script> -->
 	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-scrollspy.js"></script>
 	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-tab.js"></script>
 	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-tooltip.js"></script>
@@ -67,6 +68,7 @@
 	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-collapse.js"></script>
 	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-carousel.js"></script>
 	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-typeahead.js"></script>
+	<script src="$themedir/js/express.js"></script>
 
 	<% if SiteConfig.GACode %>
 		<script type="text/javascript">

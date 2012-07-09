@@ -10,27 +10,26 @@
       <div class="nav-collapse">
         $SearchForm
 
-        <ul class="nav pull-right">
-          <% loop Menu(1) %>
-            <% if Children %>
-          	  <li class="$LinkingMode dropdown">
-          		  <a href="#" title="Go to the $Title.XML page" class="$LinkingMode dropdown-toggle" data-toggle="dropdown">$MenuTitle.XML <b class="caret"></b>
-          			</a>
-          			<ul class="dropdown-menu">
-  							  <% control Children %>
-  								  <li>
-  									  <a href="$Link" title="Go to the $Title.XML page">$MenuTitle.XML</a>
-    							  </li>
-                  <% end_control %>
-                </ul>
-              </li>
-            <% else %> 
-              <li class="$LinkingMode">
-               <a href="$Link" title="Go to the $Title.XML page"  class="$LinkingMode">$MenuTitle.XML</a>
-              </li>
-            <% end_if %>
-          <% end_loop %>
-        </ul>
+         <ul class="nav pull-right">
+        	<% loop Menu(1) %>
+        	
+        			<li class="$LinkingMode  <% if Children %> dropdown <% end_if %>">
+        				<a href="$Link" title="Go to the $Title.XML page" class="$LinkingMode <% if Children %> dropdown-toggle" data-toggle="dropdown"<% else %>"<% end_if %>>
+                $MenuTitle.XML <% if Children %><span class="showChildren"><b class="caret"></b></span><% end_if %>
+        				</a>
+                <% if Children %>
+                  <ul class="dropdown-menu">
+							    <% control Children %>
+								    <li>
+                      <a href="$Link" title="Go to the $Title.XML page">$MenuTitle.XML</a>
+                    </li>
+							    <% end_control %>
+						      </ul>
+                <% end_if %>
+        			</li>       		
+	          	
+	        <% end_loop %>
+          </ul>
       </div><!--/.nav-collapse -->
     </div>
   </div>

@@ -3,23 +3,44 @@
  *
  * The rule of thumb is that the styles from here will not be needed for the CMS editor.
  * Styles related to content editing should go into typography.[s]css.
- *
- * *** ATTENTION SCSS DEVELOPER ***
- *
- * If you are working with SCSS, please do not import other top-level stylesheets here such
- * as typography.scss. We want to be able to generate clean CSS for the third-party dev to
- * work with directly, and this will result in code duplication between generated css files!
- *
  */
+
+
+ //* *** ATTENTION SCSS DEVELOPER ***
+ //*
+ //* If you are working with SCSS, please do not import other top-level stylesheets here such
+ //* as typography.scss. We want to be able to generate clean CSS for the third-party dev to
+ //* work with directly, without duplication of css in the generated files!
+ //*
+
 
 // Requires bootstrap to be placed in the project directory
 @import '../../module_bootstrap/lib/bootstrap.scss';
 @import '../../module_bootstrap/lib/responsive.scss';
+@import '_mobile.scss';
 
 body {
+	.navbar{
+		.showChildren{
+			display:inline-block;
+	    	width:20px;
+	    	height:20px;  
+	    	text-align:center;  	
+	    }
+	    .nav > li > a{
+			padding: 9px 0 9px 11px;
+			margin-right:10px;
+		}
+	}
+
+
 	.sidebar-nav {
 	    padding: 9px 0;
-	    .nav-list {
+	    a:visited{
+	    	color:$linkColor;
+	    }
+
+	    .nav-list {	    
 	    	.nav-list li { /* third level */
 		    	a {
 		    		padding-left: 30px;
@@ -65,6 +86,47 @@ body {
 	iframe {
 		border: 0;
 	}
+
 }
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	@include media;
+  	zoom:1;
+}
+
+/* Opera mobile high-res  */
+@media handheld, only screen and (max-device-width: 800px){
+	@include media;
+	zoom:1;
+}
+ 
+/* Landscape phone to portrait tablet  */
+@media (max-width: 600px) { 
+	@include media;
+	zoom:1;
+}
+ 
+/* Portrait tablet to landscape and desktop  */
+@media (min-width: 500px) and (max-width: 600px) { 
+	@include media;
+    zoom:1;
+}
+/* For ipad  */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+	@include media;
+  	zoom:1;
+}
+
+/* Large mobile */ 
+@media (max-width: 979px){
+	@include media;
+  	zoom:1;
+}
+
 
 

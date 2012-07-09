@@ -1,0 +1,109 @@
+@import '../../module_bootstrap/lib/bootstrap.scss';
+@import '../../module_bootstrap/lib/responsive.scss';
+
+@mixin message($type){
+	padding:5px;
+	margin-top:-5px;
+	margin-right:5px;
+	font-weight:normal;
+
+	@include border-radius(3px);
+	@if $type == 'error' {
+		background:$errorBackground;
+		border:1px solid $errorBorder;
+		color: $errorText;
+	}@else if $type == 'warning' {
+		background:$warningBackground;
+		border:1px solid $warningBorder;
+		color: $warningText;
+	}@else if $type == 'success' {
+		background:$successBackground;
+		border:1px solid $successBorder;
+		color: $successText;
+	}
+}
+
+.message{
+	@include message('error');
+}
+
+label{
+	font-weight: bold;
+	&.right{
+		color: rgba(#000, 0.3);
+		font-weight: normal;
+		width:50%;
+		text-align:left;
+		font-style:italic;
+		position: absolute;
+		top: 0;
+		right: 0;	
+		padding-left:5px;
+		@include box-sizing(border-box);
+	}
+	&.required{
+		@extend .message;
+		float:left;
+		.textarea &{
+			width:100%;
+			max-width:500px;
+		}
+	}
+}
+textarea{
+	width:80%;
+	max-width:500px;
+}
+select, input.text{
+	width:50%;
+
+	&.date{
+		width:16em;
+		max-width:50%;
+	}
+}
+.checkbox{
+	label{
+		color: $grayDark;
+		font-weight: normal;
+		font-style:normal;
+		position:static;
+		&.required{
+			color: $errorText;
+		}
+	}
+}
+
+.field{
+	margin: 15px 0;
+}
+
+div.optionset{
+	position: relative;
+	label.right{
+		position: absolute;
+		top: 0;
+		right: 0;			
+	}
+}
+ul{
+	&.optionset{
+		label{
+			font-weight: normal;
+		}
+		list-style: none;
+		margin-left: 0;
+		input{
+			float: left;
+			margin-right: 5px;
+		}
+	}
+}
+fieldset{
+	margin: 10px 0;
+}
+
+.ui-datepicker{
+	width:15em !important;
+	max-width:50% !important;
+}

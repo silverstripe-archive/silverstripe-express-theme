@@ -1,0 +1,29 @@
+
+@mixin media{
+
+	.nav-collapse{
+
+		li {
+
+			.dropdown-menu{
+				display:none;
+			}
+
+		}
+
+		li.open{
+			.caret{
+				border-top:0;
+				border-bottom: 4px solid black;
+				border-right: 4px solid transparent;
+				border-left:4px solid transparent; 
+			}
+			.dropdown-menu{
+				display:block;
+			}
+		}
+	}
+
+
+
+}
