@@ -1270,7 +1270,7 @@ select:focus:required:invalid:focus {
   border-radius: 0 3px 3px 0;
 }
 
-.search-query {
+.search-query, body #SearchGroup form input.text {
   padding-right: 14px;
   padding-right: 4px \9;
   padding-left: 14px;
@@ -3464,13 +3464,13 @@ input[type="submit"].btn.btn-mini {
   margin-top: 0;
 }
 
-.navbar-search {
+.navbar-search, body #SearchGroup form {
   position: relative;
   float: left;
   margin-top: 6px;
   margin-bottom: 0;
 }
-.navbar-search .search-query {
+.navbar-search .search-query, body #SearchGroup form .search-query, .navbar-search body #SearchGroup form input.text, body #SearchGroup form .navbar-search input.text, body #SearchGroup form input.text {
   padding: 4px 9px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
@@ -3488,13 +3488,13 @@ input[type="submit"].btn.btn-mini {
   -o-transition: none;
   transition: none;
 }
-.navbar-search .search-query:-moz-placeholder {
+.navbar-search .search-query:-moz-placeholder, body #SearchGroup form .search-query:-moz-placeholder, .navbar-search body #SearchGroup form input.text:-moz-placeholder, body #SearchGroup form .navbar-search input.text:-moz-placeholder, body #SearchGroup form input.text:-moz-placeholder {
   color: #cccccc;
 }
-.navbar-search .search-query::-webkit-input-placeholder {
+.navbar-search .search-query::-webkit-input-placeholder, body #SearchGroup form .search-query::-webkit-input-placeholder, .navbar-search body #SearchGroup form input.text::-webkit-input-placeholder, body #SearchGroup form .navbar-search input.text::-webkit-input-placeholder, body #SearchGroup form input.text::-webkit-input-placeholder {
   color: #cccccc;
 }
-.navbar-search .search-query:focus, .navbar-search .search-query.focused {
+.navbar-search .search-query:focus, body #SearchGroup form .search-query:focus, .navbar-search body #SearchGroup form input.text:focus, body #SearchGroup form .navbar-search input.text:focus, body #SearchGroup form input.text:focus, .navbar-search .search-query.focused, body #SearchGroup form .search-query.focused, .navbar-search body #SearchGroup form input.focused.text, body #SearchGroup form .navbar-search input.focused.text, body #SearchGroup form input.focused.text {
   padding: 5px 10px;
   color: #333333;
   text-shadow: 0 1px 0 white;
@@ -5563,7 +5563,9 @@ a.label:hover, a.badge:hover {
   }
 
   .nav-collapse .navbar-form,
-  .nav-collapse .navbar-search {
+  .nav-collapse .navbar-search,
+  .nav-collapse body #SearchGroup form, body #SearchGroup
+  .nav-collapse form {
     float: none;
     padding: 9px 15px;
     margin: 9px 0;
@@ -5610,6 +5612,29 @@ body .navbar .nav > li > a {
   padding: 9px 0 9px 11px;
   margin-right: 10px;
 }
+body #SearchGroup {
+  float: right;
+  width: 200px;
+}
+body #SearchGroup form {
+  padding: 0;
+}
+body #SearchGroup form .field {
+  margin: 0;
+}
+body #SearchGroup form fieldset {
+  margin: 0;
+}
+body #SearchGroup form input.text {
+  width: 160px;
+  float: left;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+body #SearchGroup form input.action {
+  display: none;
+}
 body .sidebar-nav {
   padding: 9px 0;
 }
@@ -5628,7 +5653,7 @@ body .sidebar-nav .nav-list .nav-list li a, body .sidebar-nav .nav-list .nav-lis
   margin-right: -30px;
 }
 body .sidebar-nav .nav-list .nav-list li .nav-list li {
-  /* forth level */
+  /* fourth level */
 }
 body .sidebar-nav .nav-list .nav-list li .nav-list li a {
   padding-left: 45px;

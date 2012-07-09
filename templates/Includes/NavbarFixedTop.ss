@@ -8,8 +8,9 @@
       </a>
       <a class="brand" href="#">$SiteConfig.Title</a>
       <div class="nav-collapse">
-        $SearchForm
-
+        <div id="SearchGroup">
+          $SearchForm
+        </div>
          <ul class="nav pull-right">
         	<% loop Menu(1) %>
         	

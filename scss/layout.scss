@@ -33,6 +33,30 @@ body {
 		}
 	}
 
+	#SearchGroup{
+		float:right;
+		width:200px;
+		form{
+			@extend .navbar-search;
+			.field{
+				margin:0;
+			}
+			padding:0;
+			fieldset{
+				margin:0;
+			}
+			input.text{
+				width:160px;
+				float:left;
+				@include border-radius(15px); 
+				@extend .search-query;
+			}
+			input.action{
+				display:none;
+			}
+		}
+	}
+
 
 	.sidebar-nav {
 	    padding: 9px 0;
