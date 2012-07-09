@@ -23,6 +23,14 @@
 	  <p><a class="btn" href="#">View details &raquo;</a></p>
 	</div>
 	<div class="span4">
+		<h2>News</h2>
+		<ul>
+			<% loop NewsItems %>
+				<% include NewsItem %>
+			<% end_loop %>
+		</ul>
+	</div>
+	<div class="span4">
 	  <h2>Heading</h2>
 	  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 	  <p><a class="btn" href="#">View details &raquo;</a></p>
