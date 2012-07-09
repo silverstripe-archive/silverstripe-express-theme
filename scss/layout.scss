@@ -36,8 +36,10 @@ body {
 	#SearchGroup{
 		float:right;
 		width:200px;
+		.navbar-search .search-query{
+			line-height:1.3em;
+		}
 		form{
-			@extend .navbar-search;
 			.field{
 				margin:0;
 			}
@@ -45,12 +47,7 @@ body {
 			fieldset{
 				margin:0;
 			}
-			input.text{
-				width:160px;
-				float:left;
-				@include border-radius(15px); 
-				@extend .search-query;
-			}
+
 			input.action{
 				display:none;
 			}
