@@ -8,33 +8,29 @@
       </a>
       <a class="brand" href="#">$SiteConfig.Title</a>
       <div class="nav-collapse">
+        $SearchForm
 
-		  <form action="" class="navbar-search pull-right">
-            <input type="text" placeholder="Search" class="search-query span2">
-          </form>
-
-          <ul class="nav pull-right">
-        	<% loop Menu(1) %>
-        		<% if Children %>
-        			<li class="$LinkingMode dropdown">
-        				<a href="#" title="Go to the $Title.XML page" class="$LinkingMode dropdown-toggle" data-toggle="dropdown">$MenuTitle.XML <b class="caret"></b>
-        				</a>
-        				<ul class="dropdown-menu">
-							<% control Children %>
-								<li>
-									<a href="$Link" title="Go to the $Title.XML page">$MenuTitle.XML</a>
-								</li>
-							<% end_control %>
-						</ul>
-        			</li>
-        		<% else %> 
-	          		<li class="$LinkingMode">
-	          			<a href="$Link" title="Go to the $Title.XML page"  class="$LinkingMode">$MenuTitle.XML</a>
-	          		</li>
-	          	<% end_if %>
-	        <% end_loop %>
-          </ul>
-          
+        <ul class="nav pull-right">
+          <% loop Menu(1) %>
+            <% if Children %>
+          	  <li class="$LinkingMode dropdown">
+          		  <a href="#" title="Go to the $Title.XML page" class="$LinkingMode dropdown-toggle" data-toggle="dropdown">$MenuTitle.XML <b class="caret"></b>
+          			</a>
+          			<ul class="dropdown-menu">
+  							  <% control Children %>
+  								  <li>
+  									  <a href="$Link" title="Go to the $Title.XML page">$MenuTitle.XML</a>
+    							  </li>
+                  <% end_control %>
+                </ul>
+              </li>
+            <% else %> 
+              <li class="$LinkingMode">
+               <a href="$Link" title="Go to the $Title.XML page"  class="$LinkingMode">$MenuTitle.XML</a>
+              </li>
+            <% end_if %>
+          <% end_loop %>
+        </ul>
       </div><!--/.nav-collapse -->
     </div>
   </div>
