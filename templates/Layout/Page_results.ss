@@ -6,6 +6,7 @@
 		
 		<% if Query %>
 			<header class="page-header">
+				<% include PrintShare %>
 				<h1 class="searchQuery"><strong>You searched for &quot;{$Query}&quot;</strong></h1>
 			</header>
 		<% end_if %>

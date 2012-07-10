@@ -20,6 +20,7 @@
 	</div>
 	<section class="span9">
 		<header class="page-header">
+			<% include PrintShare %>
 			<h1><span class="hidden">$SiteConfig.Title | </span>$Title</h1>
 		</header>
 		$Content

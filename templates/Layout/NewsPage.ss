@@ -23,7 +23,9 @@
 			<header class="page-header">
 				<h1><span class="hidden">$SiteConfig.Title | </span>$Title</h1>
 			</header>
-			<p class="pull-right"><a href="">Print</a> | <a href="">Share</a></p>
+			
+			<% include PrintShare %>
+			
 			<p><% if Category %><a class="label label-info" href="">$Category.Title</a><% end_if %> <time datetime="$Date">$Date.nice</time></p>
 			$Content
 			$Form

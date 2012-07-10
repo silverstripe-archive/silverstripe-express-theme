@@ -1,0 +1,1 @@
+<p class="pull-right printShare"><a href="">Print</a> | <a href="">Share</a></p>

@@ -5718,6 +5718,9 @@ body #SearchResults {
 body #SearchResults li {
   border-bottom: 1px solid #EEE;
 }
+body .page-header .printShare {
+  margin-top: 21px;
+}
 
 /* ============================= */
 /* ! Layout for mobile version   */
