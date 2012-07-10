@@ -1,0 +1,11 @@
+/**
+ * This support file is used to style the WYSIWYG editor in the CMS
+ */
+
+/* @import "layout.scss"; */ /* Need to find a way to import bootstrap typography styles into the wysiwyg without importing all of layout.scss */
+@import "typography.scss";
+
+body {
+
+
+}

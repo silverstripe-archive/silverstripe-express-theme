@@ -109,6 +109,8 @@
 	</div>
 </div>
 
+<% include Navbar %>
+
 <h2>Example tables</h2>
 <h3>1. Default table styles</h3>
 <div class="row">
@@ -315,6 +317,7 @@
 	  </table>
 	</div>
 </div>
+
 <!-- $Content end -->
 <!-- $Form -->
 

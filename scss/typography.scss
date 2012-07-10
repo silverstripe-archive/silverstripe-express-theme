@@ -7,11 +7,139 @@
  */
 
 
+/*****************************
+EXPRESS TYPOGRAPHY 
+******************************/
+
 .typography {
 	h2, h3 {
 		margin: 18px 0 9px;
 	}
+	h2 {
+		line-height: 27px;
+	}
 	p {
 		margin-bottom: 18px;
+	}
+	a { // Visited is not working – todo
+		/* color: #007ab2; */
+		&:visited {
+			/* color: #009DE5; */
+		}
+		&:hover {
+			/* color: #777; */
+		}
+		&.external-link {
+			padding-right: 20px;
+			background: url(../images/icons/external-link.png) no-repeat right 3px;
+		}
+	}
+
+	blockquote {
+		.blockquote-author {
+			margin-top: -18px;
+			color: #999999;
+		    display: block;
+		    line-height: 18px;
+		    font-size: 100%;
+		    &:before {
+	    		content: "— ";
+	    	}
+		}
+	}
+
+
+	/*** LINK ICONS ***/
+	a[href$=".pdf"],
+	a[href$=".PDF"],
+	a.pdf {
+		padding-left: 22px;
+		background: url(../images/icons/page_white_acrobat.png) no-repeat left 0;
+	}
+	a[href$=".doc"],
+	a[href$=".DOC"],
+	a.doc {
+		padding-left: 22px;
+		background: url(../images/icons/page_word.png) no-repeat left 0;
+	}
+	a[href$=".xls"],
+	a[href$=".XLS"],
+	a.xls {
+		padding-left: 22px;
+		background: url(../images/icons/page_excel.png) no-repeat left 0;
+	}
+	a[href$=".gz"],
+	a[href$=".GZ"],
+	a[href$=".gzip"],
+	a[href$=".GZIP"],
+	a[href$=".zip"],
+	a[href$=".ZIP"],
+	a.archive {
+		padding-left: 22px;
+		background: url(../images/icons/page_white_zip.png) no-repeat left 0;
+	}
+	a[href$=".exe"],
+	a[href$=".EXE"],
+	a.application {
+		padding-left: 22px;
+		background: url(../images/icons/application.png) no-repeat left 0;
+	}
+	
+	a[href$="http://www."],
+	a.external-link {
+		padding-right: 22px;
+		background: url(../images/icons/external-link.png) no-repeat right 3px;
+	}
+	
+	
+	/*** Image formatting ***/	
+	
+	img{
+		&.right {
+			float:right;
+			margin: 0 0 18px 18px;
+		}
+		&.left {
+			float:left;
+			margin: 0 18px 18px 0px;
+			background-color: red;
+		}
+		&.leftAlone {
+			margin: 0 18px 18px 0;
+			float: none;
+			display: block;
+			clear: both;
+		}
+		&.center {
+			display:block;
+			margin: 0 auto 18px auto;
+			clear: both;
+		}
+	}
+	.captionImage {
+		width: 100%;
+		&.left {
+			float: left;
+			margin: 0 18px 18px 0px;			
+		}
+		&.right{
+			float:right;
+			margin: 0 0 18px 18px;
+		}
+		&.leftAlone{
+			float:none;
+			margin: 0 18px 18px 0px;
+		}
+		&.center{
+			margin: 0 auto 18px;
+		}
+		p {
+			clear: both;
+			margin: 8px 0;
+			color: #999;
+		}
+		img {
+			margin: 0 0 5px 0;
+		}
 	}
 }

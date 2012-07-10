@@ -18,7 +18,12 @@
 @import '../../module_bootstrap/lib/bootstrap.scss';
 @import '../../module_bootstrap/lib/responsive.scss';
 @import '_mobile.scss';
+@import 'mixins';
 
+
+/*****************************
+EXPRESS LAYOUT
+******************************/
 body {
 	.navbar{
 		.showChildren{
@@ -55,6 +60,24 @@ body {
 	}
 
 
+
+	/* NAVIGATION */
+	
+	/* Dropnav arrow adjustment */
+	.navbar .nav {
+		.hasLink {
+			padding-right: 32px;
+		}
+		.hasLinkArrow {
+			width: 16px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding-right: 6px;
+		}
+	}
+	
+	/* Side navigation */
 	.sidebar-nav {
 	    padding: 9px 0;
 	    a:visited{
@@ -103,6 +126,11 @@ body {
 			    }
 		    }
 	    }
+	}
+	.carousel {
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 18px;
 	}
 	iframe {
 		border: 0;

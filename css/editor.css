@@ -1,4 +1,9 @@
 /**
+ * This support file is used to style the WYSIWYG editor in the CMS
+ */
+/* @import "layout.scss"; */
+/* Need to find a way to import bootstrap typography styles into the wysiwyg without importing all of layout.scss */
+/**
  * Typography related stylesheet.
  *
  * This stylesheet needs to safely apply to CMS editor. Prefix all entries here
@@ -44,27 +49,42 @@ EXPRESS TYPOGRAPHY
 .typography blockquote .blockquote-author:before {
   content: "— ";
 }
-.typography a[href$=".pdf"], .typography a[href$=".PDF"], .typography a.pdf {
+.typography a[href$=".pdf"],
+.typography a[href$=".PDF"],
+.typography a.pdf {
   padding-left: 22px;
   background: url(../images/icons/page_white_acrobat.png) no-repeat left 0;
 }
-.typography a[href$=".doc"], .typography a[href$=".DOC"], .typography a.doc {
+.typography a[href$=".doc"],
+.typography a[href$=".DOC"],
+.typography a.doc {
   padding-left: 22px;
   background: url(../images/icons/page_word.png) no-repeat left 0;
 }
-.typography a[href$=".xls"], .typography a[href$=".XLS"], .typography a.xls {
+.typography a[href$=".xls"],
+.typography a[href$=".XLS"],
+.typography a.xls {
   padding-left: 22px;
   background: url(../images/icons/page_excel.png) no-repeat left 0;
 }
-.typography a[href$=".gz"], .typography a[href$=".GZ"], .typography a[href$=".gzip"], .typography a[href$=".GZIP"], .typography a[href$=".zip"], .typography a[href$=".ZIP"], .typography a.archive {
+.typography a[href$=".gz"],
+.typography a[href$=".GZ"],
+.typography a[href$=".gzip"],
+.typography a[href$=".GZIP"],
+.typography a[href$=".zip"],
+.typography a[href$=".ZIP"],
+.typography a.archive {
   padding-left: 22px;
   background: url(../images/icons/page_white_zip.png) no-repeat left 0;
 }
-.typography a[href$=".exe"], .typography a[href$=".EXE"], .typography a.application {
+.typography a[href$=".exe"],
+.typography a[href$=".EXE"],
+.typography a.application {
   padding-left: 22px;
   background: url(../images/icons/application.png) no-repeat left 0;
 }
-.typography a[href$="http://www."], .typography a.external-link {
+.typography a[href$="http://www."],
+.typography a.external-link {
   padding-right: 22px;
   background: url(../images/icons/external-link.png) no-repeat right 3px;
 }
