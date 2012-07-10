@@ -5592,8 +5592,10 @@ body .navbar .showChildren {
   text-align: center;
 }
 body .navbar .nav > li > a {
-  padding: 9px 0 9px 11px;
-  margin-right: 10px;
+  padding: 9px 10px 9px 11px;
+}
+body .navbar .nav li.dropdown .current.dropdown-toggle, body .navbar .nav li.open.active .current.dropdown-toggle {
+  background-color: #222222;
 }
 body #SearchGroup {
   float: right;
@@ -5628,7 +5630,7 @@ body .sidebar-nav {
   padding: 9px 0;
 }
 body .sidebar-nav a:visited {
-  color: #0088cc;
+  /* color:$linkColor; */
 }
 body .sidebar-nav .nav-list .nav-list li {
   /* third level */
@@ -5681,6 +5683,13 @@ body .carousel {
 }
 body iframe {
   border: 0;
+}
+body #SearchResults {
+  list-style: none;
+  margin-left: 0;
+}
+body #SearchResults li {
+  border-bottom: 1px solid #EEE;
 }
 
 /* ============================= */

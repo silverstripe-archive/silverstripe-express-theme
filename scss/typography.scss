@@ -12,6 +12,12 @@ EXPRESS TYPOGRAPHY
 ******************************/
 
 .typography {
+	.page-header h1 {
+	    font-size: 40px;
+	    font-weight: bold;
+		letter-spacing: -1px;
+		line-height: 1;
+	}
 	h2, h3 {
 		margin: 18px 0 9px;
 	}
@@ -47,6 +53,8 @@ EXPRESS TYPOGRAPHY
 	    	}
 		}
 	}
+	
+	
 
 
 	/*** LINK ICONS ***/

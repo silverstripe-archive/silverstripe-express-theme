@@ -33,8 +33,10 @@ body {
 	    	text-align:center;  	
 	    }
 	    .nav > li > a{
-			padding: 9px 0 9px 11px;
-			margin-right:10px;
+			padding: 9px 10px 9px 11px;
+		}
+		.nav li.dropdown .current.dropdown-toggle, .nav li.open.active .current.dropdown-toggle {
+			background-color: #222222;
 		}
 	}
 
@@ -81,7 +83,7 @@ body {
 	.sidebar-nav {
 	    padding: 9px 0;
 	    a:visited{
-	    	color:$linkColor;
+	    	/* color:$linkColor; */
 	    }
 
 	    .nav-list {	    
@@ -134,6 +136,13 @@ body {
 	}
 	iframe {
 		border: 0;
+	}
+	#SearchResults {
+		li {
+			border-bottom: 1px solid #EEE;
+		}
+		list-style: none;
+		margin-left: 0;
 	}
 
 }

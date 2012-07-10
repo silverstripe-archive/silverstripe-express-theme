@@ -2,10 +2,13 @@
 	<div class="span3">
 		<% include SidebarNav %>
 	</div>
-	<div class="span9">
-		<h2><span class="hidden">$SiteConfig.Title | </span>$Title</h2>
+	<section class="span9">
+		<header class="page-header subhead">
+			<h1><span class="hidden">$SiteConfig.Title | </span>$Title</h1>
+		</header>
+		<% include Breadcrumb %>
 		$Content
 		$Form
 		$PageComments
-	</div>
+	</section>
 </div>

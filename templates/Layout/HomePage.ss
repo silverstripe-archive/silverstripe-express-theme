@@ -21,11 +21,11 @@ $PageComments
 	</div>
 	<div class="span4">
 		<h2>News</h2>
-		<ul>
-			<% loop NewsItems %>
-				<% include NewsItem %>
-			<% end_loop %>
-		</ul>
+		
+		<% loop NewsItems %>
+			<% include NewsItem %>
+		<% end_loop %>
+	
 	</div>
 	<div class="span4">
 	  <h2>Heading</h2>

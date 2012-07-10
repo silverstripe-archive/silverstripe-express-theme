@@ -1,22 +1,31 @@
 <div class="row">
-	<div class="span12">
+	<div class="span3">
+		Refine results here or you might be looking for x, y, z
+	</div>
+	<section class="span9">
+		
 		<% if Query %>
-			<p class="searchQuery"><strong>You searched for &quot;{$Query}&quot;</strong></p>
+			<header class="page-header">
+				<h1 class="searchQuery"><strong>You searched for &quot;{$Query}&quot;</strong></h1>
+			</header>
 		<% end_if %>
 
 		<% if Results %>
 			<ul id="SearchResults">
 				<% loop Results %>
 					<li>
-						<a class="searchResultHeader" href="$Link">
+						<h3><a class="searchResultHeader" href="$Link">
 							<% if MenuTitle %>
 								$MenuTitle
 							<% else %>
 								$Title
 							<% end_if %>
-						</a>
-						<p>$Content.LimitWordCountXML</p>
-						<a class="readMoreLink" href="$Link" title="Read more about &quot;{$Title}&quot;">Read more about &quot;{$Title}&quot;...</a>
+						</a></h3>
+						<% if $Content %>
+							<p>$Content.LimitWordCountXML<br />
+								<a class="readMoreLink" href="$Link" title="Read more about &quot;{$Title}&quot;">Read more &hellip;</a>
+							</p>
+						<% end_if %>
 					</li>
 				<% end_loop %>
 			</ul>
@@ -44,5 +53,5 @@
 				<p>Page $Results.CurrentPage of $Results.TotalPages</p>
 			</div>
 		<% end_if %>
-	</div>
+	</section>
 </div>
