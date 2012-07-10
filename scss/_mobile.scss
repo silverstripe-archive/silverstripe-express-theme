@@ -1,6 +1,13 @@
 
 @mixin media{
 
+	body {
+		#SearchGroup{
+			float:none;
+			width:100%;
+		}
+	}
+
 	.nav-collapse{
 
 		li {
