@@ -4,15 +4,10 @@
 			<ul class="nav nav-list">
 				
 				<li class="nav-header">In $Title</li>
-				
-				Todo: get categories
 
-				<% loop NewsItems %>
-					<% if Category %> 
-						<% loop Category %>
-							<li><a href="$Link" title="View the $Category.Title category">Category: $Category.Title</a></li>
-						<% end_loop %>
-					<% end_if %>
+				<li><a href="$Link" title="View all news">View all news</a></li>
+				<% loop Categories %>
+					<li><a href="$Link" title="View the $Title category">$Title</a></li>
 				<% end_loop %>
 			
 			</ul>
@@ -28,7 +23,7 @@
 		<% if NewsItems %>
 
 			<p class="pull-right">Displaying $NewsItems.FirstItem - $NewsItems.LastItem of $NewsItems.count</p>
-			<h4>Latest in $Title</h4>
+			<h4>Latest in <% if Category %>$Category.Title<% else %>$Title<% end_if %></h4>
 			<% with NewsItems %>
 				<% include Pagination %>
 			<% end_with %>
