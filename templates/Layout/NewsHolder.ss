@@ -7,7 +7,9 @@
 
 				<li><a href="$Link" title="View all news">View all news</a></li>
 				<% loop Categories %>
-					<li><a href="$Link" title="View the $Title category">$Title</a></li>
+					<% if NewsItems %>
+						<li><a href="$Link" title="View the $Title category">$Title</a></li>
+					<% end_if %>
 				<% end_loop %>
 			
 			</ul>
