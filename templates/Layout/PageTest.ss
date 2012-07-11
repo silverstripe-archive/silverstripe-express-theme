@@ -109,7 +109,7 @@
 	</div>
 </div>
 
-<% include Navbar %>
+<% include Header %>
 
 <h2>Example tables</h2>
 <h3>1. Default table styles</h3>
