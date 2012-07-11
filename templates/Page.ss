@@ -45,10 +45,7 @@
 	  $Layout
 	  	
 	  <hr>
-	
-	  <footer>
-	    <p>&copy; Company 2012</p>
-	  </footer>
+		<% include Footer %>
 	
 	</div> <!-- /container -->
 	
