@@ -3,7 +3,7 @@
 	</header>
 	<p>
 	<% if Category %>
-		<a class="label label-info" href="$Category.Link">$Category.Title</a>
+		<a class="label label-inverse" href="$Category.Link">$Category.Title</a>
 	<% end_if %> 
 	<time datetime="$Date">$Date.nice</time>
 	</p>

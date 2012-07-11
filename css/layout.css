@@ -4246,6 +4246,9 @@ a.thumbnail:hover {
   border-radius: 9px;
 }
 
+a.label:visited, a.badge:visited {
+  color: white;
+}
 a.label:hover, a.badge:hover {
   color: white;
   text-decoration: none;
@@ -5734,7 +5737,7 @@ body #layout a img:hover {
 }
 body .resultsHeader {
   *zoom: 1;
-  margin: 40px 0 0px 0;
+  margin: 40px 0 10px 0;
   height: auto;
   border-bottom: 1px solid #eeeeee;
 }
@@ -5758,6 +5761,11 @@ body .resultsList article {
 }
 body .resultsList article p {
   max-width: 790px;
+}
+body .resultsList article h3 {
+  line-height: 1em;
+  font-size: 1.4em;
+  margin-top: 5px;
 }
 body .resultsList article.even {
   background: #f6f6f6;

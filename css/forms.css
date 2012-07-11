@@ -4240,6 +4240,9 @@ a.thumbnail:hover {
   border-radius: 9px;
 }
 
+a.label:visited, a.badge:visited {
+  color: white;
+}
 a.label:hover, a.badge:hover {
   color: white;
   text-decoration: none;

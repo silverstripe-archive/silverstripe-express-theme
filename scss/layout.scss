@@ -173,7 +173,7 @@ body {
 			padding:3px 0;
 
 		}
-		margin:40px 0 0px 0;		
+		margin:40px 0 10px 0;		
 		height:auto;
 		border-bottom: 1px solid $hrBorder;
 	}
@@ -183,6 +183,11 @@ body {
 			padding:5px;
 			p{
 				max-width:790px;
+			}
+			h3{
+				line-height:1em;
+				font-size: 1.4em;
+				margin-top:5px;
 			}
 			&.even{
 				background: lighten($hrBorder, 3%);
