@@ -27,10 +27,7 @@
 				<h2 class="pull-left">Latest in <% if Category %>$Category.Title<% else %>$Title<% end_if %></h2>
 				<p class="pull-right">Displaying $NewsItems.FirstItem - $NewsItems.LastItem of $NewsItems.count</p>
 			</header>
-			<% with NewsItems %>
-				<% include Pagination %>
-			<% end_with %>
-			
+		
 			<% loop NewsItems %>
 				<article class="$EvenOdd">
 					<% include NewsItem %>
