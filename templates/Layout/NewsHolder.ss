@@ -13,23 +13,26 @@
 			</ul>
 		</div>
 	</div>
-	<section class="span9">
+	<section class="span9 resultsList">
 		<header class="page-header">
 			<% include PrintShare %>
 			<h1><span class="hidden">$SiteConfig.Title | </span>$Title</h1>
 		</header>
 		$Content
 		
-		<% if NewsItems %>
-
-			<p class="pull-right">Displaying $NewsItems.FirstItem - $NewsItems.LastItem of $NewsItems.count</p>
-			<h4>Latest in <% if Category %>$Category.Title<% else %>$Title<% end_if %></h4>
+		<% if NewsItems %>			
+			<header class="resultsHeader">
+				<h2 class="pull-left">Latest in <% if Category %>$Category.Title<% else %>$Title<% end_if %></h2>
+				<p class="pull-right">Displaying $NewsItems.FirstItem - $NewsItems.LastItem of $NewsItems.count</p>
+			</header>
 			<% with NewsItems %>
 				<% include Pagination %>
 			<% end_with %>
 			
 			<% loop NewsItems %>
-				<% include NewsItem %>
+				<article class="$EvenOdd">
+					<% include NewsItem %>
+				</article>
 			<% end_loop %>
 
 			<% with NewsItems %>

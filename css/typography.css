@@ -9,6 +9,7 @@
 EXPRESS TYPOGRAPHY 
 ******************************/
 .typography {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*** LINK ICONS ***/
   /*** Image formatting ***/
 }
@@ -26,6 +27,7 @@ EXPRESS TYPOGRAPHY
 }
 .typography p {
   margin-bottom: 18px;
+  font-size: 1.1em;
 }
 .typography a.external-link {
   padding-right: 20px;
@@ -115,4 +117,7 @@ EXPRESS TYPOGRAPHY
 }
 .typography .captionImage img {
   margin: 0 0 5px 0;
+}
+.typography time {
+  font-size: 0.9em;
 }

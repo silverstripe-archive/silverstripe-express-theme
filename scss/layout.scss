@@ -148,6 +148,7 @@ body {
 		list-style: none;
 		margin-left: 0;
 	}
+
 	.page-header .printShare {
 		margin-top: 21px;
 	}
@@ -160,6 +161,41 @@ body {
 		}
 	}
 
+	.resultsHeader{
+		@include clearfix;
+		h2, p{
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-weight:200;
+			font-size:1.3em;
+			line-height:1.1em;
+			margin:0px;
+			padding:3px 0;
+
+		}
+		padding:0 5px;
+		margin:40px 0 0px 0;
+		
+		height:auto;
+		border-bottom: 1px solid $hrBorder;
+		//background: lighten($hrBorder, 5%);
+		//@include border-radius(5px);
+	}
+
+	.resultsList{
+		article{
+			padding:5px;
+			p{
+				max-width:790px;
+			}
+			&.even{
+				background: lighten($hrBorder, 3%);
+				@include border-radius(5px);
+			}
+		}
+	}
+	p.printShare{
+		font-size:0.9em;
+	}
 }
 
 /* ============================= */
