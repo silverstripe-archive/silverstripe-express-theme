@@ -38,14 +38,15 @@
 
 <body class="typography">
 
+	<%-- You can use either NavbarFixedTop or Header but not both --%>
 	<% include NavbarFixedTop %>
+	<% include Header %>
 	
 	<div class="container" id="layout">
 	
 	  $Layout
 	  	
 	  <hr>
-		
 	
 	</div> <!-- /container -->
 	

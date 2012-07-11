@@ -63,8 +63,12 @@ body {
 
 
 
-	/* NAVIGATION */
-	
+	/* NAVIGATION & HEADER */
+	header {
+		h1.brand {
+			margin-bottom: 18px;
+		}
+	}
 	/* Dropnav arrow adjustment */
 	.navbar .nav {
 		.hasLink {

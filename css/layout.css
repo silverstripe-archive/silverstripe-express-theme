@@ -5581,7 +5581,7 @@ a.label:hover, a.badge:hover {
 EXPRESS LAYOUT
 ******************************/
 body {
-  /* NAVIGATION */
+  /* NAVIGATION & HEADER */
   /* Dropnav arrow adjustment */
   /* Side navigation */
 }
@@ -5615,6 +5615,9 @@ body #SearchGroup form fieldset {
 }
 body #SearchGroup form input.action {
   display: none;
+}
+body header h1.brand {
+  margin-bottom: 18px;
 }
 body .navbar .nav .hasLink {
   padding-right: 32px;
