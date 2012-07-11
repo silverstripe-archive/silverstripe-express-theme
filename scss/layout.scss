@@ -162,6 +162,7 @@ body {
 	}
 
 	.resultsHeader{
+		@extend breadcrumb;
 		@include clearfix;
 		h2, p{
 			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
