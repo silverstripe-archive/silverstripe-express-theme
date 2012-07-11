@@ -45,9 +45,11 @@
 	  $Layout
 	  	
 	  <hr>
-		<% include Footer %>
+		
 	
 	</div> <!-- /container -->
+	
+	<% include Footer %>
 	
 	<!-- Le javascript
 	================================================== -->

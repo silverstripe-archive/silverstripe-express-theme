@@ -27,14 +27,7 @@ EXPRESS TYPOGRAPHY
 	p {
 		margin-bottom: 18px;
 	}
-	a { // Visited is not working – todo
-		/* color: #007ab2; */
-		&:visited {
-			/* color: #009DE5; */
-		}
-		&:hover {
-			/* color: #777; */
-		}
+	a {
 		&.external-link {
 			padding-right: 20px;
 			background: url(../images/icons/external-link.png) no-repeat right 3px;
@@ -42,6 +35,9 @@ EXPRESS TYPOGRAPHY
 	}
 
 	blockquote {
+		border-left: 5px solid #EEEEEE;
+		margin: 0 0 18px;
+    	padding: 0 0 0 15px;
 		.blockquote-author {
 			margin-top: -18px;
 			color: #999999;
@@ -53,9 +49,6 @@ EXPRESS TYPOGRAPHY
 	    	}
 		}
 	}
-	
-	
-
 
 	/*** LINK ICONS ***/
 	a[href$=".pdf"],

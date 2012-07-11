@@ -27,18 +27,14 @@ EXPRESS TYPOGRAPHY
 .typography p {
   margin-bottom: 18px;
 }
-.typography a {
-  /* color: #007ab2; */
-}
-.typography a:visited {
-  /* color: #009DE5; */
-}
-.typography a:hover {
-  /* color: #777; */
-}
 .typography a.external-link {
   padding-right: 20px;
   background: url(../images/icons/external-link.png) no-repeat right 3px;
+}
+.typography blockquote {
+  border-left: 5px solid #EEEEEE;
+  margin: 0 0 18px;
+  padding: 0 0 0 15px;
 }
 .typography blockquote .blockquote-author {
   margin-top: -18px;

@@ -166,9 +166,7 @@ a {
   color: #0088cc;
   text-decoration: none;
 }
-a:visited {
-  color: #7057ed;
-}
+
 a:hover {
   color: #005580;
   text-decoration: underline;
@@ -2456,9 +2454,6 @@ button.close {
 .btn:first-child {
   *margin-left: 0;
 }
-.btn:visited {
-  color: #333333 !important;
-}
 
 .btn:hover {
   color: #333333;
@@ -2547,20 +2542,6 @@ button.close {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-.btn-primary:visited,
-.btn-primary:hover:visited,
-.btn-warning:visited,
-.btn-warning:hover:visited,
-.btn-danger:visited,
-.btn-danger:hover:visited,
-.btn-success:visited,
-.btn-success:hover:visited,
-.btn-info:visited,
-.btn-info:hover:visited,
-.btn-inverse:visited,
-.btn-inverse:hover:visited {
-  color: white !important;
-}
 
 .btn-primary.active,
 .btn-warning.active,
@@ -2568,14 +2549,6 @@ button.close {
 .btn-success.active,
 .btn-info.active,
 .btn-inverse.active {
-  color: rgba(255, 255, 255, 0.75);
-}
-.btn-primary.active:visited,
-.btn-warning.active:visited,
-.btn-danger.active:visited,
-.btn-success.active:visited,
-.btn-info.active:visited,
-.btn-inverse.active:visited {
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -3049,7 +3022,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav-list > .active > a,
-.nav-list > .active > a:hover, .nav-list > .active > a:visited {
+.nav-list > .active > a:hover {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   background-color: #0088cc;
@@ -3119,7 +3092,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav-tabs > .active > a,
-.nav-tabs > .active > a:hover, .nav-tabs > .active > a:visited {
+.nav-tabs > .active > a:hover {
   color: #555555;
   background-color: white;
   border: 1px solid #ddd;
@@ -3138,7 +3111,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav-pills > .active > a,
-.nav-pills > .active > a:hover, .nav-pills > .active > a:visited {
+.nav-pills > .active > a:hover {
   color: white;
   background-color: #0088cc;
 }
@@ -5720,6 +5693,14 @@ body #SearchResults li {
 }
 body .page-header .printShare {
   margin-top: 21px;
+}
+body #layout a img {
+  border: 2px solid blue;
+  margin-left: -2px;
+  margin-top: -2px;
+}
+body #layout a img:hover {
+  border-color: red;
 }
 
 /* ============================= */
