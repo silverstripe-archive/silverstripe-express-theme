@@ -148,6 +148,41 @@ body {
 		list-style: none;
 		margin-left: 0;
 	}
+	.resultsHeader{
+		@include clearfix;
+		h2, p{
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-weight:200;
+			font-size:1.3em;
+			line-height:1.1em;
+			margin:0px;
+			padding:3px 0;
+
+		}
+		padding:0 5px;
+		margin:40px 0 0px 0;
+		
+		height:auto;
+		border-bottom: 1px solid $hrBorder;
+		//background: lighten($hrBorder, 5%);
+		//@include border-radius(5px);
+	}
+
+	.resultsList{
+		article{
+			padding:5px;
+			p{
+				max-width:790px;
+			}
+			&.even{
+				background: lighten($hrBorder, 3%);
+				@include border-radius(5px);
+			}
+		}
+	}
+	p.printShare{
+		font-size:0.9em;
+	}
 
 	.page-header .printShare {
 		margin-top: 21px;
@@ -200,7 +235,7 @@ body {
 	}
 }
 
-#Pagination{
+.pagination{
 	margin-top:20px;
 	position: relative;
 	float:right;
@@ -213,77 +248,7 @@ body {
 		list-style: none;
 		position: relative;
 		left: 50%;
-		li{
-			text-align: center;
-			display: block;
-			float: left;
-			padding:0;
-			border:{
-				left:$border;
-				top:$border;
-				bottom:$border;
-			}
-			&.next, &.prev{
-				span, a{
-					position: relative;
-					width: 15px;
-					overflow: hidden;
-				}
-			}
-			&.prev{
-				@include roundLeftCorners(3px);
-				span, a { 
-					@include roundLeftCorners(3px);
-					border-left: none;
-				}
-			}
-			&.next{
-				@include roundRightCorners(3px);
-				border-right:$border;
-				span, a { 
-					@include roundRightCorners(3px);
-				}
-			}
-			
-			span, a{
-				display: block;
-				padding: 5px 8px 4px;
-				min-width: 15px;
-				display: block;
-				text-shadow: $white-shadow;
-				@include gradient-vertical(lighten($hrBorder,3%), $hrBorder);	
-				color: $grayDark;
-				font-weight:bold; 
-				font-size:.9em;
-				border-left: 1px solid $hrBorder;
-				&.disabled{
-					color:lighten($grayLight,15%);
-				}
-			}
 
-			a{
-				&:hover, &:active{ 
-					@include gradient-vertical($hrBorder, lighten($hrBorder,3%));
-					@include inner-shadow;
-					border-left-color:darken($hrBorder,20%); 
-				}
-			}
-
-			&.active{
-
-				border-top-color: darken($linkColor, 10%);		
-				border-bottom-color: darken($linkColor, 10%);	
-				span{
-					text-shadow: none;
-					cursor:default;
-					@include gradient-vertical($linkColor, darken($linkColor, 10%));	
-					@include boxShadowInset(0, 0, 5px, 0, rgba(darken($linkColor, 15%),0.8));
-					color: white;
-					border-left: 1px solid $linkColor; /*old-browsers*/
-					border-left: 1px solid rgba($linkColor,0.8);					
-				}	
-			}
-		}
 	}
 }
 

@@ -5724,6 +5724,43 @@ body #SearchResults {
 body #SearchResults li {
   border-bottom: 1px solid #EEE;
 }
+body .resultsHeader {
+  *zoom: 1;
+  padding: 0 5px;
+  margin: 40px 0 0px 0;
+  height: auto;
+  border-bottom: 1px solid #eeeeee;
+}
+body .resultsHeader:before, body .resultsHeader:after {
+  display: table;
+  content: "";
+}
+body .resultsHeader:after {
+  clear: both;
+}
+body .resultsHeader h2, body .resultsHeader p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 1.3em;
+  line-height: 1.1em;
+  margin: 0px;
+  padding: 3px 0;
+}
+body .resultsList article {
+  padding: 5px;
+}
+body .resultsList article p {
+  max-width: 790px;
+}
+body .resultsList article.even {
+  background: #f6f6f6;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+body p.printShare {
+  font-size: 0.9em;
+}
 body .page-header .printShare {
   margin-top: 21px;
 }
@@ -5777,7 +5814,7 @@ body p.printShare {
   font-size: 0.9em;
 }
 
-#Pagination {
+.pagination {
   margin-top: 20px;
   position: relative;
   float: right;
@@ -5785,128 +5822,18 @@ body p.printShare {
   text-align: left;
   *zoom: 1;
 }
-#Pagination:before, #Pagination:after {
+.pagination:before, .pagination:after {
   display: table;
   content: "";
 }
-#Pagination:after {
+.pagination:after {
   clear: both;
 }
-#Pagination #PageNumbers {
+.pagination #PageNumbers {
   line-height: 18px;
   list-style: none;
   position: relative;
   left: 50%;
-}
-#Pagination #PageNumbers li {
-  text-align: center;
-  display: block;
-  float: left;
-  padding: 0;
-  border-left: 1px solid #dddddd;
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
-}
-#Pagination #PageNumbers li.next span, #Pagination #PageNumbers li.next a, #Pagination #PageNumbers li.prev span, #Pagination #PageNumbers li.prev a {
-  position: relative;
-  width: 15px;
-  overflow: hidden;
-}
-#Pagination #PageNumbers li.prev {
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 3px;
-  -webkit-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
-}
-#Pagination #PageNumbers li.prev span, #Pagination #PageNumbers li.prev a {
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 3px;
-  -webkit-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
-  border-left: none;
-}
-#Pagination #PageNumbers li.next {
-  -moz-border-radius-topleft: 0;
-  -moz-border-radius-topright: 3px;
-  -moz-border-radius-bottomright: 3px;
-  -moz-border-radius-bottomleft: 0;
-  -webkit-border-radius: 0 3px 3px 0;
-  border-radius: 0 3px 3px 0;
-  border-right: 1px solid #dddddd;
-}
-#Pagination #PageNumbers li.next span, #Pagination #PageNumbers li.next a {
-  -moz-border-radius-topleft: 0;
-  -moz-border-radius-topright: 3px;
-  -moz-border-radius-bottomright: 3px;
-  -moz-border-radius-bottomleft: 0;
-  -webkit-border-radius: 0 3px 3px 0;
-  border-radius: 0 3px 3px 0;
-}
-#Pagination #PageNumbers li span, #Pagination #PageNumbers li a {
-  display: block;
-  padding: 5px 8px 4px;
-  min-width: 15px;
-  display: block;
-  text-shadow: 0 1px rgba(255, 255, 255, 0.8);
-  background-color: #f2f2f2;
-  background-image: -ms-linear-gradient(top, #f6f6f6, #eeeeee);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f6f6f6), to(#eeeeee));
-  background-image: -webkit-linear-gradient(top, #f6f6f6, #eeeeee);
-  background-image: -o-linear-gradient(top, #f6f6f6, #eeeeee);
-  background-image: -moz-linear-gradient(top, #f6f6f6, #eeeeee);
-  background-image: linear-gradient(top, #f6f6f6, #eeeeee);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#eeeeee', GradientType=0);
-  color: #333333;
-  font-weight: bold;
-  font-size: .9em;
-  border-left: 1px solid #eeeeee;
-}
-#Pagination #PageNumbers li span.disabled, #Pagination #PageNumbers li a.disabled {
-  color: #bfbfbf;
-}
-#Pagination #PageNumbers li a:hover, #Pagination #PageNumbers li a:active {
-  background-color: #f1f1f1;
-  background-image: -ms-linear-gradient(top, #eeeeee, #f6f6f6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#f6f6f6));
-  background-image: -webkit-linear-gradient(top, #eeeeee, #f6f6f6);
-  background-image: -o-linear-gradient(top, #eeeeee, #f6f6f6);
-  background-image: -moz-linear-gradient(top, #eeeeee, #f6f6f6);
-  background-image: linear-gradient(top, #eeeeee, #f6f6f6);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#f6f6f6', GradientType=0);
-  -webkit-box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.1);
-  border-left-color: #bbbbbb;
-}
-#Pagination #PageNumbers li.active {
-  border-top-color: #006699;
-  border-bottom-color: #006699;
-}
-#Pagination #PageNumbers li.active span {
-  text-shadow: none;
-  cursor: default;
-  background-color: #007ab7;
-  background-image: -ms-linear-gradient(top, #0088cc, #006699);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#006699));
-  background-image: -webkit-linear-gradient(top, #0088cc, #006699);
-  background-image: -o-linear-gradient(top, #0088cc, #006699);
-  background-image: -moz-linear-gradient(top, #0088cc, #006699);
-  background-image: linear-gradient(top, #0088cc, #006699);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#006699', GradientType=0);
-  -webkit-box-shadow: inset 0 0 5px 0 rgba(0, 85, 128, 0.8);
-  -moz-box-shadow: inset 0 0 5px 0 rgba(0, 85, 128, 0.8);
-  box-shadow: inset 0 0 5px 0 rgba(0, 85, 128, 0.8);
-  color: white;
-  border-left: 1px solid #0088cc;
-  /*old-browsers*/
-  border-left: 1px solid rgba(0, 136, 204, 0.8);
 }
 
 /* ============================= */
