@@ -7,25 +7,25 @@
 				<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>">
 					<a href="$Link"><span></span>$MenuTitle</a>
 					<% if LinkOrSection = section %>
-						<% if Children %>
+						<% if MenuChildren %>
 							<ul class="nav nav-list">
-								<% loop Children %>
+								<% loop MenuChildren %>
 									
 									<!-- third level pages -->
 									<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>">
 										<a href="$Link"><span></span>$MenuTitle</a>
 										<% if LinkOrSection = section %>
-											<% if Children %>
+											<% if MenuChildren %>
 												<ul class="nav nav-list">
-													<% loop Children %>
+													<% loop MenuChildren %>
 													
-														<!-- forth level pages -->
+														<!-- fourth level pages -->
 														<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>">
 															<a href="$Link"><span></span>$MenuTitle</a>
 															<% if LinkOrSection = section %>
-																<% if Children %>
+																<% if MenuChildren %>
 																	<ul class="nav nav-list">
-																		<% loop Children %>
+																		<% loop MenuChildren %>
 																		
 																			<!-- fifth level pages -->
 																			<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>">

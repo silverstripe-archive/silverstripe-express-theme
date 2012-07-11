@@ -24,13 +24,13 @@
 	
 	          <ul class="nav">
 	        	<% loop Menu(1) %>
-	        		<% if Children %>
+	        		<% if MenuChildren %>
 	        			<li class="$LinkingMode dropdown <% if $LinkingMode = current %>active<% end_if %>">
 	        				<a href="$Link" class="hasLink" title="Go to the $Title.XML page">$MenuTitle.XML</a>	
 	        				<a href="#" class="$LinkingMode dropdown-toggle hasLinkArrow" data-toggle="dropdown"> <b class="caret"></b>
 	        				</a>
 	        				<ul class="dropdown-menu">
-								<% control Children %>
+								<% control MenuChildren %>
 									<li>
 										<a href="$Link" title="Go to the $Title.XML page">$MenuTitle.XML</a>
 									</li>
