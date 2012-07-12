@@ -4157,6 +4157,26 @@ a.label:hover, a.badge:hover {
   color: inherit;
 }
 
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
 /*
  * Bootstrap Responsive v2.0.3
  *
@@ -5314,6 +5334,10 @@ body p.printShare {
     display: block;
   }
 
+  .Actions .action {
+    width: 100%;
+  }
+
   zoom: 1;
 }
 /* Opera mobile high-res  */
@@ -5334,6 +5358,10 @@ body p.printShare {
   }
   .nav-collapse li.open .dropdown-menu {
     display: block;
+  }
+
+  .Actions .action {
+    width: 100%;
   }
 
   zoom: 1;
@@ -5358,6 +5386,10 @@ body p.printShare {
     display: block;
   }
 
+  .Actions .action {
+    width: 100%;
+  }
+
   zoom: 1;
 }
 /* Portrait tablet to landscape and desktop  */
@@ -5378,6 +5410,10 @@ body p.printShare {
   }
   .nav-collapse li.open .dropdown-menu {
     display: block;
+  }
+
+  .Actions .action {
+    width: 100%;
   }
 
   zoom: 1;
@@ -5402,6 +5438,10 @@ body p.printShare {
     display: block;
   }
 
+  .Actions .action {
+    width: 100%;
+  }
+
   zoom: 1;
 }
 /* Large mobile */
@@ -5422,6 +5462,10 @@ body p.printShare {
   }
   .nav-collapse li.open .dropdown-menu {
     display: block;
+  }
+
+  .Actions .action {
+    width: 100%;
   }
 
   zoom: 1;

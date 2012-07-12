@@ -9,6 +9,7 @@
 			return false;
 		});
 
+		$('form fieldset > div.field:odd').addClass("odd");
 		
 	})
 })(jQuery);

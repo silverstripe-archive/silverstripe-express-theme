@@ -1,65 +1,113 @@
 @import '../../module_bootstrap/lib/bootstrap.scss';
 @import '../../module_bootstrap/lib/responsive.scss';
-
-@mixin message($type){
-	padding:5px;
-	margin-top:-5px;
-	margin-right:5px;
-	font-weight:normal;
-
-	@include border-radius(3px);
-	@if $type == 'error' {
-		background:$errorBackground;
-		border:1px solid $errorBorder;
-		color: $errorText;
-	}@else if $type == 'warning' {
-		background:$warningBackground;
-		border:1px solid $warningBorder;
-		color: $warningText;
-	}@else if $type == 'success' {
-		background:$successBackground;
-		border:1px solid $successBorder;
-		color: $successText;
-	}
-}
+@import 'mixins';
 
 .message{
-	@include message('error');
+	@include message('default');
+	&.error, &.bad{
+		@include message('error');
+	}
+	&.good, &.success{
+		@include message('success');
+	}
+	&.warning{
+		@include message('warning');
+	}
+	&.info {
+		@include message('info');
+	}
 }
 
-label{
-	font-weight: bold;
-	&.right{
-		color: rgba(#000, 0.3);
-		font-weight: normal;
-		width:50%;
-		text-align:left;
-		font-style:italic;
-		position: absolute;
-		top: 0;
-		right: 0;	
-		padding-left:5px;
-		@include box-sizing(border-box);
-	}
-	&.required{
-		@extend .message;
-		float:left;
-		.textarea &{
-			width:100%;
-			max-width:500px;
+.required{
+	@include formValidation($errorText, $errorText, $errorBackground);
+}
+
+#Form_Form{
+	@extend .well;
+	padding:0;
+	.field{
+		&.odd{
+			background: lighten($hrBorder,4%);
 		}
 	}
 }
+
+
+form{
+
+
+	.FormHeading{
+		margin:0;
+		@include roundTopCorners(3px);
+		padding:10px 19px;	
+	}
+
+	fieldset > div.field{
+		padding: 19px;
+		margin:0;
+		&.checkbox{
+			margin-left:19px;
+		}
+	}
+
+}
+
+form{
+	h1,h2,h3{
+		&.FormHeading{
+			@include gradient-vertical(darken(#ffffff,2%),#fff);
+			border-bottom:1px solid $hrBorder;
+			border-top:1px solid darken(#f5f5f5,10%);
+		}
+	}
+}
+
+
+label{
+	font-weight: bold;
+	font-size:1.2em;
+	line-height:1.2em;
+	padding-bottom:5px;
+	ul.checkboxset &, ul.optionset &{
+		font-size:1em;
+		line-height:1em;
+	}
+	&.right{
+	//	@extend .message;
+		//color: $infoText;
+		margin-top:10px;
+		font-weight: normal;
+		width:100%;
+		max-width:490px;
+		text-align:left;
+		font-style:italic;	
+		font-size:1em;
+		line-height:1em;
+	}
+	&.required{
+		@extend .message.error;
+		float:left;
+		.textarea &{
+			width:100%;
+		}
+	}
+}
+
+
+
 textarea{
-	width:80%;
-	max-width:500px;
+	width:100%;
+	height:200px;
+	@include box-sizing(border-box);
 }
 select, input.text{
-	width:50%;
-
+	width:100%;
+	max-width:490px;
+	@include box-sizing(border-box);
+	height:30px;
 	&.date{
-		width:16em;
-		max-width:50%;
+		width:100px;
+		max-width:100%;
 	}
 }
 .checkbox{
@@ -68,6 +116,7 @@ select, input.text{
 		font-weight: normal;
 		font-style:normal;
 		position:static;
+		margin-top:3px;
 		&.required{
 			color: $errorText;
 		}
@@ -76,14 +125,17 @@ select, input.text{
 
 .field{
 	margin: 15px 0;
+	&.odd{
+		border-top:1px solid $hrBorder;
+		border-bottom:1px solid $hrBorder;
+		background: lighten($hrBorder,5%);
+	}
 }
 
 div.optionset{
 	position: relative;
 	label.right{
-		position: absolute;
-		top: 0;
-		right: 0;			
+	
 	}
 }
 ul{
@@ -100,10 +152,34 @@ ul{
 	}
 }
 fieldset{
-	margin: 10px 0;
+	margin: 0;
+}
+
+.Actions{
+	//@extend .form-actions;
+	margin:0;
+	border-top:1px solid darken(#f5f5f5,10%);
+	// @include gradient-vertical(darken(#f5f5f5,5%), darken(#f5f5f5,10%));
+	@include gradient-vertical(#fff,darken(#ffffff,2%));
+	 padding: 15px 19px;
+	 padding: 15px 19px;
+	 @include roundBottomCorners(3px);
+	 .action{
+	 	@extend .btn;
+	 	@extend .btn-primary;
+	 	padding-left:15px;
+	 	padding-right:15px;
+	 	margin:0;
+	 }
 }
 
 .ui-datepicker{
+	
 	width:15em !important;
 	max-width:50% !important;
+}
+.ui-widget{
+	font-size:12px !important;
+	line-height:12px !important;
+
 }
