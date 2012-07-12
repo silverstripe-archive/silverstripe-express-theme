@@ -25,6 +25,13 @@
 EXPRESS LAYOUT
 ******************************/
 body {
+	ul.nav, ul.dropdown-menu{
+		list-style:none;
+	}
+	ul.breadcrumb{
+		margin:0 0 18px;
+		padding:7px 14px;
+	}
 	.navbar{
 		.showChildren{
 			display:inline-block;
@@ -90,7 +97,11 @@ body {
 	    	/* color:$linkColor; */
 	    }
 
-	    .nav-list {	    
+	    ul.nav-list {	
+	    	list-style:none;    
+	    	padding-left:15px;
+	    	padding-right:15px;
+	    	margin:0;
 	    	.nav-list li { /* third level */
 		    	a {
 		    		padding-left: 30px;

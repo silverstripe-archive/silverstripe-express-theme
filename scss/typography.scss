@@ -6,12 +6,20 @@
  * go into another file - for example layout.[s]css
  */
 
+@import '../../module_bootstrap/lib/typography.scss';
+
+
 
 /*****************************
 EXPRESS TYPOGRAPHY 
 ******************************/
 
 .typography {
+	@include bootstrapType;
+	@include bootstrapCode;
+	@include bootstrapTables;	
+	@include bootstrapUtilities;
+
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	.page-header h1 {
 	    font-size: 40px;
@@ -28,6 +36,7 @@ EXPRESS TYPOGRAPHY
 	p {
 		margin-bottom: 18px;
 		font-size:1.1em;
+		line-height:1.1em;
 	}
 	a {
 		&.external-link {
@@ -55,19 +64,19 @@ EXPRESS TYPOGRAPHY
 	/*** LINK ICONS ***/
 	a[href$=".pdf"],
 	a[href$=".PDF"],
-	a.pdf {
+	.pdf {
 		padding-left: 22px;
 		background: url(../images/icons/page_white_acrobat.png) no-repeat left 0;
 	}
 	a[href$=".doc"],
 	a[href$=".DOC"],
-	a.doc {
+	.doc {
 		padding-left: 22px;
 		background: url(../images/icons/page_word.png) no-repeat left 0;
 	}
 	a[href$=".xls"],
 	a[href$=".XLS"],
-	a.xls {
+	.xls {
 		padding-left: 22px;
 		background: url(../images/icons/page_excel.png) no-repeat left 0;
 	}
@@ -77,19 +86,19 @@ EXPRESS TYPOGRAPHY
 	a[href$=".GZIP"],
 	a[href$=".zip"],
 	a[href$=".ZIP"],
-	a.archive {
+	.archive {
 		padding-left: 22px;
 		background: url(../images/icons/page_white_zip.png) no-repeat left 0;
 	}
 	a[href$=".exe"],
 	a[href$=".EXE"],
-	a.application {
+	.application {
 		padding-left: 22px;
 		background: url(../images/icons/application.png) no-repeat left 0;
 	}
 	
 	a[href$="http://www."],
-	a.external-link {
+	.external-link {
 		padding-right: 22px;
 		background: url(../images/icons/external-link.png) no-repeat right 3px;
 	}
