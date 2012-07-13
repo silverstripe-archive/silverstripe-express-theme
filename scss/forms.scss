@@ -24,10 +24,11 @@
 
 #Form_Form{
 	@extend .well;
+	background: #fff;
 	padding:0;
 	.field{
 		&.odd{
-			background: lighten($hrBorder,4%);
+			//background: lighten($hrBorder,4%);
 		}
 	}
 }
@@ -64,31 +65,33 @@ form{
 
 
 label{
-	font-weight: bold;
-	font-size:1.2em;
-	line-height:1.2em;
-	padding-bottom:5px;
-	ul.checkboxset &, ul.optionset &{
-		font-size:1em;
-		line-height:1em;
+	&.left{
+		font-weight: bold;
+		font-size:1.2em;
+		line-height:1.2em;
+		padding-bottom:5px;
 	}
-	&.right{
-	//	@extend .message;
-		//color: $infoText;
-		margin-top:10px;
+	&.extra{
+		color: lighten($textColor, 12%);
+
 		font-weight: normal;
 		width:100%;
 		max-width:490px;
 		text-align:left;
 		font-style:italic;	
 		font-size:1em;
-		line-height:1em;
+		line-height:1.5em;
 	}
 	&.required{
+		@include box-sizing(border-box);
 		@extend .message.error;
-		float:left;
+		clear:both;
+		float:none;
+		width:100%;
+		max-width:490px;
 		.textarea &{
 			width:100%;
+			max-width: 100%;
 		}
 	}
 }
@@ -100,25 +103,41 @@ textarea{
 	height:200px;
 	@include box-sizing(border-box);
 }
-select, input.text{
+select, input.text, input.file{
 	width:100%;
 	max-width:490px;
 	@include box-sizing(border-box);
 	height:30px;
+	float:left;
+	@include clearAfter;
 	&.date{
 		width:100px;
 		max-width:100%;
 	}
 }
+
+div.date{
+	label{
+		float:left;
+		margin-right:10px;
+	}
+	input{
+		margin-top:-5px;
+	}
+}
+
+
 .checkbox{
 	label{
 		color: $grayDark;
 		font-weight: normal;
 		font-style:normal;
 		position:static;
-		margin-top:3px;
 		&.required{
 			color: $errorText;
+			float:left;
+			margin-top:10px;
+			margin-left:-20px;
 		}
 	}
 }
@@ -126,9 +145,9 @@ select, input.text{
 .field{
 	margin: 15px 0;
 	&.odd{
-		border-top:1px solid $hrBorder;
-		border-bottom:1px solid $hrBorder;
-		background: lighten($hrBorder,5%);
+	//	border-top:1px solid $hrBorder;
+		//border-bottom:1px solid $hrBorder;
+		//background: lighten($hrBorder,5%);
 	}
 }
 
