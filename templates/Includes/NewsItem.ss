@@ -7,4 +7,4 @@
 	<% end_if %> 
 	<time datetime="$Date">$Date.nice</time>
 	</p>
-	<p>$Abstract</p>
+	<p>$Abstract.LimitWordCountXML</p>

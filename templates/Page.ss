@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8">
 	<% base_tag %>
@@ -36,13 +33,17 @@
 	<link rel="apple-touch-icon-precomposed" href="$Themedir/ico/apple-touch-icon-57-precomposed.png">
 </head>
 
-<body class="typography">
+<body>
+<!--[if lt IE 7]><div class="IE6"> <![endif]-->
+<!--[if IE 7]><div class="no-js IE7"> <![endif]-->
+<!--[if IE 8]><div class="no-js IE8">  <![endif]-->
+<!--[if IE 9]><div class="no-js IE9">  <!--<![endif]-->
 
 	<%-- You can use either NavbarFixedTop or Header but not both --%>
 	<% include NavbarFixedTop %>
 	<% include Header %>
 	
-	<div class="container" id="layout">
+	<div class="container typography" id="layout">
 	
 	  $Layout
 	  	
@@ -85,5 +86,11 @@
 
 		</script>
 	<% end_if %>
+<!--[if lt IE 7]></div> <![endif]-->
+<!--[if IE 7]></div><![endif]-->
+<!--[if IE 8]></div><![endif]-->
+<!--[if IE 9]></div><!--<![endif]-->
+
+
 </body>
 </html>
