@@ -1,22 +1,8 @@
 <div class="row">
 	<div class="span3">
-		<div class="sidebar-nav well">
-			<ul class="nav nav-list">
-			
-				<li class="nav-header"><% with Parent %>In $Title<% end_with %></li>
-				
-				Todo: get categories
-				
-				<% loop NewsItems %>
-					<% if Category %> 
-						<% loop Category %>
-							<li><a href="$Link" title="View the $Category.Title category">Category: $Category.Title</a></li>
-						<% end_loop %>
-					<% end_if %>
-				<% end_loop %>
-			
-			</ul>
-		</div>
+		<% with Parent %>
+			<% include NewsCategories %>
+		<% end_with %>
 	</div>
 	<section class="span9">
 		<article>

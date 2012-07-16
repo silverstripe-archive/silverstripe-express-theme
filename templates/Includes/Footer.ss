@@ -1,7 +1,7 @@
 <footer class="container">
 	<aside class="socialLinks pull-right">
-		<a title="Follow us on Twitter" href="http://www.facebook.com" target="_blank"><img src="$Themedir/images/icons/twitter.png" alt="Twitter" width="20" height="20"></a>
-		<a title="Join us on Facebook" href="http://www.twitter.com" target="_blank"><img src="$Themedir/images/icons/facebook.png" alt="Facebook" width="20" height="20"></a>
+		<a title="Follow us on Twitter" href="http://www.twitter.com" target="_blank"><img src="$Themedir/images/icons/twitter.png" alt="Twitter" width="20" height="20"></a>
+		<a title="Join us on Facebook" href="http://www.facebook.com" target="_blank"><img src="$Themedir/images/icons/facebook.png" alt="Facebook" width="20" height="20"></a>
 	</aside>
 	<ul class="nav nav-pills">
 		<% loop ChildrenOf(footer) %>
