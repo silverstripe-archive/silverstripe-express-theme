@@ -10,6 +10,11 @@
 		});
 
 		$('form fieldset > div.field:odd').addClass("odd");
+
+		$(".page-toggle .btn").click(function(){
+			$(this).toggleClass("open");
+		});
+
 		
 	})
 })(jQuery);

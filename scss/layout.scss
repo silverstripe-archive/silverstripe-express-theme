@@ -161,7 +161,7 @@ body {
 		margin-top: 21px;
 	}
 	#layout a img {
-		border: 2px solid blue;
+		border: 2px solid $linkColor;
 		margin-left: -2px;
 		margin-top: -2px;
 		&:hover {
@@ -233,7 +233,96 @@ body {
 	}
 }
 
+/*******	Sitemap 	**************/
+.typography #layout ul.sitemap{
+	@extend .well;
+	list-style:none;
+	margin-left:0;
+	padding:0;
+	li{
+		border-style: solid;
+		border-width: 1px;
+		border-top-color:#fff;//non rgba browsers
+		border-top-color:rgba(#fff,0.5);
+		border-bottom-color:$gray;//non rgba browsers
+		border-bottom-color:rgba($gray,0.1);
+		border-left:none;
+		border-right:none;
+		&.initial{
+			&.first{
+				border-top:none;
+				> a.sitemap-link{
+					@include roundTopCorners(5px);
+				}
+			}
+			&.last{
+				> a.sitemap-link{
+					@include roundBottomCorners(5px);
+				}
 
+			}
+
+		}
+
+		z-index:0;
+		position:relative;
+		//padding:10px 0px;
+		line-height:35px;
+
+		a.sitemap-link{
+			img{
+				border:none;
+			}
+			@include box-sizing(border-box);
+			padding-left:30px;
+			z-index:1;
+			display:block;
+			width:100%;
+			height:100%;
+			.sitetree-icon{
+				margin:0 5px 0 15px;
+			}
+			&:hover{
+				color:#000;
+				text-decoration:none;
+				background-color:$gray;
+				background-color:rgba($gray,0.2);
+			}
+		}
+		ul{
+			//border-top:1px solid rgba($gray,0.1);
+			//border-bottom:1px solid rgba($gray,0.1);
+			margin:0;
+			background-color:$grayLight;
+			background-color:rgba($gray,0.1);
+			list-style:none;
+			li{
+				&.first{
+					border-top:$gray;
+					border-top:1px solid rgba($gray,0.2);
+				}
+				&.last{
+					border-bottom:none;
+				}
+
+			}
+		}
+	}
+	
+}
+
+.page-toggle{
+	left:10px;
+	top:0px;
+	z-index: 5;
+	position:absolute;
+	display:inline-block;
+	width:20px;
+	height:20px;
+	.btn.open{
+		@extend .btn:active;
+	}
+}
 
 
 

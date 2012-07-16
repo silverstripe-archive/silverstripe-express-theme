@@ -6,7 +6,9 @@
 
 		<ul class="sitemap">
 			<% loop Menu(1) %>
+				<li data-pagetype="$ClassName" class="$FirstLast initial class-$ClassName">
 				<% include SitemapNode %>
+				</li>
 			<% end_loop %>
 		</ul>
 
