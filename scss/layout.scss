@@ -245,10 +245,12 @@ body {
 /*******	Sitemap 	**************/
 #layout ul.sitemap{
 	@extend .well;
+	background:#fff;
 	list-style:none;
 	margin-left:0;
 	padding:0;
 	li{
+		@include gradient-vertical(rgba(darken(#ffffff,5%),0.6),rgba(#fff,0.6));
 		border-style: solid;
 		border-width: 1px;
 		border-top-color:#fff;//non rgba browsers
@@ -299,19 +301,21 @@ body {
 			}
 		}
 		ul{
-			//border-top:1px solid rgba($gray,0.1);
-			//border-bottom:1px solid rgba($gray,0.1);
 			margin:0;
-			background-color:$grayLight;
-			background-color:rgba($gray,0.1);
+
 			list-style:none;
 			li{
+				
+				background-color:rgba($gray,0.2);
+				ul li{
+					background-color:rgba($gray,0.4);
+				}
 				&.first{
 					border-top:$gray;
-					border-top:1px solid rgba($gray,0.2);
+					border-top:1px solid rgba($gray,0.1);
 				}
 				&.last{
-					border-bottom:none;
+				 	border-bottom:none;
 				}
 
 			}

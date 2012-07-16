@@ -5329,11 +5329,21 @@ p.printShare {
 
 /*******	Sitemap 	**************/
 #layout ul.sitemap {
+  background: #fff;
   list-style: none;
   margin-left: 0;
   padding: 0;
 }
 #layout ul.sitemap li {
+  background-color: rgba(247, 247, 247, 0.6);
+  background-image: -ms-linear-gradient(top, rgba(242, 242, 242, 0.6), rgba(255, 255, 255, 0.6));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(242, 242, 242, 0.6)), to(rgba(255, 255, 255, 0.6)));
+  background-image: -webkit-linear-gradient(top, rgba(242, 242, 242, 0.6), rgba(255, 255, 255, 0.6));
+  background-image: -o-linear-gradient(top, rgba(242, 242, 242, 0.6), rgba(255, 255, 255, 0.6));
+  background-image: -moz-linear-gradient(top, rgba(242, 242, 242, 0.6), rgba(255, 255, 255, 0.6));
+  background-image: linear-gradient(top, rgba(242, 242, 242, 0.6), rgba(255, 255, 255, 0.6));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(242, 242, 242, 0.6)', endColorstr='rgba(255, 255, 255, 0.6)', GradientType=0);
   border-style: solid;
   border-width: 1px;
   border-top-color: #fff;
@@ -5390,13 +5400,17 @@ p.printShare {
 }
 #layout ul.sitemap li ul {
   margin: 0;
-  background-color: #999999;
-  background-color: rgba(85, 85, 85, 0.1);
   list-style: none;
+}
+#layout ul.sitemap li ul li {
+  background-color: rgba(85, 85, 85, 0.2);
+}
+#layout ul.sitemap li ul li ul li {
+  background-color: rgba(85, 85, 85, 0.4);
 }
 #layout ul.sitemap li ul li.first {
   border-top: #555555;
-  border-top: 1px solid rgba(85, 85, 85, 0.2);
+  border-top: 1px solid rgba(85, 85, 85, 0.1);
 }
 #layout ul.sitemap li ul li.last {
   border-bottom: none;
