@@ -362,12 +362,13 @@ body {
 							 		 text-indent:75px;
 
 							 		li{
-
+							 			.in{
+							 				li{
+							 					border:none;
+							 				}
+							 			}
 							 			 text-indent:85px;
 							 			 background-color: rgba($gray,0.2);
-							 			 a{
-							 			 	color:#fff;
-							 			 }
 							 			&.first{
 											border-top:$gray;
 											border-top:2px solid rgba($grayLight,0.5);
@@ -375,8 +376,11 @@ body {
 										&.last{
 										 	border-bottom:2px solid rgba($grayLight,0.5);
 										}
-										li{
 
+										li{									
+
+											background: none;
+											border:none;
 											&.last,&.first{
 												border:none;
 											}
@@ -414,33 +418,33 @@ body {
 
 .page-toggle{
 	text-indent:0;
-	left:10px;
+	left:0px;
 	top:0px;
 	z-index: 5;
 	position:absolute;
 	display:inline-block;
-	width:20px;
-	height:20px;
+	width:40px;
+	height:36px;
+
 	.button {
+		margin-left:10px;
 		display:block;
-		
-		//@extend .btn-info;
-
+		&:hover{
+			cursor:pointer;
+			.toggleIco{
+				opacity:0.7;
+			}
+		}
 		.toggleIco{
-
 			margin-top:2px;
 			@extend .icon-plus;	
-			//@extend .icon-white;
 			opacity:0.3;
 			height:20px;
-		width:20px;
+			width:20px;
 		}
 		&.open{
-
-			.toggleIco{	
-					
+			.toggleIco{						
 				@extend .icon-minus;
-
 			}
 		}
 	}

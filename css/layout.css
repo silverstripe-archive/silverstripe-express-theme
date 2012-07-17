@@ -5463,8 +5463,8 @@ p.printShare {
   text-indent: 85px;
   background-color: rgba(85, 85, 85, 0.2);
 }
-#layout ul.sitemap li ul li li li li li li li li a {
-  color: #fff;
+#layout ul.sitemap li ul li li li li li li li li .in li {
+  border: none;
 }
 #layout ul.sitemap li ul li li li li li li li li.first {
   border-top: #555555;
@@ -5472,6 +5472,10 @@ p.printShare {
 }
 #layout ul.sitemap li ul li li li li li li li li.last {
   border-bottom: 2px solid rgba(153, 153, 153, 0.5);
+}
+#layout ul.sitemap li ul li li li li li li li li li {
+  background: none;
+  border: none;
 }
 #layout ul.sitemap li ul li li li li li li li li li.last, #layout ul.sitemap li ul li li li li li li li li li.first {
   border: none;
@@ -5493,16 +5497,23 @@ p.printShare {
 
 .page-toggle {
   text-indent: 0;
-  left: 10px;
+  left: 0px;
   top: 0px;
   z-index: 5;
   position: absolute;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 36px;
 }
 .page-toggle .button {
+  margin-left: 10px;
   display: block;
+}
+.page-toggle .button:hover {
+  cursor: pointer;
+}
+.page-toggle .button:hover .toggleIco {
+  opacity: 0.7;
 }
 .page-toggle .button .toggleIco {
   margin-top: 2px;
