@@ -5,7 +5,7 @@
 
 			<% include MobileNav %>
 
-			<a class="brand" href="#">$SiteConfig.Title</a>
+			<a class="brand" title="$SiteConfig.Title" href="$BaseHref">$SiteConfig.Title</a>
 			<div class="nav-collapse deviceOnly">
 				<div id="SearchGroup">
 					$SearchForm
