@@ -2,18 +2,22 @@
 	$(document).ready(function() {
 
 		$('.carousel').carousel({
-			interval: 8000
+			interval: 8000,
+			pause: ""
 	    });  
 
-	    $('.carousel').hover(
-	    	function(){
-	    		var html ='<div id="pause"><div class="text">Paused</div></div>';
-	    		$(this).append(html);
-	    	},
-	    	function(){
-	    		$('#pause').remove();
-	    	}
-	    );
+
+	    $('.carousel').on('click','#pause .btn',function(){
+	    	if($(this).closest('.carousel').hasClass('play')){
+	    		$(this).closest('.carousel').carousel('cycle').removeClass('play');
+	    		$(this).find('.icon-play').removeClass('icon-play').addClass('icon-pause');
+	    	}else{
+	    		$(this).closest('.carousel').carousel('pause').addClass('play');
+	    		$(this).find('.icon-pause').removeClass('icon-pause').addClass('icon-play');
+	    	}	    	
+	    });
+
+
 
 		$('.navbar a .showChildren').click(function(e){
 			e.preventDefault();
