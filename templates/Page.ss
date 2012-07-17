@@ -69,7 +69,9 @@
 	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-collapse.js"></script>
 	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-carousel.js"></script>
 	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-typeahead.js"></script>
-	<script src="$themedir/js/express.js"></script>
+	<% if ClassName == 'UserDefinedForm' %>
+		<script src="$themedir/js/forms.js"></script> 
+	<% end_if %>
 
 	<% if SiteConfig.GACode %>
 		<script type="text/javascript">

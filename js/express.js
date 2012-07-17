@@ -1,6 +1,20 @@
 (function($) {
 	$(document).ready(function() {
 
+		$('.carousel').carousel({
+			interval: 8000
+	    });  
+
+	    $('.carousel').hover(
+	    	function(){
+	    		var html ='<div id="pause"><div class="text">Paused</div></div>';
+	    		$(this).append(html);
+	    	},
+	    	function(){
+	    		$('#pause').remove();
+	    	}
+	    );
+
 		$('.navbar a .showChildren').click(function(e){
 			e.preventDefault();
 			var oldOpen = $('.navbar .open');		
@@ -14,14 +28,6 @@
 		$(".page-toggle .button").click(function(){
 			$(this).toggleClass("open");
 		});
-
-
-		$( "input.date" ).datepicker({
-			showOn: "button",
-			buttonImage: "images/icons/sitetree_images/date.png",
-			buttonImageOnly: true
-		});
-
 		
 	})
 })(jQuery);
