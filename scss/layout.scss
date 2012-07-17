@@ -178,6 +178,40 @@ body {
 		list-style: none;
 		margin-left: 0;
 	}
+	.resultsHeader{
+		@include clearfix;
+		h2, p{
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-weight:200;
+			font-size:1.3em;
+			line-height:1.1em;
+			margin:0px;
+			padding:3px 0;
+
+		}
+		padding:0 5px;
+		margin:40px 0 0px 0;
+		
+		height:auto;
+		border-bottom: 1px solid $hrBorder;
+		//background: lighten($hrBorder, 5%);
+		//@include border-radius(5px);
+	}
+
+	.resultsList{
+		article{
+			padding:5px;
+			p{
+				max-width:790px;
+			}
+			&.even{
+				background: lighten($hrBorder, 3%);
+			}
+		}
+	}
+	p.printShare{
+		font-size:0.9em;
+	}
 
 
 	/*For news and search results*/
@@ -302,20 +336,74 @@ body {
 		}
 		ul{
 			margin:0;
-
 			list-style:none;
+			
+			
 			li{
 				
-				background-color:rgba($gray,0.2);
+
+
+				border-top-color:rgba(#fff,0.8);
+				border-bottom-color:rgba(lighten($grayLight,5%),0.1);
+				
+				
+			 text-indent:15px;
+			 li{
+			 	 text-indent:25px;
+			 	li{
+			 		 text-indent:35px;
+				 	li{
+				 		 text-indent:45px;
+					 	li{
+					 		 text-indent:55px;
+						 	li{
+						 		 text-indent:65px;
+							 	li{
+							 		 text-indent:75px;
+
+							 		li{
+
+							 			 text-indent:85px;
+							 			 background-color: rgba($gray,0.2);
+							 			 a{
+							 			 	color:#fff;
+							 			 }
+							 			&.first{
+											border-top:$gray;
+											border-top:2px solid rgba($grayLight,0.5);
+										}
+										&.last{
+										 	border-bottom:2px solid rgba($grayLight,0.5);
+										}
+										li{
+
+											&.last,&.first{
+												border:none;
+											}
+
+										}
+							 		}
+			 					}
+							}
+						}
+					}
+				}
+			}
+				
+				background-color:rgba($gray,0.3);
 				ul li{
-					background-color:rgba($gray,0.4);
+					background:none;
+					border:none;
+					&.first,&.last{
+						border:none;
+					}
 				}
 				&.first{
 					border-top:$gray;
-					border-top:1px solid rgba($gray,0.1);
+					border-top:2px solid rgba($grayLight,0.1);
 				}
 				&.last{
-				 	border-bottom:none;
+				 	border-bottom:2px solid rgba($grayLight,0.1);
 				}
 
 			}
@@ -325,6 +413,7 @@ body {
 }
 
 .page-toggle{
+	text-indent:0;
 	left:10px;
 	top:0px;
 	z-index: 5;
@@ -332,8 +421,28 @@ body {
 	display:inline-block;
 	width:20px;
 	height:20px;
-	.btn.open{
-		@extend .btn:active;
+	.button {
+		display:block;
+		
+		//@extend .btn-info;
+
+		.toggleIco{
+
+			margin-top:2px;
+			@extend .icon-plus;	
+			//@extend .icon-white;
+			opacity:0.3;
+			height:20px;
+		width:20px;
+		}
+		&.open{
+
+			.toggleIco{	
+					
+				@extend .icon-minus;
+
+			}
+		}
 	}
 }
 

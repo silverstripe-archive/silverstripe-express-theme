@@ -8,7 +8,7 @@
 			<h1><span class="hidden">$SiteConfig.Title | </span>$Title</h1>
 		</header>
 		$Content
-		
+	
 		<% if NewsItems %>			
 			<header class="resultsHeader">
 				<h2 class="pull-left">Latest in <% if Category %>$Category.Title<% else %>$Title<% end_if %></h2>

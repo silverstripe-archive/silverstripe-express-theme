@@ -1,7 +1,7 @@
 <% if MenuChildren %>
 	<div class="page-toggle">
-	<a class="btn btn-mini" data-toggle="collapse" data-target="#children-$ID">
-		<span class="caret"></span>
+	<a class="button" data-toggle="collapse" data-target="#children-$ID">
+		<span class="toggleIco icon-plus"></span>
 	</a>
 	</div>
 <% end_if %> 
