@@ -5119,8 +5119,6 @@ body ul.nav, body ul.dropdown-menu {
 body .nav-collapse {
   position: relative;
   height: auto;
-  font-size: 1.1em;
-  line-height: 1.1em;
 }
 body .nav-collapse .dropdown-menu {
   margin-left: 0;
@@ -5567,6 +5565,10 @@ p.printShare {
     display: none;
   }
 
+  .nav-collapse {
+    font-size: 1.1em;
+    line-height: 1.1em;
+  }
   .nav-collapse li .dropdown-menu {
     display: none;
   }
@@ -5627,6 +5629,10 @@ p.printShare {
     display: none;
   }
 
+  .nav-collapse {
+    font-size: 1.1em;
+    line-height: 1.1em;
+  }
   .nav-collapse li .dropdown-menu {
     display: none;
   }
@@ -5687,6 +5693,10 @@ p.printShare {
     display: none;
   }
 
+  .nav-collapse {
+    font-size: 1.1em;
+    line-height: 1.1em;
+  }
   .nav-collapse li .dropdown-menu {
     display: none;
   }
@@ -5747,6 +5757,10 @@ p.printShare {
     display: none;
   }
 
+  .nav-collapse {
+    font-size: 1.1em;
+    line-height: 1.1em;
+  }
   .nav-collapse li .dropdown-menu {
     display: none;
   }
@@ -5807,6 +5821,10 @@ p.printShare {
     display: none;
   }
 
+  .nav-collapse {
+    font-size: 1.1em;
+    line-height: 1.1em;
+  }
   .nav-collapse li .dropdown-menu {
     display: none;
   }
@@ -5867,6 +5885,10 @@ p.printShare {
     display: none;
   }
 
+  .nav-collapse {
+    font-size: 1.1em;
+    line-height: 1.1em;
+  }
   .nav-collapse li .dropdown-menu {
     display: none;
   }
