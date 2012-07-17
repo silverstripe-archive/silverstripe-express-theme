@@ -8,6 +8,30 @@
 		}
 	}
 
+
+	#SearchGroup{
+		float:right;
+		width:200px;
+		.navbar-search .search-query{
+			line-height:1.3em;
+		}
+		form{
+			.field{
+				margin:0;
+			}
+			padding:5px !important;
+			fieldset{
+				margin:0;
+			}
+
+			input.action{
+				display:none;
+			}
+		}
+	}
+
+	
+
 	.nav-collapse{
 
 		li {
@@ -15,10 +39,23 @@
 			.dropdown-menu{
 				display:none;
 			}
+			.caret{
+				margin-left:10px;
+				border-width: 5px !important;
+				border-width-top:0;			
+
+			}
 
 		}
 
 		li.open{
+			background-color:rgba(#000,0.2);
+			li{
+				padding-bottom:5px;
+				a{
+					padding-left:30px;
+				}	
+			}
 			.caret{
 				border-top:0;
 				border-bottom: 4px solid black;

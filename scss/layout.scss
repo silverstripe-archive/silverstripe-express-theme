@@ -27,6 +27,24 @@ EXPRESS LAYOUT
 body {
 	ul.nav, ul.dropdown-menu{
 		list-style:none;
+		padding-left:0;
+	}
+
+	.nav-collapse{
+		position:relative;
+		height:auto;
+		font-size:1.1em;
+		line-height:1.1em;
+		 .dropdown-menu{
+			margin-left:0;
+			margin-right:0;
+		
+			li a{
+				
+				line-height:1.1em;
+				padding-left:20px;
+			}	
+		}
 	}
 	ul.breadcrumb{
 		margin:0 0 18px;
@@ -146,7 +164,7 @@ body {
 		    }
 	    }
 	}
-}
+} //end body tag
 	.carousel {
 		width: 100%;
 		margin: 0 auto;
