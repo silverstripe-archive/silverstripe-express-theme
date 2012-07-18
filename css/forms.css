@@ -5185,7 +5185,7 @@ a.label:hover, a.badge:hover {
 .carousel-caption {
   position: absolute;
   left: 0;
-  right: 0;
+  right: 2px;
   bottom: 0;
   padding: 10px 15px 5px;
   background: #333333;

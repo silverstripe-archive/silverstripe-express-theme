@@ -5163,7 +5163,7 @@ a.label:hover, a.badge:hover {
 .carousel-caption {
   position: absolute;
   left: 0;
-  right: 0;
+  right: 2px;
   bottom: 0;
   padding: 10px 15px 5px;
   background: #333333;
@@ -6280,9 +6280,16 @@ body .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li .nav-list l
 
 /* Carousel Styling */
 .carousel {
+  overflow: hidden;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 18px;
+}
+.carousel .carousel-caption {
+  right: 2px;
+}
+.carousel img {
+  width: 100%;
 }
 #layout .carousel a img {
   border: none;
