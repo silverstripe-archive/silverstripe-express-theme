@@ -15,6 +15,8 @@
 
 
 // Requires bootstrap to be placed in the project directory
+@import "compass/support"; //for IE9 SVG gradient support 
+$experimental-support-for-svg: true;
 @import '../../module_bootstrap/lib/bootstrap.scss';
 @import '../../module_bootstrap/lib/responsive.scss';
 @import '_mobile.scss';
@@ -26,10 +28,25 @@
 EXPRESS LAYOUT
 ******************************/
 body {
+
+	#IE7 a.dropdown-toggle{
+	//	padding-right:20px;
+		//position:relative;
+		.showChildren{
+		//	position:absolute;
+		//	right:0;
+			//display:block;
+			margin-top:-3px;
+		}
+	}
+
 	ul.nav, ul.dropdown-menu{
 		list-style:none;
 		padding-left:0;
+
 	}
+
+
 
 	.nav-collapse{
 		position:relative;
@@ -50,16 +67,17 @@ body {
 		margin:0 0 18px;
 		padding:7px 14px;
 	}
-		.navbar{
+	.navbar{
 		.showChildren{
 			display:inline-block;
 	    	width:20px;
 	    	height:20px;  
-	    	text-align:center;  	
+	    	text-align:center;  
 	    }
 	    .nav > li > a{
 			padding: 9px 10px 9px 11px;
 		}
+
 		.nav li.dropdown .current.dropdown-toggle, .nav li.open.active .current.dropdown-toggle {
 			background-color: #222222;
 		}
@@ -94,6 +112,8 @@ body {
 	header {
 		h1.brand {
 			margin-bottom: 18px;
+			overflow:visible;
+			line-height:1em;
 		}
 	}
 	/* Dropnav arrow adjustment */
@@ -178,16 +198,30 @@ body {
 	}
 	&:hover{
 		#pause{
-			display:block;
+			#IE8 &{
+				display:block;
+			}
+			@include duration(1s);
+			
+			visibility:visible;
+			opacity:1;
 		}
 	}
 }
 
 #pause{
-	display:none;
+	#IE8 &{
+		display:none;
+	}
+	visibility:hidden;
+	opacity:0;
 	.btn{	
-		.icon-play{
-			padding-left:3px;
+		.icon{
+			font-family: FontAwesome;
+			font-weight: normal;
+			font-style: normal;
+			display: inline-block;
+			text-decoration: inherit;
 		}
 		z-index:4; 
 		@extend .btn-inverse;
@@ -197,17 +231,33 @@ body {
 		position:relative;
 		top:28%;
 		font-size:3em;
+		line-height:1em;
 		width:70px;
 		height:70px;
 		padding-top:15px;
 		opacity:0.5;
+		#IE7 &{
+			.icon{
+				zoom:1;
+			}
+			padding-top:5px;
+			width:30px;
+			height:43px;
+		}
+		.icon-play-js{
+			padding-left:3px;
+			#IE7 &{
+				padding-top:2px;
+			}
+		}
 		&:hover{
+			@include duration(1s);
 			opacity:1;
 		}
 	}
 	text-align:center;
 	width:100%;
-	height:100%;	
+	height:100%;
 	position:absolute; 
 	z-index:0; 
 	top:0px;
@@ -314,6 +364,8 @@ p.printShare{
 		border-bottom: 1px solid lighten($hrBorder,3%);
 		p{
 			max-width:790px;
+			margin:0;
+			padding:5px 0;
 		}
 		h3{
 			line-height:1em;
@@ -355,16 +407,40 @@ p.printShare{
 	list-style:none;
 	margin-left:0;
 	padding:0;
+
+
+
+	#IE9 & .open .collapse{
+		height:auto;
+		.page-toggle{
+			display:none;
+		}
+	}
 	li{
+		#IE7 & {
+			.page-toggle{
+				display:none;
+			}
+			.collapse{
+				height:auto;			
+			}
+		}
+		background:#fafafa;
 		@include gradient-vertical(rgba(darken(#ffffff,5%),0.6),rgba(#fff,0.6));
 		border-style: solid;
 		border-width: 1px;
 		border-top-color:#fff;//non rgba browsers
 		border-top-color:rgba(#fff,0.5);
-		border-bottom-color:$gray;//non rgba browsers
+		border-bottom-color:$grayLighter;//non rgba browsers
 		border-bottom-color:rgba($gray,0.1);
+		#IE7 &{
+			border-bottom:1px solid $grayLighter;
+		}
 		border-left:none;
 		border-right:none;
+		z-index:0;
+		position:relative;
+		line-height:35px;
 		&.initial{
 			&.first{
 				border-top:none;
@@ -376,16 +452,8 @@ p.printShare{
 				> a.sitemap-link{
 					@include roundBottomCorners(5px);
 				}
-
 			}
-
-		}
-
-		z-index:0;
-		position:relative;
-		//padding:10px 0px;
-		line-height:35px;
-
+		}		
 		a.sitemap-link{
 			img{
 				border:none;
@@ -402,90 +470,105 @@ p.printShare{
 			&:hover{
 				color:#000;
 				text-decoration:none;
-				background-color:$gray;
+				background-color:lighten($grayLight,25%);
 				background-color:rgba($gray,0.2);
 			}
 		}
 		ul{
 			margin:0;
 			list-style:none;
-			
-			
-			li{
-				
-
+			height:auto;	
+			border:none;
+			li{	
 
 				border-top-color:rgba(#fff,0.8);
-				border-bottom-color:rgba(lighten($grayLight,5%),0.1);
-				
-				
-			 text-indent:15px;
-			 li{
-			 	 text-indent:25px;
-			 	li{
-			 		 text-indent:35px;
-				 	li{
-				 		 text-indent:45px;
-					 	li{
-					 		 text-indent:55px;
-						 	li{
-						 		 text-indent:65px;
-							 	li{
-							 		 text-indent:75px;
-
-							 		li{
-							 			.in{
-							 				li{
-							 					border:none;
-							 				}
-							 			}
-							 			 text-indent:85px;
-							 			 background-color: rgba($gray,0.2);
-							 			&.first{
-											border-top:$gray;
-											border-top:2px solid rgba($grayLight,0.5);
-										}
-										&.last{
-										 	border-bottom:2px solid rgba($grayLight,0.5);
-										}
-
-										li{									
-
-											background: none;
-											border:none;
-											&.last,&.first{
-												border:none;
-											}
-
-										}
-							 		}
-			 					}
-							}
+				border-bottom-color:lighten($grayLight,20%);//non rgba browsers
+				border-bottom-color:rgba(lighten($grayLight,5%),0.1);			
+			 	text-indent:15px;
+			 	background-color:rgba($gray,0.3);
+			 	#IE9 &{
+			 		background-color:$grayLighter;
+			 	}
+			 	#IE7 & {
+			 		overflow:hidden;
+					border:none !important;
+					&.first, &.last{
+						border:none;
+					}
+					li{
+						border:none;	
+						&.first, &.last{
+							border:none;
 						}
 					}
 				}
-			}
-				
-				background-color:rgba($gray,0.3);
-				ul li{
-					background:none;
-					border:none;
-					&.first,&.last{
-						border:none;
-					}
-				}
 				&.first{
-					border-top:$gray;
+					border-top:2px solid $grayLighter;
 					border-top:2px solid rgba($grayLight,0.1);
 				}
 				&.last{
+					border-bottom:2px solid $grayLighter;
 				 	border-bottom:2px solid rgba($grayLight,0.1);
 				}
-
+				li{
+				 	background:none;
+					border:none;
+					text-indent:25px;
+					&.first,&.last{
+						border:none;
+					}
+					
+				 	li{
+						text-indent:35px;
+					 	li{
+					 		text-indent:45px;
+						 	li{
+						 		text-indent:55px;
+							 	li{
+							 		text-indent:65px;
+								 	li{
+								 		text-indent:75px;
+								 		li{
+								 			text-indent:85px;
+								 			background-color: rgba($gray,0.2);
+								 			#IE9 &{
+								 				background:none;
+								 				&.first,&.last{
+								 					border:none;
+								 				}
+								 			}
+								 			&.first{
+												border-top:$gray;
+												border-top:2px solid rgba($grayLight,0.5);
+											}
+											&.last{
+											 	border-bottom:2px solid rgba($grayLight,0.5);
+											}
+											.in{
+								 				li{
+								 					border:none;
+								 				}
+								 			}	
+											li{	
+												#IE9 &{
+													padding-left:10px;					
+												}	
+												background: none;
+												border:none;
+												&.last,&.first{
+													border:none;
+												}
+											}
+								 		}
+				 					}
+								}
+							}
+						}
+					}
+				}				
 			}
 		}
-	}
-	
+	}	
 }
 
 .page-toggle{
@@ -497,7 +580,6 @@ p.printShare{
 	display:inline-block;
 	width:40px;
 	height:36px;
-
 	.button {
 		margin-left:10px;
 		display:block;
@@ -505,6 +587,9 @@ p.printShare{
 			cursor:pointer;
 			.toggleIco{
 				opacity:0.7;
+				#IE8 &{
+					color: $textColor;
+				}
 			}
 		}
 		.toggleIco{
@@ -515,6 +600,9 @@ p.printShare{
 			opacity:0.3;
 			height:20px;
 			width:20px;
+			#IE8 &{
+				color: lighten($textColor,30%);
+			}
 		}
 		&.open{
 			.toggleIco{						
@@ -522,6 +610,32 @@ p.printShare{
 			}
 		}
 	}
+}
+
+.socialLinks{
+	overflow:visible;
+	font-size:2em;
+	line-height:1em;
+	a{
+		overflow:visible;
+		z-index:5;
+		position:relative;
+		text-shadow: lighten(rgba(#000,0.1), 10%) 1px 1px 0;
+
+	}
+}
+.icon-dark{
+	color: $textColor;
+	&:visited{
+		color: $textColor;
+	}
+	&:hover{
+		color: darken($linkColor,5%);
+		text-decoration:none;
+	}
+} 
+.icon-small{
+	font-size:1em;
 }
 
 

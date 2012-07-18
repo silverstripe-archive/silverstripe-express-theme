@@ -4,7 +4,7 @@
 
 .message{
 	@include message('default');
-	&.error, &.bad{
+	&.error, &.bad, &.required{
 		@include message('error');
 	}
 	&.good, &.success{
@@ -28,15 +28,13 @@
 	padding:0;
 	.field{
 		&.odd{
-			//background: lighten($hrBorder,4%);
+
 		}
 	}
 }
 
 
 form{
-
-
 	.FormHeading{
 		margin:0;
 		@include roundTopCorners(3px);
@@ -113,6 +111,14 @@ select, input.text, input.file{
 	&.date{
 		width:100px;
 		max-width:100%;
+		#IE7 &{
+			width:100px;
+		}
+	}
+	#IE7 &{
+		height:20px;
+		width:490px;
+		line-height:20px;
 	}
 }
 
@@ -154,29 +160,29 @@ div.date{
 
 .field{
 	margin: 15px 0;
-	&.odd{
-	//	border-top:1px solid $hrBorder;
-		//border-bottom:1px solid $hrBorder;
-		//background: lighten($hrBorder,5%);
-	}
 }
 
 div.optionset{
 	position: relative;
-	label.right{
-	
-	}
 }
 ul{
 	&.optionset{
 		label{
 			font-weight: normal;
+			@include clearfix;
+			#IE7 &{
+				float:left;
+				width:200px;
+				//margin-top:-20px;
+			}
 		}
 		list-style: none;
 		margin-left: 0;
 		input{
+			clear:both;
 			float: left;
 			margin-right: 5px;
+
 		}
 	}
 }

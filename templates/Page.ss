@@ -1,7 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-	<meta charset="utf-8">
+		
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 	<% base_tag %>
 	<title>$SiteConfig.Title | $Title</title>
 	$MetaTags(false)
@@ -34,10 +35,10 @@
 </head>
 
 <body>
-<!--[if lt IE 7]><div class="IE6"> <![endif]-->
-<!--[if IE 7]><div class="no-js IE7"> <![endif]-->
-<!--[if IE 8]><div class="no-js IE8">  <![endif]-->
-<!--[if IE 9]><div class="no-js IE9">  <!--<![endif]-->
+<!--[if lte IE 6]><div id="IE6"> <![endif]-->
+<!--[if lte IE 7]><div id="IE7"> <![endif]-->
+<!--[if lte IE 8]><div id="IE8">  <![endif]-->
+<!--[if lte IE 9]><div id="IE9">  <!--<![endif]-->
 
 	<%-- You can use either NavbarFixedTop or Header but not both --%>
 	<% include NavbarFixedTop %>

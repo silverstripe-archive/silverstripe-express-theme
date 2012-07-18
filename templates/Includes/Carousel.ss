@@ -15,5 +15,5 @@
     <!-- Carousel nav -->
     <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
     <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    <div id="pause"><div class="btn"><span class="icon-pause"></span></div></div>
+    <div id="pause"><div class="btn"><span class="icon">&#xf04c;</span></div></div>
 </div>

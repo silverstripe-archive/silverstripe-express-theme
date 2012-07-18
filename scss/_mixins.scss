@@ -82,7 +82,8 @@ $dark-shadow: 0px -1px 0px rgba(0,0,0,0.7);
 	font-weight:normal;
 	font-size:$baseFontSize;
 	line-height:$baseFontSize +5px;
-
+	display:block;
+	clear:both;
 	@include border-radius(3px);
 	@if $type == 'error' {
 		background:$errorBackground;
@@ -106,4 +107,24 @@ $dark-shadow: 0px -1px 0px rgba(0,0,0,0.7);
 		color: $grayDark;
 	}
 }
+
+
+@mixin delay($time, $webkit:true){
+	@if($webkit){
+		-webkit-transition-delay: $time;
+	}
+	-moz-transition-delay: $time;
+	-o-transition-delay: $time;
+		
+}
+
+@mixin duration($time, $webkit:true){
+	@if($webkit){
+		-webkit-transition-duration: $time;
+	}	
+	-moz-transition-duration: $time;
+	-o-transition-duration: $time;
+	transition-duration: $time;	
+}
+
 
