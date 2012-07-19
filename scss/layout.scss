@@ -111,9 +111,16 @@ body {
 	/* NAVIGATION & HEADER */
 	header {
 		h1.brand {
+			font-size: 3em;
 			margin-bottom: 18px;
 			overflow:visible;
 			line-height:1em;
+			padding: 42px 0 38px 105px;
+			background: url(../../../themes/ssexpress/images/logo.png) 0px center no-repeat;
+
+			a:visited {
+				color: black;
+			}
 		}
 	}
 	/* Dropnav arrow adjustment */
@@ -186,6 +193,37 @@ body {
 	}
 } //end body tag
 
+/* Icons */
+.has-icon {
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	padding-left: 32px;
+	&.conversation {
+		background-image: url('../../../themes/ssexpress/images/icons/conversation.png');
+	}
+	&.news {
+		background-image: url('../../../themes/ssexpress/images/icons/news.png');
+		padding-left: 28px;
+	}
+	&.parents {
+		background-image: url('../../../themes/ssexpress/images/icons/parents.png');
+		padding-left: 40px;
+	}
+}
+
+/* Hero Unit */
+div.hero-unit {
+	padding: 30px;
+
+	h1 {
+		margin-bottom: 15px;
+	}
+
+	.carousel-container {
+		float: right;
+	}
+}
+
 /* Carousel Styling */
 .carousel {
 	overflow:hidden;
@@ -194,6 +232,11 @@ body {
 	margin-bottom: 18px;
 	.carousel-caption {
   		right: 2px;
+  		p {
+			font-size: 14px;
+			color: white;
+			line-height: 1.2em;
+		}
   	}
 	img{
 		width:100%;
@@ -276,6 +319,10 @@ body {
 
 .carousel-control{
 	z-index:6;
+
+	&:visited {
+		color: white;
+	}
 }
 
 

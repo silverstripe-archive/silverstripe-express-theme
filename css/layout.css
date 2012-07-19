@@ -6153,9 +6153,15 @@ body #SearchGroup form input.action {
   display: none;
 }
 body header h1.brand {
+  font-size: 3em;
   margin-bottom: 18px;
   overflow: visible;
   line-height: 1em;
+  padding: 42px 0 38px 105px;
+  background: url(../../../themes/ssexpress/images/logo.png) 0px center no-repeat;
+}
+body header h1.brand a:visited {
+  color: black;
 }
 body .navbar .nav .hasLink {
   padding-right: 32px;
@@ -6224,6 +6230,35 @@ body .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li .nav-list l
   margin-right: -75px;
 }
 
+/* Icons */
+.has-icon {
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  padding-left: 32px;
+}
+.has-icon.conversation {
+  background-image: url("../../../themes/ssexpress/images/icons/conversation.png");
+}
+.has-icon.news {
+  background-image: url("../../../themes/ssexpress/images/icons/news.png");
+  padding-left: 28px;
+}
+.has-icon.parents {
+  background-image: url("../../../themes/ssexpress/images/icons/parents.png");
+  padding-left: 40px;
+}
+
+/* Hero Unit */
+div.hero-unit {
+  padding: 30px;
+}
+div.hero-unit h1 {
+  margin-bottom: 15px;
+}
+div.hero-unit .carousel-container {
+  float: right;
+}
+
 /* Carousel Styling */
 .carousel {
   overflow: hidden;
@@ -6233,6 +6268,11 @@ body .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li .nav-list l
 }
 .carousel .carousel-caption {
   right: 2px;
+}
+.carousel .carousel-caption p {
+  font-size: 14px;
+  color: white;
+  line-height: 1.2em;
 }
 .carousel img {
   width: 100%;
@@ -6319,6 +6359,9 @@ body .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li .nav-list l
 
 .carousel-control {
   z-index: 6;
+}
+.carousel-control:visited {
+  color: white;
 }
 
 /*******************************/

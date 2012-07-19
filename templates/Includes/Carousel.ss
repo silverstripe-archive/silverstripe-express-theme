@@ -1,16 +1,17 @@
 <div id="myCarousel" class="carousel slide">
     <!-- Carousel items -->
     <div class="carousel-inner">
-    	<div class="active item">
-    		<a href="#" class=""><img src="$themedir/images/banner-images/soup_hero1.jpg" alt="" />
-    		<div class="carousel-caption">
-                  <h4>First Thumbnail label</h4>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <div class="active item"><a href="#" class=""><img src="$themedir/images/banner-images/soup_hero1.jpg" alt="" /></a></div>
+    	<div class="item"><a href="#" class=""><img src="$themedir/images/banner-images/soup_hero2.jpg" alt="" /></a></div>
+        <div class="item">
+            <a href="#" class=""><img src="$themedir/images/banner-images/soup_hero3.jpg" alt="" />
+            <div class="carousel-caption">
+                  <h4>Carousel Caption</h4>
+                  <p>If you have any further information about this image you can add a caption to explain it.</p>
             </div>
             </a>
-    	</div>
-    	<div class="item"><a href="#" class=""><img src="$themedir/images/banner-images/soup_hero2.jpg" alt="" /></a></div>
-    	<div class="item"><a href="#" class=""><img src="$themedir/images/banner-images/soup_hero3.jpg" alt="" /></a></div>
+        </div>
+        <div class="item"><a href="#" class=""><img src="$themedir/images/banner-images/soup_hero4.jpg" alt="" /></a></div>
     </div>
     <!-- Carousel nav -->
     <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
