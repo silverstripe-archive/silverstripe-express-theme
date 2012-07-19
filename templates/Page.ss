@@ -18,9 +18,6 @@
 	  }
 	</style>
 	
-	<!-- Don't include Modernizer if not used - if used compile a smaller copy at modernizr.com for production -->
-	<script src="$ThemeDir/js/lib/modernizr.js"></script>
-	
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
 	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -32,10 +29,6 @@
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="$Themedir/ico/apple-touch-icon-114-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="$Themedir/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="$Themedir/ico/apple-touch-icon-57-precomposed.png">
-
-	<% require themedCSS(layout) %>
-	<% require themedCSS(typography) %>
-	<% require themedCSS(forms) %>
 </head>
 
 <body>
@@ -57,26 +50,6 @@
 	</div> <!-- /container -->
 	
 	<% include Footer %>
-	
-	<!-- Le javascript
-	================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="$themedir/js/lib/jquery.js"></script>
-	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-transition.js"></script>
-	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-alert.js"></script>
-	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-modal.js"></script>
-	<!-- <script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-dropdown.js"></script> -->
-	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-scrollspy.js"></script>
-	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-tab.js"></script>
-	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-tooltip.js"></script>
-	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-popover.js"></script>
-	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-button.js"></script>
-	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-collapse.js"></script>
-	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-carousel.js"></script>
-	<script src="{$BaseHref}themes/module_bootstrap/js/bootstrap-typeahead.js"></script>
-	<% if ClassName == 'UserDefinedForm' %>
-		<script src="$themedir/js/forms.js"></script> 
-	<% end_if %>
 
 	<% if SiteConfig.GACode %>
 		<script type="text/javascript">
