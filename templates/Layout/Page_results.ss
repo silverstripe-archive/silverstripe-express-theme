@@ -24,18 +24,18 @@
 				<% loop Results %>
 					<li>
 						<article class="$EvenOdd">
-						<header>
-							<h3>
-								<a class="searchResultHeader" href="$Link">
-									$ContextualTitle
-								</a>
-							</h3>
-						</header>
-						<% if ContextualContent %>
-							<p>
-								$ContextualContent
-							</p>
-						<% end_if %>
+							<header>
+								<h3>
+									<a class="searchResultHeader" href="$Link">
+										$ContextualTitle
+									</a>
+								</h3>
+							</header>
+							<% if ContextualContent %>
+								<p>
+									$ContextualContent
+								</p>
+							<% end_if %>
 						</article>
 					</li>
 				<% end_loop %>
