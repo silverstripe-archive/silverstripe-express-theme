@@ -32,6 +32,10 @@
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="$Themedir/ico/apple-touch-icon-114-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="$Themedir/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="$Themedir/ico/apple-touch-icon-57-precomposed.png">
+
+	<% require themedCSS(layout) %>
+	<% require themedCSS(typography) %>
+	<% require themedCSS(forms) %>
 </head>
 
 <body>
