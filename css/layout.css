@@ -749,27 +749,20 @@ input[type="checkbox"][readonly] {
   background-color: transparent;
 }
 
-.control-group.warning > label,
-.control-group.warning .help-block,
-.control-group.warning .help-inline {
+.control-group.warning > label, .control-group.warning .help-block, .control-group.warning .help-inline {
   color: #c09853;
 }
-.control-group.warning input,
-.control-group.warning select,
-.control-group.warning textarea {
+.control-group.warning input, .control-group.warning select, .control-group.warning textarea {
   color: #c09853;
   border-color: #c09853;
 }
-.control-group.warning input:focus,
-.control-group.warning select:focus,
-.control-group.warning textarea:focus {
+.control-group.warning input:focus, .control-group.warning select:focus, .control-group.warning textarea:focus {
   border-color: #a47e3c;
   -webkit-box-shadow: 0 0 6px #dbc59e;
   -moz-box-shadow: 0 0 6px #dbc59e;
   box-shadow: 0 0 6px #dbc59e;
 }
-.control-group.warning .input-prepend .add-on,
-.control-group.warning .input-append .add-on {
+.control-group.warning .input-prepend .add-on, .control-group.warning .input-append .add-on {
   color: #c09853;
   background-color: #fcf8e3;
   border-color: #c09853;
@@ -885,9 +878,7 @@ select:focus:required:invalid:focus {
 .input-append {
   margin-bottom: 5px;
 }
-.input-prepend input,
-.input-prepend select,
-.input-prepend .uneditable-input,
+.input-prepend input, .input-prepend select, .input-prepend .uneditable-input,
 .input-append input,
 .input-append select,
 .input-append .uneditable-input {
@@ -899,9 +890,7 @@ select:focus:required:invalid:focus {
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
 }
-.input-prepend input:focus,
-.input-prepend select:focus,
-.input-prepend .uneditable-input:focus,
+.input-prepend input:focus, .input-prepend select:focus, .input-prepend .uneditable-input:focus,
 .input-append input:focus,
 .input-append select:focus,
 .input-append .uneditable-input:focus {
@@ -926,8 +915,7 @@ select:focus:required:invalid:focus {
   background-color: #eeeeee;
   border: 1px solid #ccc;
 }
-.input-prepend .add-on,
-.input-prepend .btn,
+.input-prepend .add-on, .input-prepend .btn,
 .input-append .add-on,
 .input-append .btn {
   margin-left: -1px;
@@ -941,20 +929,16 @@ select:focus:required:invalid:focus {
   border-color: #46a546;
 }
 
-.input-prepend .add-on,
-.input-prepend .btn {
+.input-prepend .add-on, .input-prepend .btn {
   margin-right: -1px;
 }
-.input-prepend .add-on:first-child,
-.input-prepend .btn:first-child {
+.input-prepend .add-on:first-child, .input-prepend .btn:first-child {
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
 
-.input-append input,
-.input-append select,
-.input-append .uneditable-input {
+.input-append input, .input-append select, .input-append .uneditable-input {
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
@@ -963,29 +947,24 @@ select:focus:required:invalid:focus {
   border-right-color: #ccc;
   border-left-color: #eee;
 }
-.input-append .add-on:last-child,
-.input-append .btn:last-child {
+.input-append .add-on:last-child, .input-append .btn:last-child {
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
 }
 
-.input-prepend.input-append input,
-.input-prepend.input-append select,
-.input-prepend.input-append .uneditable-input {
+.input-prepend.input-append input, .input-prepend.input-append select, .input-prepend.input-append .uneditable-input {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.input-prepend.input-append .add-on:first-child,
-.input-prepend.input-append .btn:first-child {
+.input-prepend.input-append .add-on:first-child, .input-prepend.input-append .btn:first-child {
   margin-right: -1px;
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
-.input-prepend.input-append .add-on:last-child,
-.input-prepend.input-append .btn:last-child {
+.input-prepend.input-append .add-on:last-child, .input-prepend.input-append .btn:last-child {
   margin-left: -1px;
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
@@ -1004,13 +983,7 @@ select:focus:required:invalid:focus {
   border-radius: 14px;
 }
 
-.form-search input,
-.form-search textarea,
-.form-search select,
-.form-search .help-inline,
-.form-search .uneditable-input,
-.form-search .input-prepend,
-.form-search .input-append,
+.form-search input, .form-search textarea, .form-search select, .form-search .help-inline, .form-search .uneditable-input, .form-search .input-prepend, .form-search .input-append,
 .form-inline input,
 .form-inline textarea,
 .form-inline select,
@@ -1163,20 +1136,17 @@ a [class*=" icon-"] {
   font-size: 4/3em;
 }
 
-.btn [class^="icon-"],
-.btn [class*=" icon-"], .nav-tabs [class^="icon-"], .nav-tabs [class*=" icon-"] {
+.btn [class^="icon-"], .btn [class*=" icon-"], .nav-tabs [class^="icon-"], .nav-tabs [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
   line-height: .9em;
 }
 
-li [class^="icon-"],
-li [class*=" icon-"] {
+li [class^="icon-"], li [class*=" icon-"] {
   display: inline-block;
   width: 1.25em;
   text-align: center;
 }
-li .icon-large:before,
-li .icon-large:before {
+li .icon-large:before, li .icon-large:before {
   /* 1.5 increased font size for icon-large * 1.25 width */
   width: 1.875em;
 }
@@ -1186,12 +1156,10 @@ ul.icons {
   margin-left: 2em;
   text-indent: -0.8em;
 }
-ul.icons li [class^="icon-"],
-ul.icons li [class*=" icon-"] {
+ul.icons li [class^="icon-"], ul.icons li [class*=" icon-"] {
   width: .8em;
 }
-ul.icons li .icon-large:before,
-ul.icons li .icon-large:before {
+ul.icons li .icon-large:before, ul.icons li .icon-large:before {
   /* 1.5 increased font size for icon-large * 1.25 width */
   vertical-align: initial;
 }
@@ -2039,14 +2007,12 @@ ul.icons li .icon-large:before {
   content: "\f200";
 }
 
-#IE7 [class^="icon-"],
-#IE7 [class*=" icon-"], #IE7 .icon {
+#IE7 [class^="icon-"], #IE7 [class*=" icon-"], #IE7 .icon {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
 }
-#IE7 .btn.dropdown-toggle [class^="icon-"],
-#IE7 .btn.dropdown-toggle [class*=" icon-"] {
+#IE7 .btn.dropdown-toggle [class^="icon-"], #IE7 .btn.dropdown-toggle [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
   line-height: 1.4em;
 }
@@ -3036,11 +3002,9 @@ button.close {
 .btn-info,
 .btn-info:hover,
 .btn-inverse,
-#pause .btn, #pause
-.btn,
+#pause .btn,
 .btn-inverse:hover,
-#pause .btn:hover, #pause
-.btn:hover {
+#pause .btn:hover {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -3055,11 +3019,9 @@ button.close {
 .btn-info:visited,
 .btn-info:hover:visited,
 .btn-inverse:visited,
-#pause .btn:visited, #pause
-.btn:visited,
+#pause .btn:visited,
 .btn-inverse:hover:visited,
-#pause .btn:hover:visited, #pause
-.btn:hover:visited {
+#pause .btn:hover:visited {
   color: white !important;
 }
 
@@ -3069,8 +3031,7 @@ button.close {
 .btn-success.active,
 .btn-info.active,
 .btn-inverse.active,
-#pause .active.btn, #pause
-.active.btn {
+#pause .active.btn {
   color: rgba(255, 255, 255, 0.75);
 }
 .btn-primary.active:visited,
@@ -3079,8 +3040,7 @@ button.close {
 .btn-success.active:visited,
 .btn-info.active:visited,
 .btn-inverse.active:visited,
-#pause .active.btn:visited, #pause
-.active.btn:visited {
+#pause .active.btn:visited {
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -3452,8 +3412,7 @@ input[type="submit"].btn.btn-mini {
 .btn-info .caret,
 .btn-success .caret,
 .btn-inverse .caret,
-#pause .btn .caret, #pause
-.btn .caret {
+#pause .btn .caret {
   border-top-color: white;
   border-bottom-color: white;
   opacity: 0.75;
@@ -3940,8 +3899,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .navbar-link:hover {
   color: white;
 }
-.navbar .btn,
-.navbar .btn-group {
+.navbar .btn, .navbar .btn-group {
   margin-top: 5px;
 }
 .navbar .btn-group .btn {
@@ -3959,29 +3917,21 @@ input[type="submit"].btn.btn-mini {
 .navbar-form:after {
   clear: both;
 }
-.navbar-form input,
-.navbar-form select,
-.navbar-form .radio,
-.navbar-form .checkbox {
+.navbar-form input, .navbar-form select, .navbar-form .radio, .navbar-form .checkbox {
   margin-top: 5px;
 }
-.navbar-form input,
-.navbar-form select {
+.navbar-form input, .navbar-form select {
   display: inline-block;
   margin-bottom: 0;
 }
-.navbar-form input[type="image"],
-.navbar-form input[type="checkbox"],
-.navbar-form input[type="radio"] {
+.navbar-form input[type="image"], .navbar-form input[type="checkbox"], .navbar-form input[type="radio"] {
   margin-top: 3px;
 }
-.navbar-form .input-append,
-.navbar-form .input-prepend {
+.navbar-form .input-append, .navbar-form .input-prepend {
   margin-top: 6px;
   white-space: nowrap;
 }
-.navbar-form .input-append input,
-.navbar-form .input-prepend input {
+.navbar-form .input-append input, .navbar-form .input-prepend input {
   margin-top: 0;
 }
 
@@ -5098,16 +5048,13 @@ a.label:hover, a.badge:hover {
   display: block;
   line-height: 1;
 }
-.carousel .active,
-.carousel .next,
-.carousel .prev {
+.carousel .active, .carousel .next, .carousel .prev {
   display: block;
 }
 .carousel .active {
   left: 0;
 }
-.carousel .next,
-.carousel .prev {
+.carousel .next, .carousel .prev {
   position: absolute;
   top: 0;
   width: 100%;
@@ -5118,8 +5065,7 @@ a.label:hover, a.badge:hover {
 .carousel .prev {
   left: -100%;
 }
-.carousel .next.left,
-.carousel .prev.right {
+.carousel .next.left, .carousel .prev.right {
   left: 0;
 }
 .carousel .active.left {
@@ -5163,7 +5109,7 @@ a.label:hover, a.badge:hover {
 .carousel-caption {
   position: absolute;
   left: 0;
-  right: 2px;
+  right: 0;
   bottom: 0;
   padding: 10px 15px 5px;
   background: #333333;

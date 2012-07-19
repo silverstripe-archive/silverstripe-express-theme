@@ -38,6 +38,10 @@ EXPRESS TYPOGRAPHY
 		font-size:1.1em;
 		line-height:1.1em;
 	}
+	/* Highlighting for search results titles and content snippets. */
+	span.highlight {
+		background: yellow;
+	}
 	a {
 		&.external-link {
 			padding-right: 20px;

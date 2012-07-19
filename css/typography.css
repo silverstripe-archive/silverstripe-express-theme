@@ -48,6 +48,7 @@ EXPRESS TYPOGRAPHY
 ******************************/
 .typography {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Highlighting for search results titles and content snippets. */
   /*** LINK ICONS ***/
   /*** Image formatting ***/
 }
@@ -388,6 +389,9 @@ EXPRESS TYPOGRAPHY
   margin-bottom: 18px;
   font-size: 1.1em;
   line-height: 1.1em;
+}
+.typography span.highlight {
+  background: yellow;
 }
 .typography a.external-link {
   padding-right: 20px;

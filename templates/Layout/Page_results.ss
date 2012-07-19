@@ -24,16 +24,13 @@
 						<header>
 							<h3>
 								<a class="searchResultHeader" href="$Link">
-								<% if MenuTitle %>
-									$MenuTitle
-								<% else %>
-									$Title
-								<% end_if %>
+									$ContextualTitle
 								</a>
 							</h3>
 						</header>
-						<% if $Content %>
-							<p>$Content.LimitWordCountXML					
+						<% if ContextualContent %>
+							<p>
+								$ContextualContent
 							</p>
 						<% end_if %>
 						</article>
