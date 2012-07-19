@@ -1,6 +1,7 @@
 <div class="row">
 	<div class="span3">
-		Refine results here or you might be looking for x, y, z
+		&nbsp;
+		<%-- Sidebar --%>
 	</div>
 	<section class="span9 resultsList">
 		
@@ -11,10 +12,12 @@
 			</header>
 		<% end_if %>
 
-		<header class="resultsHeader">
+		<% if Results %>
+			<header class="resultsHeader">
 				<h2 class="pull-left">Results for &quot;{$Query}&quot;</h2>
 				<p class="pull-right">Displaying Page $Results.CurrentPage of $Results.TotalPages</p>
 			</header>
+		<% end_if %>
 
 		<% if Results %>
 			<ol id="SearchResults">
