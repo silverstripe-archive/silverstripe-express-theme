@@ -20,8 +20,9 @@ $experimental-support-for-svg: true;
 @import '../../module_bootstrap/lib/bootstrap.scss';
 @import '../../module_bootstrap/lib/responsive.scss';
 @import 'mixins';
-@import '_mobile.scss';
-@import '_sitemap.scss';
+@import 'mobile.scss';
+@import 'sitemap.scss';
+@import 'carousel.scss';
 
 
 
@@ -214,106 +215,7 @@ div.hero-unit {
 	}
 }
 
-/* Carousel Styling */
-.carousel {
-	overflow:hidden;
-	width: 100%;
-	margin: 0 auto;
-	margin-bottom: 18px;
-	.carousel-caption {
-  		right: 2px;
-  		p {
-			font-size: 14px;
-			color: white;
-			line-height: 1.2em;
-		}
-  	}
-	img{
-		width:100%;
-	}
-	a{
-		#layout & img{
-			border:none;
-		}
-	}
-	&:hover{
-		#pause{
-			#IE8 &{
-				display:block;
-			}
-			@include duration(1s);
-			
-			visibility:visible;
-			opacity:1;
-		}
-	}
-}
-
-#pause{
-	#IE8 &{
-		display:none;
-	}
-	visibility:hidden;
-	opacity:0;
-	.btn{	
-		.icon{
-			font-family: FontAwesome;
-			font-weight: normal;
-			font-style: normal;
-			display: inline-block;
-			text-decoration: inherit;
-		}
-		z-index:4; 
-		@extend .btn-inverse;
-		@include border-radius(40px);
-		@include box-sizing(border-box);
-		border:2px solid #fff;
-		position:relative;
-		top:28%;
-		font-size:3em;
-		line-height:1em;
-		width:70px;
-		height:70px;
-		padding-top:15px;
-		opacity:0.5;
-		#IE7 &{
-			.icon{
-				zoom:1;
-			}
-			padding-top:5px;
-			width:30px;
-			height:43px;
-		}
-		.icon-play-js{
-			padding-left:3px;
-			#IE7 &{
-				padding-top:2px;
-			}
-		}
-		&:hover{
-			@include duration(1s);
-			opacity:1;
-		}
-	}
-	text-align:center;
-	width:100%;
-	height:100%;
-	position:absolute; 
-	z-index:0; 
-	top:0px;
-	left:0px;
-	color:#fff;
-	color:rgba(#fff,0.8);
-	text-shadow: lighten(rgba(#000,0.5), 10%) 1px 1px 0;
-}
-
-.carousel-control{
-	z-index:6;
-
-	&:visited {
-		color: white;
-	}
-}
+@include carousel;
 
 
 /*******************************/
