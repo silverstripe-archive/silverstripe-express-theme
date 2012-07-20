@@ -1,9 +1,5 @@
 <div class="row">
-	<div class="span3">
-		&nbsp;
-		<%-- Sidebar --%>
-	</div>
-	<section class="span9 resultsList">
+	<section class="span12 resultsList">
 		
 		<% if Query %>
 			<header class="page-header">
