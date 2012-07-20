@@ -163,14 +163,14 @@ body {
 }
 
 a {
-  color: #0088cc;
+  color: #005bdb;
   text-decoration: none;
 }
 a:visited {
-  color: #7057ed;
+  color: #0092db;
 }
 a:hover {
-  color: #005580;
+  color: #003175;
   text-decoration: underline;
 }
 
@@ -749,27 +749,20 @@ input[type="checkbox"][readonly] {
   background-color: transparent;
 }
 
-.control-group.warning > label,
-.control-group.warning .help-block,
-.control-group.warning .help-inline {
+.control-group.warning > label, .control-group.warning .help-block, .control-group.warning .help-inline {
   color: #c09853;
 }
-.control-group.warning input,
-.control-group.warning select,
-.control-group.warning textarea {
+.control-group.warning input, .control-group.warning select, .control-group.warning textarea {
   color: #c09853;
   border-color: #c09853;
 }
-.control-group.warning input:focus,
-.control-group.warning select:focus,
-.control-group.warning textarea:focus {
+.control-group.warning input:focus, .control-group.warning select:focus, .control-group.warning textarea:focus {
   border-color: #a47e3c;
   -webkit-box-shadow: 0 0 6px #dbc59e;
   -moz-box-shadow: 0 0 6px #dbc59e;
   box-shadow: 0 0 6px #dbc59e;
 }
-.control-group.warning .input-prepend .add-on,
-.control-group.warning .input-append .add-on {
+.control-group.warning .input-prepend .add-on, .control-group.warning .input-append .add-on {
   color: #c09853;
   background-color: #fcf8e3;
   border-color: #c09853;
@@ -885,9 +878,7 @@ select:focus:required:invalid:focus {
 .input-append {
   margin-bottom: 5px;
 }
-.input-prepend input,
-.input-prepend select,
-.input-prepend .uneditable-input,
+.input-prepend input, .input-prepend select, .input-prepend .uneditable-input,
 .input-append input,
 .input-append select,
 .input-append .uneditable-input {
@@ -899,9 +890,7 @@ select:focus:required:invalid:focus {
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
 }
-.input-prepend input:focus,
-.input-prepend select:focus,
-.input-prepend .uneditable-input:focus,
+.input-prepend input:focus, .input-prepend select:focus, .input-prepend .uneditable-input:focus,
 .input-append input:focus,
 .input-append select:focus,
 .input-append .uneditable-input:focus {
@@ -926,8 +915,7 @@ select:focus:required:invalid:focus {
   background-color: #eeeeee;
   border: 1px solid #ccc;
 }
-.input-prepend .add-on,
-.input-prepend .btn,
+.input-prepend .add-on, .input-prepend .btn,
 .input-append .add-on,
 .input-append .btn {
   margin-left: -1px;
@@ -941,20 +929,16 @@ select:focus:required:invalid:focus {
   border-color: #46a546;
 }
 
-.input-prepend .add-on,
-.input-prepend .btn {
+.input-prepend .add-on, .input-prepend .btn {
   margin-right: -1px;
 }
-.input-prepend .add-on:first-child,
-.input-prepend .btn:first-child {
+.input-prepend .add-on:first-child, .input-prepend .btn:first-child {
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
 
-.input-append input,
-.input-append select,
-.input-append .uneditable-input {
+.input-append input, .input-append select, .input-append .uneditable-input {
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
@@ -963,29 +947,24 @@ select:focus:required:invalid:focus {
   border-right-color: #ccc;
   border-left-color: #eee;
 }
-.input-append .add-on:last-child,
-.input-append .btn:last-child {
+.input-append .add-on:last-child, .input-append .btn:last-child {
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
 }
 
-.input-prepend.input-append input,
-.input-prepend.input-append select,
-.input-prepend.input-append .uneditable-input {
+.input-prepend.input-append input, .input-prepend.input-append select, .input-prepend.input-append .uneditable-input {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.input-prepend.input-append .add-on:first-child,
-.input-prepend.input-append .btn:first-child {
+.input-prepend.input-append .add-on:first-child, .input-prepend.input-append .btn:first-child {
   margin-right: -1px;
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
-.input-prepend.input-append .add-on:last-child,
-.input-prepend.input-append .btn:last-child {
+.input-prepend.input-append .add-on:last-child, .input-prepend.input-append .btn:last-child {
   margin-left: -1px;
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
@@ -1004,13 +983,7 @@ select:focus:required:invalid:focus {
   border-radius: 14px;
 }
 
-.form-search input,
-.form-search textarea,
-.form-search select,
-.form-search .help-inline,
-.form-search .uneditable-input,
-.form-search .input-prepend,
-.form-search .input-append,
+.form-search input, .form-search textarea, .form-search select, .form-search .help-inline, .form-search .uneditable-input, .form-search .input-prepend, .form-search .input-append,
 .form-inline input,
 .form-inline textarea,
 .form-inline select,
@@ -1163,20 +1136,17 @@ a [class*=" icon-"] {
   font-size: 4/3em;
 }
 
-.btn [class^="icon-"],
-.btn [class*=" icon-"], .nav-tabs [class^="icon-"], .nav-tabs [class*=" icon-"] {
+.btn [class^="icon-"], .btn [class*=" icon-"], .nav-tabs [class^="icon-"], .nav-tabs [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
   line-height: .9em;
 }
 
-li [class^="icon-"],
-li [class*=" icon-"] {
+li [class^="icon-"], li [class*=" icon-"] {
   display: inline-block;
   width: 1.25em;
   text-align: center;
 }
-li .icon-large:before,
-li .icon-large:before {
+li .icon-large:before, li .icon-large:before {
   /* 1.5 increased font size for icon-large * 1.25 width */
   width: 1.875em;
 }
@@ -1186,12 +1156,10 @@ ul.icons {
   margin-left: 2em;
   text-indent: -0.8em;
 }
-ul.icons li [class^="icon-"],
-ul.icons li [class*=" icon-"] {
+ul.icons li [class^="icon-"], ul.icons li [class*=" icon-"] {
   width: .8em;
 }
-ul.icons li .icon-large:before,
-ul.icons li .icon-large:before {
+ul.icons li .icon-large:before, ul.icons li .icon-large:before {
   /* 1.5 increased font size for icon-large * 1.25 width */
   vertical-align: initial;
 }
@@ -2039,14 +2007,12 @@ ul.icons li .icon-large:before {
   content: "\f200";
 }
 
-#IE7 [class^="icon-"],
-#IE7 [class*=" icon-"], #IE7 .icon {
+#IE7 [class^="icon-"], #IE7 [class*=" icon-"], #IE7 .icon {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
 }
-#IE7 .btn.dropdown-toggle [class^="icon-"],
-#IE7 .btn.dropdown-toggle [class*=" icon-"] {
+#IE7 .btn.dropdown-toggle [class^="icon-"], #IE7 .btn.dropdown-toggle [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
   line-height: 1.4em;
 }
@@ -2776,7 +2742,7 @@ ul.icons li .icon-large:before {
 .dropdown-menu .active > a:hover {
   color: white;
   text-decoration: none;
-  background-color: #0088cc;
+  background-color: #005bdb;
 }
 
 .open {
@@ -3084,29 +3050,29 @@ button.close {
 }
 
 .btn-primary {
-  background-color: #0073cc;
-  background-image: -ms-linear-gradient(top, #0088cc, #0055cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0055cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0055cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0055cc);
-  background-image: -moz-linear-gradient(top, #0088cc, #0055cc);
-  background-image: linear-gradient(top, #0088cc, #0055cc);
+  background-color: #007cdb;
+  background-image: -ms-linear-gradient(top, #0092db, #005bdb);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0092db), to(#005bdb));
+  background-image: -webkit-linear-gradient(top, #0092db, #005bdb);
+  background-image: -o-linear-gradient(top, #0092db, #005bdb);
+  background-image: -moz-linear-gradient(top, #0092db, #005bdb);
+  background-image: linear-gradient(top, #0092db, #005bdb);
   background-repeat: repeat-x;
-  border-color: #0055cc #0055cc #003580;
+  border-color: #005bdb #005bdb #003b8f;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #0055cc;
+  *background-color: #005bdb;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .btn-primary #IE8 {
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0088CC', endColorstr='#FF0055CC', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0092DB', endColorstr='#FF005BDB', GradientType=0);
 }
 .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
-  background-color: #0055cc;
-  *background-color: #004ab3;
+  background-color: #005bdb;
+  *background-color: #0051c2;
 }
 .btn-primary:active, .btn-primary.active {
-  background-color: #004099 \9;
+  background-color: #0046a8 \9;
 }
 
 .btn-warning {
@@ -3391,7 +3357,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #e6e6e6;
 }
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #0055cc;
+  background-color: #005bdb;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #f89406;
@@ -3564,7 +3530,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a:hover, .nav-list > .active > a:visited {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #0088cc;
+  background-color: #005bdb;
 }
 
 .nav-list [class^="icon-"] {
@@ -3652,7 +3618,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover, .nav-pills > .active > a:visited {
   color: white;
-  background-color: #0088cc;
+  background-color: #005bdb;
 }
 
 .nav-stacked > li {
@@ -3713,15 +3679,15 @@ input[type="submit"].btn.btn-mini {
 
 .nav-tabs .dropdown-toggle .caret,
 .nav-pills .dropdown-toggle .caret {
-  border-top-color: #0088cc;
-  border-bottom-color: #0088cc;
+  border-top-color: #005bdb;
+  border-bottom-color: #005bdb;
   margin-top: 6px;
 }
 
 .nav-tabs .dropdown-toggle:hover .caret,
 .nav-pills .dropdown-toggle:hover .caret {
-  border-top-color: #005580;
-  border-bottom-color: #005580;
+  border-top-color: #003175;
+  border-bottom-color: #003175;
 }
 
 .nav-tabs .active .dropdown-toggle .caret,
@@ -3933,8 +3899,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .navbar-link:hover {
   color: white;
 }
-.navbar .btn,
-.navbar .btn-group {
+.navbar .btn, .navbar .btn-group {
   margin-top: 5px;
 }
 .navbar .btn-group .btn {
@@ -3952,29 +3917,21 @@ input[type="submit"].btn.btn-mini {
 .navbar-form:after {
   clear: both;
 }
-.navbar-form input,
-.navbar-form select,
-.navbar-form .radio,
-.navbar-form .checkbox {
+.navbar-form input, .navbar-form select, .navbar-form .radio, .navbar-form .checkbox {
   margin-top: 5px;
 }
-.navbar-form input,
-.navbar-form select {
+.navbar-form input, .navbar-form select {
   display: inline-block;
   margin-bottom: 0;
 }
-.navbar-form input[type="image"],
-.navbar-form input[type="checkbox"],
-.navbar-form input[type="radio"] {
+.navbar-form input[type="image"], .navbar-form input[type="checkbox"], .navbar-form input[type="radio"] {
   margin-top: 3px;
 }
-.navbar-form .input-append,
-.navbar-form .input-prepend {
+.navbar-form .input-append, .navbar-form .input-prepend {
   margin-top: 6px;
   white-space: nowrap;
 }
-.navbar-form .input-append input,
-.navbar-form .input-prepend input {
+.navbar-form .input-append input, .navbar-form .input-prepend input {
   margin-top: 0;
 }
 
@@ -4721,7 +4678,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 a.thumbnail:hover {
-  border-color: #0088cc;
+  border-color: #005bdb;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
@@ -5091,16 +5048,13 @@ a.label:hover, a.badge:hover {
   display: block;
   line-height: 1;
 }
-.carousel .active,
-.carousel .next,
-.carousel .prev {
+.carousel .active, .carousel .next, .carousel .prev {
   display: block;
 }
 .carousel .active {
   left: 0;
 }
-.carousel .next,
-.carousel .prev {
+.carousel .next, .carousel .prev {
   position: absolute;
   top: 0;
   width: 100%;
@@ -5111,8 +5065,7 @@ a.label:hover, a.badge:hover {
 .carousel .prev {
   left: -100%;
 }
-.carousel .next.left,
-.carousel .prev.right {
+.carousel .next.left, .carousel .prev.right {
   left: 0;
 }
 .carousel .active.left {
@@ -6428,7 +6381,7 @@ p.printShare {
 }
 
 #layout a img {
-  border: 2px solid #0088cc;
+  border: 2px solid #005bdb;
   margin-left: -2px;
   margin-top: -2px;
 }
@@ -6785,7 +6738,7 @@ p.printShare {
   color: #333333;
 }
 .icon-dark:hover {
-  color: #0077b3;
+  color: #0051c2;
   text-decoration: none;
 }
 
