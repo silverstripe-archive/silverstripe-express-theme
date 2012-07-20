@@ -5,6 +5,7 @@
 	    	<!-- <img width="280" height="50" src="http://placehold.it/280x50" alt="$SiteConfig.Title"> -->
 		</a>
 	</h1>
+</header>
 	
 	<div class="navbar">
 	  <div class="navbar-inner">
@@ -21,4 +22,3 @@
 	    </div>
 	  </div>
 	</div>
-</header>

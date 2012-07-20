@@ -199,23 +199,6 @@ h2 {
 	a, a:visited {
 		color: #000;
 	}
-
-	&.has-icon {
-		background-repeat: no-repeat;
-		background-position: 0px center;
-		padding-left: 32px;
-		&.conversation {
-			background-image: url('../../../themes/ssexpress/images/icons/conversation.png');
-		}
-		&.news {
-			background-image: url('../../../themes/ssexpress/images/icons/news.png');
-			padding-left: 28px;
-		}
-		&.parents {
-			background-image: url('../../../themes/ssexpress/images/icons/parents.png');
-			padding-left: 40px;
-		}
-	}
 }
 
 /* Hero Unit */

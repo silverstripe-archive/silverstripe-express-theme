@@ -157,14 +157,14 @@ body {
 }
 
 a {
-  color: #005bdb;
+  color: #0055cc;
   text-decoration: none;
 }
 a:visited {
   color: #0092db;
 }
 a:hover {
-  color: #003175;
+  color: #003580;
   text-decoration: underline;
 }
 
@@ -922,12 +922,12 @@ select:focus:required:invalid:focus {
 }
 .input-prepend .add-on,
 .input-prepend .btn,
-.input-prepend .Actions .action,
-.Actions .input-prepend .action,
+.input-prepend .Actions .action, .Actions
+.input-prepend .action,
 .input-append .add-on,
 .input-append .btn,
-.input-append .Actions .action,
-.Actions .input-append .action {
+.input-append .Actions .action, .Actions
+.input-append .action {
   margin-left: -1px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -941,14 +941,14 @@ select:focus:required:invalid:focus {
 
 .input-prepend .add-on,
 .input-prepend .btn,
-.input-prepend .Actions .action,
-.Actions .input-prepend .action {
+.input-prepend .Actions .action, .Actions
+.input-prepend .action {
   margin-right: -1px;
 }
 .input-prepend .add-on:first-child,
 .input-prepend .btn:first-child,
-.input-prepend .Actions .action:first-child,
-.Actions .input-prepend .action:first-child {
+.input-prepend .Actions .action:first-child, .Actions
+.input-prepend .action:first-child {
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
@@ -967,8 +967,8 @@ select:focus:required:invalid:focus {
 }
 .input-append .add-on:last-child,
 .input-append .btn:last-child,
-.input-append .Actions .action:last-child,
-.Actions .input-append .action:last-child {
+.input-append .Actions .action:last-child, .Actions
+.input-append .action:last-child {
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
@@ -983,8 +983,8 @@ select:focus:required:invalid:focus {
 }
 .input-prepend.input-append .add-on:first-child,
 .input-prepend.input-append .btn:first-child,
-.input-prepend.input-append .Actions .action:first-child,
-.Actions .input-prepend.input-append .action:first-child {
+.input-prepend.input-append .Actions .action:first-child, .Actions
+.input-prepend.input-append .action:first-child {
   margin-right: -1px;
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
@@ -992,8 +992,8 @@ select:focus:required:invalid:focus {
 }
 .input-prepend.input-append .add-on:last-child,
 .input-prepend.input-append .btn:last-child,
-.input-prepend.input-append .Actions .action:last-child,
-.Actions .input-prepend.input-append .action:last-child {
+.input-prepend.input-append .Actions .action:last-child, .Actions
+.input-prepend.input-append .action:last-child {
   margin-left: -1px;
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
@@ -1173,7 +1173,8 @@ a [class*=" icon-"] {
 
 .btn [class^="icon-"], .Actions .action [class^="icon-"],
 .btn [class*=" icon-"],
-.Actions .action [class*=" icon-"], .nav-tabs [class^="icon-"], .nav-tabs [class*=" icon-"] {
+.Actions .action [class*=" icon-"], .Actions
+.action [class*=" icon-"], .nav-tabs [class^="icon-"], .nav-tabs [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
   line-height: .9em;
 }
@@ -2056,8 +2057,8 @@ ul.icons li .icon-large:before {
 }
 #IE7 .btn.dropdown-toggle [class^="icon-"], #IE7 .Actions .dropdown-toggle.action [class^="icon-"], .Actions #IE7 .dropdown-toggle.action [class^="icon-"],
 #IE7 .btn.dropdown-toggle [class*=" icon-"],
-#IE7 .Actions .dropdown-toggle.action [class*=" icon-"],
-.Actions #IE7 .dropdown-toggle.action [class*=" icon-"] {
+#IE7 .Actions .dropdown-toggle.action [class*=" icon-"], .Actions
+#IE7 .dropdown-toggle.action [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
   line-height: 1.4em;
 }
@@ -2787,7 +2788,7 @@ ul.icons li .icon-large:before {
 .dropdown-menu .active > a:hover {
   color: white;
   text-decoration: none;
-  background-color: #005bdb;
+  background-color: #0055cc;
 }
 
 .open {
@@ -2986,7 +2987,8 @@ button.close {
 
 .btn.active, .Actions .active.action,
 .btn:active,
-.Actions .action:active {
+.Actions .action:active, .Actions
+.action:active {
   background-color: #e6e6e6;
   background-color: #d9d9d9 \9;
   background-image: none;
@@ -2998,7 +3000,8 @@ button.close {
 
 .btn.disabled, .Actions .disabled.action,
 .btn[disabled],
-.Actions [disabled].action {
+.Actions [disabled].action, .Actions
+[disabled].action {
   cursor: default;
   background-color: #e6e6e6;
   background-image: none;
@@ -3040,7 +3043,8 @@ button.close {
 
 .btn-primary, .Actions .action,
 .btn-primary:hover,
-.Actions .action:hover,
+.Actions .action:hover, .Actions
+.action:hover,
 .btn-warning,
 .btn-warning:hover,
 .btn-danger,
@@ -3056,7 +3060,8 @@ button.close {
 }
 .btn-primary:visited, .Actions .action:visited,
 .btn-primary:hover:visited,
-.Actions .action:hover:visited,
+.Actions .action:hover:visited, .Actions
+.action:hover:visited,
 .btn-warning:visited,
 .btn-warning:hover:visited,
 .btn-danger:visited,
@@ -3250,31 +3255,36 @@ button.close {
 
 button.btn, .Actions button.action,
 input[type="submit"].btn,
-.Actions input[type="submit"].action {
+.Actions input[type="submit"].action, .Actions
+input[type="submit"].action {
   *padding-top: 2px;
   *padding-bottom: 2px;
 }
 button.btn::-moz-focus-inner, .Actions button.action::-moz-focus-inner,
 input[type="submit"].btn::-moz-focus-inner,
-.Actions input[type="submit"].action::-moz-focus-inner {
+.Actions input[type="submit"].action::-moz-focus-inner, .Actions
+input[type="submit"].action::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 button.btn.btn-large, .Actions button.btn-large.action,
 input[type="submit"].btn.btn-large,
-.Actions input[type="submit"].btn-large.action {
+.Actions input[type="submit"].btn-large.action, .Actions
+input[type="submit"].btn-large.action {
   *padding-top: 7px;
   *padding-bottom: 7px;
 }
 button.btn.btn-small, .Actions button.btn-small.action,
 input[type="submit"].btn.btn-small,
-.Actions input[type="submit"].btn-small.action {
+.Actions input[type="submit"].btn-small.action, .Actions
+input[type="submit"].btn-small.action {
   *padding-top: 3px;
   *padding-bottom: 3px;
 }
 button.btn.btn-mini, .Actions button.btn-mini.action,
 input[type="submit"].btn.btn-mini,
-.Actions input[type="submit"].btn-mini.action {
+.Actions input[type="submit"].btn-mini.action, .Actions
+input[type="submit"].btn-mini.action {
   *padding-top: 1px;
   *padding-bottom: 1px;
 }
@@ -3360,14 +3370,14 @@ input[type="submit"].btn.btn-mini,
 
 .btn-group > .btn:hover, .btn-group > .Actions .action:hover, .Actions .btn-group > .action:hover,
 .btn-group > .btn:focus,
-.btn-group > .Actions .action:focus,
-.Actions .btn-group > .action:focus,
+.btn-group > .Actions .action:focus, .Actions
+.btn-group > .action:focus,
 .btn-group > .btn:active,
-.btn-group > .Actions .action:active,
-.Actions .btn-group > .action:active,
+.btn-group > .Actions .action:active, .Actions
+.btn-group > .action:active,
 .btn-group > .btn.active,
-.btn-group > .Actions .active.action,
-.Actions .btn-group > .active.action {
+.btn-group > .Actions .active.action, .Actions
+.btn-group > .active.action {
   z-index: 2;
 }
 
@@ -3583,7 +3593,7 @@ input[type="submit"].btn.btn-mini,
 .nav-list > .active > a:hover, .nav-list > .active > a:visited {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #005bdb;
+  background-color: #0055cc;
 }
 
 .nav-list [class^="icon-"] {
@@ -3671,7 +3681,7 @@ input[type="submit"].btn.btn-mini,
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover, .nav-pills > .active > a:visited {
   color: white;
-  background-color: #005bdb;
+  background-color: #0055cc;
 }
 
 .nav-stacked > li {
@@ -3732,15 +3742,15 @@ input[type="submit"].btn.btn-mini,
 
 .nav-tabs .dropdown-toggle .caret,
 .nav-pills .dropdown-toggle .caret {
-  border-top-color: #005bdb;
-  border-bottom-color: #005bdb;
+  border-top-color: #0055cc;
+  border-bottom-color: #0055cc;
   margin-top: 6px;
 }
 
 .nav-tabs .dropdown-toggle:hover .caret,
 .nav-pills .dropdown-toggle:hover .caret {
-  border-top-color: #003175;
-  border-bottom-color: #003175;
+  border-top-color: #003580;
+  border-bottom-color: #003580;
 }
 
 .nav-tabs .active .dropdown-toggle .caret,
@@ -3916,10 +3926,6 @@ input[type="submit"].btn.btn-mini,
 }
 .navbar-inner #IE8 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF333333', endColorstr='#FF222222', GradientType=0);
-}
-
-.navbar .container {
-  width: auto;
 }
 
 .nav-collapse.collapse {
@@ -4740,7 +4746,7 @@ input[type="submit"].btn.btn-mini,
 }
 
 a.thumbnail:hover {
-  border-color: #005bdb;
+  border-color: #0055cc;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
