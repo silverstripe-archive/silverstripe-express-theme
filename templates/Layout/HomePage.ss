@@ -21,7 +21,7 @@ $PageComments
 		<p><a class="btn" href="about-us/our-people">Meet the team &raquo;</a></p>
 	</div>
 	<div class="span4 resultsList no-indent">
-		<h2 class="icon-th-list"><a href="news"> News</a></h2>
+		<h2 class="icon-th-list"> <a href="news">News</a></h2>
 
 		<% loop NewsItems %>
 			<article class="$EvenOdd">
