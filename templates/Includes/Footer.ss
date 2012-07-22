@@ -22,5 +22,5 @@
 	    	<!-- <img width="280" height="50" src="http://placehold.it/280x50" alt=""> -->
 		</a>
 	</h1>
-	<p><small>$SiteConfig.Title &copy; 2012</small></p>
+	<!-- <p><small>$SiteConfig.Title &copy; 2012</small></p> -->
 </footer>

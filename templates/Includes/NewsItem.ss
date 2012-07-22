@@ -10,6 +10,5 @@
 <% if Abstract %>
 	<p>$Abstract</p>
 <% else %>
-	$Content.LimitWordCount
+	<p>$Content.LimitWordCount</p>
 <% end_if %>
-
