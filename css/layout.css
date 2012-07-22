@@ -5241,28 +5241,6 @@ a.label:hover, a.badge:hover {
   color: white;
 }
 
-.hero-unit {
-  padding: 60px;
-  margin-bottom: 30px;
-  background-color: #eeeeee;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-}
-.hero-unit h1 {
-  margin-bottom: 0;
-  font-size: 60px;
-  line-height: 1;
-  color: inherit;
-  letter-spacing: -1px;
-}
-.hero-unit p {
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 27px;
-  color: inherit;
-}
-
 .pull-right {
   float: right;
 }
@@ -6542,6 +6520,11 @@ body ul.nav, body ul.dropdown-menu {
   list-style: none;
   padding-left: 0;
 }
+body .noCorners .navbar-inner {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
 body .nav-collapse {
   position: relative;
   height: auto;
@@ -6559,7 +6542,7 @@ body ul.breadcrumb, body #layout ul.resultsHeader, #layout body ul.resultsHeader
   padding: 7px 14px;
 }
 body .navbar {
-  font-size: 1.1em;
+  font-size: 13px;
 }
 body .navbar .showChildren {
   display: inline-block;
@@ -6670,22 +6653,21 @@ body .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li .nav-list l
   margin-right: -75px;
 }
 
-/* Headers and Icons */
-h2 a, h2 a:visited {
-  color: #000;
-}
-
-/* Hero Unit */
-div.hero-unit {
+/* Hero Unit adjustments */
+.typography div.hero-unit {
   padding: 30px;
 }
-div.hero-unit h1 {
+.typography div.hero-unit h1 {
   margin-bottom: 15px;
 }
-div.hero-unit .carousel-container {
+.typography div.hero-unit .span4 {
+  margin-right: -20px;
+}
+.typography div.hero-unit .carousel-container {
   float: right;
 }
 
+/* Include carousel, and adjust */
 /* Carousel Styling */
 .carousel {
   overflow: hidden;
@@ -6790,7 +6772,19 @@ div.hero-unit .carousel-container {
   color: white;
 }
 
-/*******************************/
+.typography .carousel a {
+  color: #fff;
+}
+.typography .carousel a:visited {
+  color: #fff;
+}
+
+/* Misc */
+/* Headers and Icons */
+h2 a, h2 a:visited {
+  color: #000;
+}
+
 iframe {
   border: 0;
 }
