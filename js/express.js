@@ -1,10 +1,10 @@
 (function($) {
 	$(document).ready(function() {
 
-		$('.carousel').carousel({
-			interval: 8000,
-			pause: ""
-	    });  
+
+
+
+	    /*************************  Dynamic sticky nav   *********************************/
 		$('.navbar').scrollspy();
 
 		 // fix sub nav on scroll
@@ -33,6 +33,12 @@
 	        $nav.removeClass('navbar-fixed-top');
 	      }
 	    }
+	    /*************************/
+
+	    $('.carousel').carousel({
+			interval: 8000,
+			pause: ""
+	    });  
 
 
 

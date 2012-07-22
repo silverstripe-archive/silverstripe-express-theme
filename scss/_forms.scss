@@ -48,11 +48,14 @@ form{
 }
 
 form{
-	h1,h2,h3{
-		&.FormHeading{
-			@include gradient-vertical(darken(#ffffff,2%),#fff);
-			border-bottom:1px solid $hrBorder;
-			border-top:1px solid darken(#f5f5f5,10%);
+	.typography &{
+		h1,h2,h3{
+			margin:0;
+			&.FormHeading{
+				@include gradient-vertical(darken(#ffffff,2%),#fff);
+				border-bottom:1px solid $hrBorder;
+				border-top:1px solid darken(#f5f5f5,10%);
+			}
 		}
 	}
 }
@@ -161,7 +164,7 @@ div.date{
 div.optionset{
 	position: relative;
 }
-ul{
+form ul{
 	&.optionset{
 		label{
 			font-weight: normal;
