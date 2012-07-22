@@ -49,6 +49,10 @@ body {
 
 	}
 
+	.noCorners .navbar-inner{
+		@include border-radius(0);
+	}
+
 
 
 	.nav-collapse{
@@ -71,7 +75,7 @@ body {
 		padding:7px 14px;
 	}
 	.navbar{
-		font-size: 1.1em;
+		font-size: 13px;
 		.showChildren{
 			display:inline-block;
 	    	width:20px;
@@ -197,30 +201,45 @@ body {
 	}
 } //end body tag
 
+
+/* Hero Unit adjustments */
+.typography div.hero-unit {
+	padding: 30px;
+
+	h1 {
+		margin-bottom: 15px;
+	}
+	.span4{
+		margin-right:-20px;
+	}
+
+	.carousel-container {
+		float: right;
+		
+	}
+}
+
+/* Include carousel, and adjust */
+@include carousel;
+.typography .carousel{
+	a{
+		color:#fff;
+		&:visited{
+			color:#fff;
+		}
+	}
+} 
+
+
+
+/* Misc */
+
 /* Headers and Icons */
 h2 {
 	a, a:visited {
 		color: #000;
 	}
 }
-
-/* Hero Unit */
-div.hero-unit {
-	padding: 30px;
-
-	h1 {
-		margin-bottom: 15px;
-	}
-
-	.carousel-container {
-		float: right;
-	}
-}
-
-@include carousel;
-
-
-/*******************************/
 
 
 iframe {

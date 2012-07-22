@@ -14,21 +14,17 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_mixins\.scss}line{font-family:\0000334}}
 .clearfix {
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_mixins\.scss}line{font-family:\0000325}}
 .clearfix:before, .clearfix:after {
   display: table;
   content: "";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_mixins\.scss}line{font-family:\0000329}}
 .clearfix:after {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_mixins\.scss}line{font-family:\00003126}}
 .hide-text {
   font: 0/0 a;
   color: transparent;
@@ -37,7 +33,6 @@
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_mixins\.scss}line{font-family:\00003307}}
 .input-block-level {
   display: block;
   width: 100%;
@@ -51,33 +46,28 @@
 /*****************************
 EXPRESS TYPOGRAPHY 
 ******************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\0000317}}
 .typography {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Highlighting for search results titles and content snippets. */
   /*** LINK ICONS ***/
   /*** Image formatting ***/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000315}}
 .typography p {
   margin: 0 0 9px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000320}}
 .typography p small {
   font-size: 11px;
   color: #999999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000325}}
 .typography .lead {
   margin-bottom: 18px;
   font-size: 20px;
   font-weight: 200;
   line-height: 27px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000335}}
 .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
   margin: 0;
   font-family: inherit;
@@ -85,114 +75,89 @@ EXPRESS TYPOGRAPHY
   color: inherit;
   text-rendering: optimizelegibility;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000341}}
 .typography h1 small, .typography h2 small, .typography h3 small, .typography h4 small, .typography h5 small, .typography h6 small {
   font-weight: normal;
   color: #999999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000346}}
 .typography h1 {
   font-size: 30px;
   line-height: 36px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000349}}
 .typography h1 small {
   font-size: 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000353}}
 .typography h2 {
   font-size: 24px;
   line-height: 36px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000356}}
 .typography h2 small {
   font-size: 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000360}}
 .typography h3 {
   font-size: 18px;
   line-height: 27px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000363}}
 .typography h3 small {
   font-size: 14px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000367}}
 .typography h4, .typography h5, .typography h6 {
   line-height: 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000370}}
 .typography h4 {
   font-size: 14px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000372}}
 .typography h4 small {
   font-size: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000376}}
 .typography h5 {
   font-size: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000379}}
 .typography h6 {
   font-size: 11px;
   color: #999999;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000386}}
 .typography .page-header {
   padding-bottom: 17px;
   margin: 18px 0;
   border-bottom: 1px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\0000391}}
 .typography .page-header h1 {
   line-height: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003101}}
 .typography ul, .typography ol {
   padding: 0;
   margin: 0 0 9px 25px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003108}}
 .typography ul ul, .typography ul ol, .typography ol ol, .typography ol ul {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003111}}
 .typography ul {
   list-style: disc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003114}}
 .typography ol {
   list-style: decimal;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003117}}
 .typography li {
   line-height: 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003121}}
 .typography ul.unstyled, .typography ol.unstyled {
   margin-left: 0;
   list-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003127}}
 .typography dl {
   margin-bottom: 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003131}}
 .typography dt, .typography dd {
   line-height: 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003134}}
 .typography dt {
   font-weight: bold;
   line-height: 17px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003138}}
 .typography dd {
   margin-left: 9px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003143}}
 .typography .dl-horizontal dt {
   float: left;
   width: 120px;
@@ -202,63 +167,51 @@ EXPRESS TYPOGRAPHY
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003150}}
 .typography .dl-horizontal dd {
   margin-left: 130px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003159}}
 .typography hr {
   margin: 18px 0;
   border: 0;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003167}}
 .typography strong {
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003170}}
 .typography em {
   font-style: italic;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003173}}
 .typography .muted {
   color: #999999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003178}}
 .typography abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #ddd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003182}}
 .typography abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003188}}
 .typography blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 18px;
   border-left: 5px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003192}}
 .typography blockquote p {
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 300;
   line-height: 22.5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003196}}
 .typography blockquote small {
   display: block;
   line-height: 18px;
   color: #999999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003200}}
 .typography blockquote small:before {
   content: '\2014 \00A0';
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003206}}
 .typography blockquote.pull-right {
   float: right;
   padding-right: 15px;
@@ -266,30 +219,24 @@ EXPRESS TYPOGRAPHY
   border-right: 5px solid #eeeeee;
   border-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003213}}
 .typography blockquote.pull-right p, .typography blockquote.pull-right small {
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003223}}
 .typography q:before, .typography q:after, .typography blockquote:before, .typography blockquote:after {
   content: "";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003228}}
 .typography address {
   display: block;
   margin-bottom: 18px;
   font-style: normal;
   line-height: 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003236}}
 .typography small {
   font-size: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_type\.scss}line{font-family:\00003239}}
 .typography cite {
   font-style: normal;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_code\.scss}line{font-family:\0000314}}
 .typography code, .typography pre {
   padding: 0 3px 2px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -299,14 +246,12 @@ EXPRESS TYPOGRAPHY
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_code\.scss}line{font-family:\0000323}}
 .typography code {
   padding: 2px 4px;
   color: #d14;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_code\.scss}line{font-family:\0000331}}
 .typography pre {
   display: block;
   padding: 8.5px;
@@ -324,35 +269,29 @@ EXPRESS TYPOGRAPHY
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_code\.scss}line{font-family:\0000347}}
 .typography pre.pre-prettyprint {
   margin-bottom: 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_code\.scss}line{font-family:\0000352}}
 .typography pre code {
   padding: 0;
   color: inherit;
   background-color: transparent;
   border: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_code\.scss}line{font-family:\0000361}}
 .typography .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\0000315}}
 .typography table {
   max-width: 100%;
   background-color: transparent;
   border-collapse: collapse;
   border-spacing: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\0000325}}
 .typography .table {
   width: 100%;
   margin-bottom: 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\0000330}}
 .typography .table th, .typography .table td {
   padding: 8px;
   line-height: 18px;
@@ -360,27 +299,21 @@ EXPRESS TYPOGRAPHY
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\0000337}}
 .typography .table th {
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\0000341}}
 .typography .table thead th {
   vertical-align: bottom;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\0000350}}
 .typography .table caption + thead tr:first-child th, .typography .table caption + thead tr:first-child td, .typography .table colgroup + thead tr:first-child th, .typography .table colgroup + thead tr:first-child td, .typography .table thead:first-child tr:first-child th, .typography .table thead:first-child tr:first-child td {
   border-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\0000354}}
 .typography .table tbody + tbody {
   border-top: 2px solid #dddddd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\0000366}}
 .typography .table-condensed th, .typography .table-condensed td {
   padding: 4px 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\0000375}}
 .typography .table-bordered {
   border: 1px solid #dddddd;
   border-collapse: separate;
@@ -390,27 +323,22 @@ EXPRESS TYPOGRAPHY
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\0000382}}
 .typography .table-bordered th, .typography .table-bordered td {
   border-left: 1px solid #dddddd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\0000394}}
 .typography .table-bordered caption + thead tr:first-child th, .typography .table-bordered caption + tbody tr:first-child th, .typography .table-bordered caption + tbody tr:first-child td, .typography .table-bordered colgroup + thead tr:first-child th, .typography .table-bordered colgroup + tbody tr:first-child th, .typography .table-bordered colgroup + tbody tr:first-child td, .typography .table-bordered thead:first-child tr:first-child th, .typography .table-bordered tbody:first-child tr:first-child th, .typography .table-bordered tbody:first-child tr:first-child td {
   border-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\0000399}}
 .typography .table-bordered thead:first-child tr:first-child th:first-child, .typography .table-bordered tbody:first-child tr:first-child td:first-child {
   -webkit-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\00003105}}
 .typography .table-bordered thead:first-child tr:first-child th:last-child, .typography .table-bordered tbody:first-child tr:first-child td:last-child {
   -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\00003112}}
 .typography .table-bordered thead:last-child tr:last-child th:first-child, .typography .table-bordered tbody:last-child tr:last-child td:first-child {
   -webkit-border-radius: 0 0 0 4px;
   -moz-border-radius: 0 0 0 4px;
@@ -419,81 +347,85 @@ EXPRESS TYPOGRAPHY
   border-bottom-left-radius: 4px;
   -moz-border-radius-bottomleft: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\00003119}}
 .typography .table-bordered thead:last-child tr:last-child th:last-child, .typography .table-bordered tbody:last-child tr:last-child td:last-child {
   -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
   -moz-border-radius-bottomright: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\00003134}}
 .typography .table-striped tbody tr:nth-child(odd) td, .typography .table-striped tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_tables\.scss}line{font-family:\00003146}}
 .typography .table tbody tr:hover td, .typography .table tbody tr:hover th {
   background-color: #f5f5f5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_utilities\.scss}line{font-family:\0000310}}
 .typography .pull-right {
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_utilities\.scss}line{font-family:\0000313}}
 .typography .pull-left {
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_utilities\.scss}line{font-family:\0000318}}
 .typography .hide {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_utilities\.scss}line{font-family:\0000321}}
 .typography .show {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/module_bootstrap\/lib\/_utilities\.scss}line{font-family:\0000326}}
 .typography .invisible {
   visibility: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\0000324}}
+.typography .hero-unit {
+  padding: 60px;
+  margin-bottom: 30px;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.typography .hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  color: inherit;
+  letter-spacing: -1px;
+}
+.typography .hero-unit p {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 27px;
+  color: inherit;
+}
 .typography .page-header h1 {
   font-size: 40px;
   font-weight: bold;
   letter-spacing: -1px;
   line-height: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\0000330}}
 .typography h2, .typography h3 {
   margin: 18px 0 9px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\0000333}}
 .typography h2 {
   line-height: 27px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\0000336}}
 .typography p {
   margin-bottom: 18px;
   font-size: 1.1em;
   line-height: 1.1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\0000342}}
 .typography span.highlight {
   background: yellow;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\0000346}}
 .typography a.external-link {
   padding-right: 20px;
   background: url(../images/icons/external-link.png) no-repeat right 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\0000350}}
 .typography a img {
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\0000355}}
 .typography blockquote {
   border-left: 5px solid #EEEEEE;
   margin: 0 0 18px;
   padding: 0 0 0 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\0000359}}
 .typography blockquote .blockquote-author {
   margin-top: -18px;
   color: #999999;
@@ -501,98 +433,79 @@ EXPRESS TYPOGRAPHY
   line-height: 18px;
   font-size: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\0000365}}
 .typography blockquote .blockquote-author:before {
   content: "— ";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\0000374}}
 .typography a[href$=".pdf"], .typography a[href$=".PDF"], .typography .pdf {
   padding-left: 22px;
   background: url(../images/icons/page_white_acrobat.png) no-repeat left 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\0000380}}
 .typography a[href$=".doc"], .typography a[href$=".DOC"], .typography .doc {
   padding-left: 22px;
   background: url(../images/icons/page_word.png) no-repeat left 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\0000386}}
 .typography a[href$=".xls"], .typography a[href$=".XLS"], .typography .xls {
   padding-left: 22px;
   background: url(../images/icons/page_excel.png) no-repeat left 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\0000396}}
 .typography a[href$=".gz"], .typography a[href$=".GZ"], .typography a[href$=".gzip"], .typography a[href$=".GZIP"], .typography a[href$=".zip"], .typography a[href$=".ZIP"], .typography .archive {
   padding-left: 22px;
   background: url(../images/icons/page_white_zip.png) no-repeat left 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\00003102}}
 .typography a[href$=".exe"], .typography a[href$=".EXE"], .typography .application {
   padding-left: 22px;
   background: url(../images/icons/application.png) no-repeat left 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\00003108}}
 .typography a[href$="http://www."], .typography .external-link {
   padding-right: 22px;
   background: url(../images/icons/external-link.png) no-repeat right 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\00003117}}
 .typography img.right {
   float: right;
   margin: 0 0 18px 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\00003121}}
 .typography img.left {
   float: left;
   margin: 0 18px 18px 0px;
   background-color: red;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\00003126}}
 .typography img.leftAlone {
   margin: 0 18px 18px 0;
   float: none;
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\00003132}}
 .typography img.center {
   display: block;
   margin: 0 auto 18px auto;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\00003138}}
 .typography .captionImage {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\00003140}}
 .typography .captionImage.left {
   float: left;
   margin: 0 18px 18px 0px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\00003144}}
 .typography .captionImage.right {
   float: right;
   margin: 0 0 18px 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\00003148}}
 .typography .captionImage.leftAlone {
   float: none;
   margin: 0 18px 18px 0px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\00003152}}
 .typography .captionImage.center {
   margin: 0 auto 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\00003155}}
 .typography .captionImage p {
   clear: both;
   margin: 8px 0;
   color: #999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\00003160}}
 .typography .captionImage img {
   margin: 0 0 5px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rcurry\/Sites\/express\/themes\/ssexpress\/scss\/typography\.scss}line{font-family:\00003165}}
 .typography time {
   font-size: 0.9em;
 }

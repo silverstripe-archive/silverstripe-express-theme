@@ -7,7 +7,7 @@
 	</h1>
 </header>
 	
-	<div class="navbar">
+	<div class="navbar noCorners">
 	  <div class="navbar-inner">
 	    <div class="container">
 	    <% include MobileNav %>	

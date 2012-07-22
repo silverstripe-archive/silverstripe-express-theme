@@ -9,7 +9,6 @@
 @import '../../module_bootstrap/lib/typography.scss';
 
 
-
 /*****************************
 EXPRESS TYPOGRAPHY 
 ******************************/
@@ -19,6 +18,7 @@ EXPRESS TYPOGRAPHY
 	@include bootstrapCode;
 	@include bootstrapTables;	
 	@include bootstrapUtilities;
+	@include bootstrapHeroUnit;
 
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	.page-header h1 {
