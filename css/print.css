@@ -130,7 +130,10 @@ EXPRESS TYPOGRAPHY
   padding: 0;
   margin: 0 0 9px 25px;
 }
-.typography ul ul, .typography ul ol, .typography ol ol, .typography ol ul {
+.typography ul ul,
+.typography ul ol,
+.typography ol ol,
+.typography ol ul {
   margin-bottom: 0;
 }
 .typography ul {
@@ -142,14 +145,16 @@ EXPRESS TYPOGRAPHY
 .typography li {
   line-height: 18px;
 }
-.typography ul.unstyled, .typography ol.unstyled {
+.typography ul.unstyled,
+.typography ol.unstyled {
   margin-left: 0;
   list-style: none;
 }
 .typography dl {
   margin-bottom: 18px;
 }
-.typography dt, .typography dd {
+.typography dt,
+.typography dd {
   line-height: 18px;
 }
 .typography dt {
@@ -220,10 +225,14 @@ EXPRESS TYPOGRAPHY
   border-right: 5px solid #eeeeee;
   border-left: 0;
 }
-.typography blockquote.pull-right p, .typography blockquote.pull-right small {
+.typography blockquote.pull-right p,
+.typography blockquote.pull-right small {
   text-align: right;
 }
-.typography q:before, .typography q:after, .typography blockquote:before, .typography blockquote:after {
+.typography q:before,
+.typography q:after,
+.typography blockquote:before,
+.typography blockquote:after {
   content: "";
 }
 .typography address {
@@ -238,7 +247,8 @@ EXPRESS TYPOGRAPHY
 .typography cite {
   font-style: normal;
 }
-.typography code, .typography pre {
+.typography code,
+.typography pre {
   padding: 0 3px 2px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 12px;
@@ -293,7 +303,8 @@ EXPRESS TYPOGRAPHY
   width: 100%;
   margin-bottom: 18px;
 }
-.typography .table th, .typography .table td {
+.typography .table th,
+.typography .table td {
   padding: 8px;
   line-height: 18px;
   text-align: left;
@@ -306,13 +317,19 @@ EXPRESS TYPOGRAPHY
 .typography .table thead th {
   vertical-align: bottom;
 }
-.typography .table caption + thead tr:first-child th, .typography .table caption + thead tr:first-child td, .typography .table colgroup + thead tr:first-child th, .typography .table colgroup + thead tr:first-child td, .typography .table thead:first-child tr:first-child th, .typography .table thead:first-child tr:first-child td {
+.typography .table caption + thead tr:first-child th,
+.typography .table caption + thead tr:first-child td,
+.typography .table colgroup + thead tr:first-child th,
+.typography .table colgroup + thead tr:first-child td,
+.typography .table thead:first-child tr:first-child th,
+.typography .table thead:first-child tr:first-child td {
   border-top: 0;
 }
 .typography .table tbody + tbody {
   border-top: 2px solid #dddddd;
 }
-.typography .table-condensed th, .typography .table-condensed td {
+.typography .table-condensed th,
+.typography .table-condensed td {
   padding: 4px 5px;
 }
 .typography .table-bordered {
@@ -324,23 +341,35 @@ EXPRESS TYPOGRAPHY
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.typography .table-bordered th, .typography .table-bordered td {
+.typography .table-bordered th,
+.typography .table-bordered td {
   border-left: 1px solid #dddddd;
 }
-.typography .table-bordered caption + thead tr:first-child th, .typography .table-bordered caption + tbody tr:first-child th, .typography .table-bordered caption + tbody tr:first-child td, .typography .table-bordered colgroup + thead tr:first-child th, .typography .table-bordered colgroup + tbody tr:first-child th, .typography .table-bordered colgroup + tbody tr:first-child td, .typography .table-bordered thead:first-child tr:first-child th, .typography .table-bordered tbody:first-child tr:first-child th, .typography .table-bordered tbody:first-child tr:first-child td {
+.typography .table-bordered caption + thead tr:first-child th,
+.typography .table-bordered caption + tbody tr:first-child th,
+.typography .table-bordered caption + tbody tr:first-child td,
+.typography .table-bordered colgroup + thead tr:first-child th,
+.typography .table-bordered colgroup + tbody tr:first-child th,
+.typography .table-bordered colgroup + tbody tr:first-child td,
+.typography .table-bordered thead:first-child tr:first-child th,
+.typography .table-bordered tbody:first-child tr:first-child th,
+.typography .table-bordered tbody:first-child tr:first-child td {
   border-top: 0;
 }
-.typography .table-bordered thead:first-child tr:first-child th:first-child, .typography .table-bordered tbody:first-child tr:first-child td:first-child {
+.typography .table-bordered thead:first-child tr:first-child th:first-child,
+.typography .table-bordered tbody:first-child tr:first-child td:first-child {
   -webkit-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
 }
-.typography .table-bordered thead:first-child tr:first-child th:last-child, .typography .table-bordered tbody:first-child tr:first-child td:last-child {
+.typography .table-bordered thead:first-child tr:first-child th:last-child,
+.typography .table-bordered tbody:first-child tr:first-child td:last-child {
   -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
 }
-.typography .table-bordered thead:last-child tr:last-child th:first-child, .typography .table-bordered tbody:last-child tr:last-child td:first-child {
+.typography .table-bordered thead:last-child tr:last-child th:first-child,
+.typography .table-bordered tbody:last-child tr:last-child td:first-child {
   -webkit-border-radius: 0 0 0 4px;
   -moz-border-radius: 0 0 0 4px;
   border-radius: 0 0 0 4px;
@@ -348,15 +377,18 @@ EXPRESS TYPOGRAPHY
   border-bottom-left-radius: 4px;
   -moz-border-radius-bottomleft: 4px;
 }
-.typography .table-bordered thead:last-child tr:last-child th:last-child, .typography .table-bordered tbody:last-child tr:last-child td:last-child {
+.typography .table-bordered thead:last-child tr:last-child th:last-child,
+.typography .table-bordered tbody:last-child tr:last-child td:last-child {
   -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
   -moz-border-radius-bottomright: 4px;
 }
-.typography .table-striped tbody tr:nth-child(odd) td, .typography .table-striped tbody tr:nth-child(odd) th {
+.typography .table-striped tbody tr:nth-child(odd) td,
+.typography .table-striped tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
-.typography .table tbody tr:hover td, .typography .table tbody tr:hover th {
+.typography .table tbody tr:hover td,
+.typography .table tbody tr:hover th {
   background-color: #f5f5f5;
 }
 .typography .pull-right {
@@ -437,27 +469,42 @@ EXPRESS TYPOGRAPHY
 .typography blockquote .blockquote-author:before {
   content: "— ";
 }
-.typography a[href$=".pdf"], .typography a[href$=".PDF"], .typography .pdf {
+.typography a[href$=".pdf"],
+.typography a[href$=".PDF"],
+.typography .pdf {
   padding-left: 22px;
   background: url(../images/icons/page_white_acrobat.png) no-repeat left 0;
 }
-.typography a[href$=".doc"], .typography a[href$=".DOC"], .typography .doc {
+.typography a[href$=".doc"],
+.typography a[href$=".DOC"],
+.typography .doc {
   padding-left: 22px;
   background: url(../images/icons/page_word.png) no-repeat left 0;
 }
-.typography a[href$=".xls"], .typography a[href$=".XLS"], .typography .xls {
+.typography a[href$=".xls"],
+.typography a[href$=".XLS"],
+.typography .xls {
   padding-left: 22px;
   background: url(../images/icons/page_excel.png) no-repeat left 0;
 }
-.typography a[href$=".gz"], .typography a[href$=".GZ"], .typography a[href$=".gzip"], .typography a[href$=".GZIP"], .typography a[href$=".zip"], .typography a[href$=".ZIP"], .typography .archive {
+.typography a[href$=".gz"],
+.typography a[href$=".GZ"],
+.typography a[href$=".gzip"],
+.typography a[href$=".GZIP"],
+.typography a[href$=".zip"],
+.typography a[href$=".ZIP"],
+.typography .archive {
   padding-left: 22px;
   background: url(../images/icons/page_white_zip.png) no-repeat left 0;
 }
-.typography a[href$=".exe"], .typography a[href$=".EXE"], .typography .application {
+.typography a[href$=".exe"],
+.typography a[href$=".EXE"],
+.typography .application {
   padding-left: 22px;
   background: url(../images/icons/application.png) no-repeat left 0;
 }
-.typography a[href$="http://www."], .typography .external-link {
+.typography a[href$="http://www."],
+.typography .external-link {
   padding-right: 22px;
   background: url(../images/icons/external-link.png) no-repeat right 3px;
 }
@@ -3523,18 +3570,18 @@ button.close {
 .btn-info,
 .btn-info:hover,
 .btn-inverse,
-#layout #pause .btn, #layout #pause
+.carousel #pause .btn, .carousel #pause
 .btn,
-#layout #pause .Actions .action, #layout #pause .Actions
+.carousel #pause .Actions .action, .carousel #pause .Actions
 .action,
-.Actions #layout #pause .action, .Actions #layout #pause
+.Actions .carousel #pause .action, .Actions .carousel #pause
 .action,
 .btn-inverse:hover,
-#layout #pause .btn:hover, #layout #pause
+.carousel #pause .btn:hover, .carousel #pause
 .btn:hover,
-#layout #pause .Actions .action:hover, #layout #pause .Actions
+.carousel #pause .Actions .action:hover, .carousel #pause .Actions
 .action:hover,
-.Actions #layout #pause .action:hover, .Actions #layout #pause
+.Actions .carousel #pause .action:hover, .Actions .carousel #pause
 .action:hover {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -3552,18 +3599,18 @@ button.close {
 .btn-info:visited,
 .btn-info:hover:visited,
 .btn-inverse:visited,
-#layout #pause .btn:visited, #layout #pause
+.carousel #pause .btn:visited, .carousel #pause
 .btn:visited,
-#layout #pause .Actions .action:visited, #layout #pause .Actions
+.carousel #pause .Actions .action:visited, .carousel #pause .Actions
 .action:visited,
-.Actions #layout #pause .action:visited, .Actions #layout #pause
+.Actions .carousel #pause .action:visited, .Actions .carousel #pause
 .action:visited,
 .btn-inverse:hover:visited,
-#layout #pause .btn:hover:visited, #layout #pause
+.carousel #pause .btn:hover:visited, .carousel #pause
 .btn:hover:visited,
-#layout #pause .Actions .action:hover:visited, #layout #pause .Actions
+.carousel #pause .Actions .action:hover:visited, .carousel #pause .Actions
 .action:hover:visited,
-.Actions #layout #pause .action:hover:visited, .Actions #layout #pause
+.Actions .carousel #pause .action:hover:visited, .Actions .carousel #pause
 .action:hover:visited {
   color: white !important;
 }
@@ -3574,11 +3621,11 @@ button.close {
 .btn-success.active,
 .btn-info.active,
 .btn-inverse.active,
-#layout #pause .active.btn, #layout #pause
+.carousel #pause .active.btn, .carousel #pause
 .active.btn,
-#layout #pause .Actions .active.action, #layout #pause .Actions
+.carousel #pause .Actions .active.action, .carousel #pause .Actions
 .active.action,
-.Actions #layout #pause .active.action, .Actions #layout #pause
+.Actions .carousel #pause .active.action, .Actions .carousel #pause
 .active.action {
   color: rgba(255, 255, 255, 0.75);
 }
@@ -3588,11 +3635,11 @@ button.close {
 .btn-success.active:visited,
 .btn-info.active:visited,
 .btn-inverse.active:visited,
-#layout #pause .active.btn:visited, #layout #pause
+.carousel #pause .active.btn:visited, .carousel #pause
 .active.btn:visited,
-#layout #pause .Actions .active.action:visited, #layout #pause .Actions
+.carousel #pause .Actions .active.action:visited, .carousel #pause .Actions
 .active.action:visited,
-.Actions #layout #pause .active.action:visited, .Actions #layout #pause
+.Actions .carousel #pause .active.action:visited, .Actions .carousel #pause
 .active.action:visited {
   color: rgba(255, 255, 255, 0.75);
 }
@@ -3732,7 +3779,7 @@ button.close {
   background-color: #24748c \9;
 }
 
-.btn-inverse, #layout #pause .btn, #layout #pause .Actions .action, .Actions #layout #pause .action {
+.btn-inverse, .carousel #pause .btn, .carousel #pause .Actions .action, .Actions .carousel #pause .action {
   background-color: #404040;
   background-image: -ms-linear-gradient(top, #555555, #222222);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555555), to(#222222));
@@ -3747,14 +3794,14 @@ button.close {
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-.btn-inverse #IE8, #layout #pause .btn #IE8, #layout #pause .Actions .action #IE8, .Actions #layout #pause .action #IE8 {
+.btn-inverse #IE8, .carousel #pause .btn #IE8, .carousel #pause .Actions .action #IE8, .Actions .carousel #pause .action #IE8 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF555555', endColorstr='#FF222222', GradientType=0);
 }
-.btn-inverse:hover, #layout #pause .btn:hover, #layout #pause .Actions .action:hover, .Actions #layout #pause .action:hover, .btn-inverse:active, #layout #pause .btn:active, #layout #pause .Actions .action:active, .Actions #layout #pause .action:active, .btn-inverse.active, #layout #pause .active.btn, #layout #pause .Actions .active.action, .Actions #layout #pause .active.action, .btn-inverse.disabled, #layout #pause .disabled.btn, #layout #pause .Actions .disabled.action, .Actions #layout #pause .disabled.action, .btn-inverse[disabled], #layout #pause [disabled].btn, #layout #pause .Actions [disabled].action, .Actions #layout #pause [disabled].action {
+.btn-inverse:hover, .carousel #pause .btn:hover, .carousel #pause .Actions .action:hover, .Actions .carousel #pause .action:hover, .btn-inverse:active, .carousel #pause .btn:active, .carousel #pause .Actions .action:active, .Actions .carousel #pause .action:active, .btn-inverse.active, .carousel #pause .active.btn, .carousel #pause .Actions .active.action, .Actions .carousel #pause .active.action, .btn-inverse.disabled, .carousel #pause .disabled.btn, .carousel #pause .Actions .disabled.action, .Actions .carousel #pause .disabled.action, .btn-inverse[disabled], .carousel #pause [disabled].btn, .carousel #pause .Actions [disabled].action, .Actions .carousel #pause [disabled].action {
   background-color: #222222;
   *background-color: #151515;
 }
-.btn-inverse:active, #layout #pause .btn:active, #layout #pause .Actions .action:active, .Actions #layout #pause .action:active, .btn-inverse.active, #layout #pause .active.btn, #layout #pause .Actions .active.action, .Actions #layout #pause .active.action {
+.btn-inverse:active, .carousel #pause .btn:active, .carousel #pause .Actions .action:active, .Actions .carousel #pause .action:active, .btn-inverse.active, .carousel #pause .active.btn, .carousel #pause .Actions .active.action, .Actions .carousel #pause .active.action {
   background-color: #090909 \9;
 }
 
@@ -3940,7 +3987,7 @@ input[type="submit"].btn-mini.action {
 .btn-group.open .btn-info.dropdown-toggle {
   background-color: #2f96b4;
 }
-.btn-group.open .btn-inverse.dropdown-toggle, .btn-group.open #layout #pause .dropdown-toggle.btn, #layout #pause .btn-group.open .dropdown-toggle.btn, .btn-group.open #layout #pause .Actions .dropdown-toggle.action, #layout #pause .Actions .btn-group.open .dropdown-toggle.action, .btn-group.open .Actions #layout #pause .dropdown-toggle.action, .Actions #layout #pause .btn-group.open .dropdown-toggle.action {
+.btn-group.open .btn-inverse.dropdown-toggle, .btn-group.open .carousel #pause .dropdown-toggle.btn, .carousel #pause .btn-group.open .dropdown-toggle.btn, .btn-group.open .carousel #pause .Actions .dropdown-toggle.action, .carousel #pause .Actions .btn-group.open .dropdown-toggle.action, .btn-group.open .Actions .carousel #pause .dropdown-toggle.action, .Actions .carousel #pause .btn-group.open .dropdown-toggle.action {
   background-color: #222222;
 }
 
@@ -3981,11 +4028,11 @@ input[type="submit"].btn-mini.action {
 .btn-info .caret,
 .btn-success .caret,
 .btn-inverse .caret,
-#layout #pause .btn .caret, #layout #pause
+.carousel #pause .btn .caret, .carousel #pause
 .btn .caret,
-#layout #pause .Actions .action .caret, #layout #pause .Actions
+.carousel #pause .Actions .action .caret, .carousel #pause .Actions
 .action .caret,
-.Actions #layout #pause .action .caret, .Actions #layout #pause
+.Actions .carousel #pause .action .caret, .Actions .carousel #pause
 .action .caret {
   border-top-color: white;
   border-bottom-color: white;
@@ -5593,18 +5640,19 @@ a.label:hover, a.badge:hover {
   border-top: 1px solid #e5e5e5;
 }
 
-.carousel {
-  position: relative;
-  margin-bottom: 18px;
-  line-height: 1;
-}
-
 .carousel-inner {
   overflow: hidden;
   width: 100%;
   position: relative;
 }
 
+.carousel {
+  position: relative;
+  line-height: 1;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
 .carousel .item {
   display: none;
   position: relative;
@@ -5614,9 +5662,91 @@ a.label:hover, a.badge:hover {
   -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
 }
-.carousel .item > img {
+.carousel .item img {
   display: block;
   line-height: 1;
+  width: 100%;
+}
+.carousel a {
+  color: #fff;
+}
+.carousel a:visited {
+  color: #fff;
+}
+#layout .carousel a img {
+  border: none;
+}
+.carousel:hover #pause {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  visibility: visible;
+  opacity: 1;
+}
+#IE8 .carousel:hover #pause {
+  display: block;
+}
+.carousel #pause {
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 35%;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: rgba(26, 26, 26, 0.5) 1px 1px 0;
+}
+#IE8 .carousel #pause {
+  display: none;
+}
+.carousel #pause .btn, .carousel #pause .Actions .action, .Actions .carousel #pause .action {
+  z-index: 4;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  position: relative;
+  font-size: 3em;
+  line-height: 1em;
+  width: 70px;
+  height: 70px;
+  padding-top: 15px;
+  opacity: 0.5;
+}
+.carousel #pause .btn .icon, .carousel #pause .Actions .action .icon, .Actions .carousel #pause .action .icon {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+#IE7 .carousel #pause .btn, #IE7 .carousel #pause .Actions .action, .Actions #IE7 .carousel #pause .action {
+  padding-top: 5px;
+  width: 30px;
+  height: 43px;
+}
+#IE7 .carousel #pause .btn .icon, #IE7 .carousel #pause .Actions .action .icon, .Actions #IE7 .carousel #pause .action .icon {
+  zoom: 1;
+}
+.carousel #pause .btn .icon-play-js, .carousel #pause .Actions .action .icon-play-js, .Actions .carousel #pause .action .icon-play-js {
+  padding-left: 3px;
+}
+#IE7 .carousel #pause .btn .icon-play-js, #IE7 .carousel #pause .Actions .action .icon-play-js, .Actions #IE7 .carousel #pause .action .icon-play-js {
+  padding-top: 2px;
+}
+.carousel #pause .btn:hover, .carousel #pause .Actions .action:hover, .Actions .carousel #pause .action:hover {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  opacity: 1;
 }
 .carousel .active, .carousel .next, .carousel .prev {
   display: block;
@@ -5664,6 +5794,7 @@ a.label:hover, a.badge:hover {
   border-radius: 23px;
   opacity: 0.5;
   filter: alpha(opacity=50);
+  z-index: 6;
 }
 .carousel-control.right {
   left: auto;
@@ -5675,20 +5806,23 @@ a.label:hover, a.badge:hover {
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
+.carousel-control:visited {
+  color: white;
+}
 
 .carousel-caption {
   position: absolute;
   left: 0;
-  right: 0;
+  right: 2px;
   bottom: 0;
   padding: 10px 15px 5px;
   background: #333333;
   background: rgba(0, 0, 0, 0.75);
 }
-
-.carousel-caption h4,
-.carousel-caption p {
+.carousel-caption h4, .carousel-caption p {
+  font-size: 14px;
   color: white;
+  line-height: 1.2em;
 }
 
 .pull-right {
@@ -6634,10 +6768,6 @@ a.label:hover, a.badge:hover {
     overflow: visible !important;
   }
 }
-/**
- * General mixins to be used in SilverStripe express
- *
- */
 /*
 *	Styling for form related components
 *
@@ -7091,15 +7221,6 @@ ul.nav, ul.dropdown-menu {
   margin-right: -75px;
 }
 
-/*
-*	Mixin for carousel formatting
-*	Import this file then use '@include carousel;' to include in your layout scss file
-* 	Include within a more specific tag if you find typography styles overriding these
-* 	eg:
-*  		#layout{
-*			@include carousel;
-*		}	
-*/
 /* 
 * Styling for results and pagination. 
 * Can be used on search results, news listings, etc 
@@ -7289,116 +7410,9 @@ iframe {
   font-size: 1em;
 }
 
-/* Include carouseland sitemap within layout tag to override typography styles*/
+/* Include sitemap within layout tag to override typography styles*/
 #layout {
-  /* Carousel Styling */
   /**********		Sitemap 	**************/
-}
-#layout .carousel {
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
-}
-#layout .carousel .carousel-caption {
-  right: 2px;
-}
-#layout .carousel .carousel-caption p {
-  font-size: 14px;
-  color: white;
-  line-height: 1.2em;
-}
-#layout .carousel img {
-  width: 100%;
-}
-#layout .carousel a {
-  color: #fff;
-}
-#layout .carousel a:visited {
-  color: #fff;
-}
-#layout .carousel a img {
-  border: none;
-}
-#layout .carousel:hover #pause {
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
-  visibility: visible;
-  opacity: 1;
-}
-#IE8 #layout .carousel:hover #pause {
-  display: block;
-}
-#layout #pause {
-  visibility: hidden;
-  opacity: 0;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 0;
-  top: 0px;
-  left: 0px;
-  color: #fff;
-  color: rgba(255, 255, 255, 0.8);
-  text-shadow: rgba(26, 26, 26, 0.5) 1px 1px 0;
-}
-#IE8 #layout #pause {
-  display: none;
-}
-#layout #pause .btn, #layout #pause .Actions .action, .Actions #layout #pause .action {
-  z-index: 4;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  border-radius: 40px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 2px solid #fff;
-  position: relative;
-  top: 35%;
-  font-size: 3em;
-  line-height: 1em;
-  width: 70px;
-  height: 70px;
-  padding-top: 15px;
-  opacity: 0.5;
-}
-#layout #pause .btn .icon, #layout #pause .Actions .action .icon, .Actions #layout #pause .action .icon {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  text-decoration: inherit;
-}
-#IE7 #layout #pause .btn, #IE7 #layout #pause .Actions .action, .Actions #IE7 #layout #pause .action {
-  padding-top: 5px;
-  width: 30px;
-  height: 43px;
-}
-#IE7 #layout #pause .btn .icon, #IE7 #layout #pause .Actions .action .icon, .Actions #IE7 #layout #pause .action .icon {
-  zoom: 1;
-}
-#layout #pause .btn .icon-play-js, #layout #pause .Actions .action .icon-play-js, .Actions #layout #pause .action .icon-play-js {
-  padding-left: 3px;
-}
-#IE7 #layout #pause .btn .icon-play-js, #IE7 #layout #pause .Actions .action .icon-play-js, .Actions #IE7 #layout #pause .action .icon-play-js {
-  padding-top: 2px;
-}
-#layout #pause .btn:hover, #layout #pause .Actions .action:hover, .Actions #layout #pause .action:hover {
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
-  opacity: 1;
-}
-#layout .carousel-control {
-  z-index: 6;
-}
-#layout .carousel-control:visited {
-  color: white;
 }
 #layout ul.sitemap {
   background: #fff;

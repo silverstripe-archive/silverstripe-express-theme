@@ -20,8 +20,8 @@
 // -------------------------
 // Required since we compile the responsive stuff separately
 
-@import "variables"; // Modify this for custom colors, font-sizes, etc
-@import "../../../module_bootstrap/lib/mixins";
+@import "custom/variables"; // Modify this for custom colors, font-sizes, etc
+@import "custom/mixins";
 
 
 // RESPONSIVE CLASSES

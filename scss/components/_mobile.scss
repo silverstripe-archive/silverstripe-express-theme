@@ -11,6 +11,49 @@
 //  'mediaSizes' mixin
 
 
+@mixin mediaSizes{
+
+  /* ============================= */
+  /* ! Layout for mobile version   */
+  /* ============================= */
+
+  /* Landscape phones and down */
+  @media (max-width: 480px) { 
+    @include media;
+      zoom:1;
+  }
+
+  /* Opera mobile high-res  */
+  @media handheld, only screen and (max-device-width: 800px){
+    @include media;
+    zoom:1;
+  }
+   
+  /* Landscape phone to portrait tablet  */
+  @media (max-width: 600px) { 
+    @include media;
+    zoom:1;
+  }
+   
+  /* Portrait tablet to landscape and desktop  */
+  @media (min-width: 500px) and (max-width: 600px) { 
+    @include media;
+      zoom:1;
+  }
+  /* For ipad  */
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+    @include media;
+      zoom:1;
+  }
+
+  /* Large mobile */ 
+  @media (max-width: 979px){
+    @include media;
+      zoom:1;
+  }
+
+}
+
 @mixin media{
 	body {
 		#SearchGroup{

@@ -13,8 +13,8 @@
 //  - move @import for reset below mixins, because it uses tab-focus mixin
 
 // Core variables and mixins
-@import "variables"; // Modify this for custom colors, font-sizes, etc
-@import "../../../module_bootstrap/lib/mixins"; 
+@import "custom/variables"; // Modify this for custom colors, font-sizes, etc
+@import "custom/mixins"; 
 
 // CSS Reset
 @import "../../../module_bootstrap/lib/reset";
@@ -29,7 +29,7 @@
 
 // Components: common
 //@import "../../../module_bootstrap/lib/sprites";
-@import "../../../module_bootstrap/lib/font-awesome";
+@import "custom/font-awesome";
 @import "../../../module_bootstrap/lib/dropdowns";
 @import "../../../module_bootstrap/lib/wells";
 @import "../../../module_bootstrap/lib/component-animations";
@@ -57,7 +57,7 @@
 @import "../../../module_bootstrap/lib/labels-badges";
 @import "../../../module_bootstrap/lib/progress-bars";
 @import "../../../module_bootstrap/lib/accordion";
-@import "../../../module_bootstrap/lib/carousel";
+@import "custom/carousel";
 
 
 // Utility classes

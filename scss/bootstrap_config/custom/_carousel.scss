@@ -1,0 +1,205 @@
+// CAROUSEL
+// --------
+
+// Updates for SASS:
+//  - replace @ with $
+//  - replace . with @include for mixins
+
+.carousel-inner {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+  line-height: 1;
+  overflow:hidden;
+  width: 100%;
+  margin: 0 auto;
+
+  .item {
+    display: none;
+    position: relative;
+    @include transition(.6s ease-in-out left);
+  }
+
+  // Account for jankitude on images
+  .item img {
+    display: block;
+    line-height: 1;
+    width:100%;
+  }
+  a{
+    color:#fff;
+    &:visited{
+      color:#fff;
+    }
+    #layout & img{
+      border:none;
+    }
+  }
+  &:hover{
+    #pause{
+      #IE8 &{
+        display:block;
+      }
+      @include duration(1s);
+      
+      visibility:visible;
+      opacity:1;
+    }
+  }
+
+  #pause{
+    #IE8 &{
+      display:none;
+    }
+    visibility:hidden;
+    opacity:0;
+    .btn{ 
+      .icon{
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        display: inline-block;
+        text-decoration: inherit;
+      }
+      z-index:4; 
+      @extend .btn-inverse;
+      @include border-radius(40px);
+      @include box-sizing(border-box);
+      border:2px solid #fff;
+      position:relative;
+      
+      font-size:3em;
+      line-height:1em;
+      width:70px;
+      height:70px;
+      padding-top:15px;
+      opacity:0.5;
+      #IE7 &{
+        .icon{
+          zoom:1;
+        }
+        padding-top:5px;
+        width:30px;
+        height:43px;
+      }
+      .icon-play-js{
+        padding-left:3px;
+        #IE7 &{
+          padding-top:2px;
+        }
+      }
+      &:hover{
+        @include duration(1s);
+        opacity:1;
+      }
+    }
+    text-align:center;
+    width:100%;
+    position:absolute; 
+    z-index:0; 
+    top:35%;
+    color:#fff;
+    color:rgba(#fff,0.8);
+    text-shadow: lighten(rgba(#000,0.5), 10%) 1px 1px 0;
+  }
+
+  .active,
+  .next,
+  .prev { display: block; }
+
+  .active {
+    left: 0;
+  }
+
+  .next,
+  .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .next {
+    left: 100%;
+  }
+  .prev {
+    left: -100%;
+  }
+  .next.left,
+  .prev.right {
+    left: 0;
+  }
+
+  .active.left {
+    left: -100%;
+  }
+  .active.right {
+    left: 100%;
+  }
+
+}
+
+// Left/right controls for nav
+// ---------------------------
+
+.carousel-control {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: $white;
+  text-align: center;
+  background: $grayDarker;
+  border: 3px solid $white;
+  @include border-radius(23px);
+  @include opacity(50);
+  z-index:6;
+  // we can't have this transition here
+  // because webkit cancels the carousel
+  // animation if you trip this while
+  // in the middle of another animation
+  // ;_;
+  // .transition(opacity .2s linear);
+
+  // Reposition the right one
+  &.right {
+    left: auto;
+    right: 15px;
+  }
+
+  // Hover state
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    @include opacity(90);
+  }
+  &:visited {
+      color: white;
+  }
+}
+
+// Caption for text below images
+// -----------------------------
+
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 2px;
+  bottom: 0;
+  padding: 10px 15px 5px;
+  background: $grayDark;
+  background: rgba(0,0,0,.75);
+  h4, p{
+        font-size: 14px;
+        color: white;
+        line-height: 1.2em;
+  }
+}

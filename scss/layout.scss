@@ -20,13 +20,11 @@ $experimental-support-for-svg: true; //for IE9 SVG gradient support
 
 @import 'bootstrap_config/bootstrap.scss'; //Core bootstrap layout components
 @import 'bootstrap_config/responsive.scss'; //Core bootstrap responsive components
-@import 'mixins'; //custom mixins
-@import 'forms'; //form specific scss
-@import 'navigation'; //navigation components
-@import 'mobile'; //mobile specific adjustments
-@import 'sitemap'; //sitemap specific scss
-@import 'carousel'; //carousel specific scss
-@import 'results'; //carousel specific scss
+@import 'components/forms'; //form specific scss
+@import 'components/navigation'; //navigation components
+@import 'components/mobile'; //mobile specific adjustments
+@import 'components/sitemap'; //sitemap specific scss
+@import 'components/results'; //carousel specific scss
 
 
 
@@ -153,9 +151,8 @@ iframe {
 }
 
 
-/* Include carouseland sitemap within layout tag to override typography styles*/
+/* Include sitemap within layout tag to override typography styles*/
 #layout{ 
-	@include carousel;
 	@include sitemap;
 }
 

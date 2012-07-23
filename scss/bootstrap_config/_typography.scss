@@ -13,8 +13,8 @@
 //  - move @import for reset below mixins, because it uses tab-focus mixin
 
 // Core variables and mixins
-@import "variables"; // Modify this for custom colors, font-sizes, etc
-@import "../../../module_bootstrap/lib/mixins";
+@import "custom/variables"; // Modify this for custom colors, font-sizes, etc
+@import "custom/mixins";
 
 // Base CSS
 @import "../../../module_bootstrap/lib/type";
