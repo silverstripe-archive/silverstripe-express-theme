@@ -130,10 +130,7 @@ EXPRESS TYPOGRAPHY
   padding: 0;
   margin: 0 0 9px 25px;
 }
-.typography ul ul,
-.typography ul ol,
-.typography ol ol,
-.typography ol ul {
+.typography ul ul, .typography ul ol, .typography ol ol, .typography ol ul {
   margin-bottom: 0;
 }
 .typography ul {
@@ -145,16 +142,14 @@ EXPRESS TYPOGRAPHY
 .typography li {
   line-height: 18px;
 }
-.typography ul.unstyled,
-.typography ol.unstyled {
+.typography ul.unstyled, .typography ol.unstyled {
   margin-left: 0;
   list-style: none;
 }
 .typography dl {
   margin-bottom: 18px;
 }
-.typography dt,
-.typography dd {
+.typography dt, .typography dd {
   line-height: 18px;
 }
 .typography dt {
@@ -225,14 +220,10 @@ EXPRESS TYPOGRAPHY
   border-right: 5px solid #eeeeee;
   border-left: 0;
 }
-.typography blockquote.pull-right p,
-.typography blockquote.pull-right small {
+.typography blockquote.pull-right p, .typography blockquote.pull-right small {
   text-align: right;
 }
-.typography q:before,
-.typography q:after,
-.typography blockquote:before,
-.typography blockquote:after {
+.typography q:before, .typography q:after, .typography blockquote:before, .typography blockquote:after {
   content: "";
 }
 .typography address {
@@ -247,8 +238,7 @@ EXPRESS TYPOGRAPHY
 .typography cite {
   font-style: normal;
 }
-.typography code,
-.typography pre {
+.typography code, .typography pre {
   padding: 0 3px 2px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 12px;
@@ -303,8 +293,7 @@ EXPRESS TYPOGRAPHY
   width: 100%;
   margin-bottom: 18px;
 }
-.typography .table th,
-.typography .table td {
+.typography .table th, .typography .table td {
   padding: 8px;
   line-height: 18px;
   text-align: left;
@@ -317,19 +306,13 @@ EXPRESS TYPOGRAPHY
 .typography .table thead th {
   vertical-align: bottom;
 }
-.typography .table caption + thead tr:first-child th,
-.typography .table caption + thead tr:first-child td,
-.typography .table colgroup + thead tr:first-child th,
-.typography .table colgroup + thead tr:first-child td,
-.typography .table thead:first-child tr:first-child th,
-.typography .table thead:first-child tr:first-child td {
+.typography .table caption + thead tr:first-child th, .typography .table caption + thead tr:first-child td, .typography .table colgroup + thead tr:first-child th, .typography .table colgroup + thead tr:first-child td, .typography .table thead:first-child tr:first-child th, .typography .table thead:first-child tr:first-child td {
   border-top: 0;
 }
 .typography .table tbody + tbody {
   border-top: 2px solid #dddddd;
 }
-.typography .table-condensed th,
-.typography .table-condensed td {
+.typography .table-condensed th, .typography .table-condensed td {
   padding: 4px 5px;
 }
 .typography .table-bordered {
@@ -341,35 +324,23 @@ EXPRESS TYPOGRAPHY
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.typography .table-bordered th,
-.typography .table-bordered td {
+.typography .table-bordered th, .typography .table-bordered td {
   border-left: 1px solid #dddddd;
 }
-.typography .table-bordered caption + thead tr:first-child th,
-.typography .table-bordered caption + tbody tr:first-child th,
-.typography .table-bordered caption + tbody tr:first-child td,
-.typography .table-bordered colgroup + thead tr:first-child th,
-.typography .table-bordered colgroup + tbody tr:first-child th,
-.typography .table-bordered colgroup + tbody tr:first-child td,
-.typography .table-bordered thead:first-child tr:first-child th,
-.typography .table-bordered tbody:first-child tr:first-child th,
-.typography .table-bordered tbody:first-child tr:first-child td {
+.typography .table-bordered caption + thead tr:first-child th, .typography .table-bordered caption + tbody tr:first-child th, .typography .table-bordered caption + tbody tr:first-child td, .typography .table-bordered colgroup + thead tr:first-child th, .typography .table-bordered colgroup + tbody tr:first-child th, .typography .table-bordered colgroup + tbody tr:first-child td, .typography .table-bordered thead:first-child tr:first-child th, .typography .table-bordered tbody:first-child tr:first-child th, .typography .table-bordered tbody:first-child tr:first-child td {
   border-top: 0;
 }
-.typography .table-bordered thead:first-child tr:first-child th:first-child,
-.typography .table-bordered tbody:first-child tr:first-child td:first-child {
+.typography .table-bordered thead:first-child tr:first-child th:first-child, .typography .table-bordered tbody:first-child tr:first-child td:first-child {
   -webkit-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
 }
-.typography .table-bordered thead:first-child tr:first-child th:last-child,
-.typography .table-bordered tbody:first-child tr:first-child td:last-child {
+.typography .table-bordered thead:first-child tr:first-child th:last-child, .typography .table-bordered tbody:first-child tr:first-child td:last-child {
   -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
 }
-.typography .table-bordered thead:last-child tr:last-child th:first-child,
-.typography .table-bordered tbody:last-child tr:last-child td:first-child {
+.typography .table-bordered thead:last-child tr:last-child th:first-child, .typography .table-bordered tbody:last-child tr:last-child td:first-child {
   -webkit-border-radius: 0 0 0 4px;
   -moz-border-radius: 0 0 0 4px;
   border-radius: 0 0 0 4px;
@@ -377,18 +348,15 @@ EXPRESS TYPOGRAPHY
   border-bottom-left-radius: 4px;
   -moz-border-radius-bottomleft: 4px;
 }
-.typography .table-bordered thead:last-child tr:last-child th:last-child,
-.typography .table-bordered tbody:last-child tr:last-child td:last-child {
+.typography .table-bordered thead:last-child tr:last-child th:last-child, .typography .table-bordered tbody:last-child tr:last-child td:last-child {
   -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
   -moz-border-radius-bottomright: 4px;
 }
-.typography .table-striped tbody tr:nth-child(odd) td,
-.typography .table-striped tbody tr:nth-child(odd) th {
+.typography .table-striped tbody tr:nth-child(odd) td, .typography .table-striped tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
-.typography .table tbody tr:hover td,
-.typography .table tbody tr:hover th {
+.typography .table tbody tr:hover td, .typography .table tbody tr:hover th {
   background-color: #f5f5f5;
 }
 .typography .pull-right {
@@ -469,42 +437,27 @@ EXPRESS TYPOGRAPHY
 .typography blockquote .blockquote-author:before {
   content: "— ";
 }
-.typography a[href$=".pdf"],
-.typography a[href$=".PDF"],
-.typography .pdf {
+.typography a[href$=".pdf"], .typography a[href$=".PDF"], .typography .pdf {
   padding-left: 22px;
   background: url(../images/icons/page_white_acrobat.png) no-repeat left 0;
 }
-.typography a[href$=".doc"],
-.typography a[href$=".DOC"],
-.typography .doc {
+.typography a[href$=".doc"], .typography a[href$=".DOC"], .typography .doc {
   padding-left: 22px;
   background: url(../images/icons/page_word.png) no-repeat left 0;
 }
-.typography a[href$=".xls"],
-.typography a[href$=".XLS"],
-.typography .xls {
+.typography a[href$=".xls"], .typography a[href$=".XLS"], .typography .xls {
   padding-left: 22px;
   background: url(../images/icons/page_excel.png) no-repeat left 0;
 }
-.typography a[href$=".gz"],
-.typography a[href$=".GZ"],
-.typography a[href$=".gzip"],
-.typography a[href$=".GZIP"],
-.typography a[href$=".zip"],
-.typography a[href$=".ZIP"],
-.typography .archive {
+.typography a[href$=".gz"], .typography a[href$=".GZ"], .typography a[href$=".gzip"], .typography a[href$=".GZIP"], .typography a[href$=".zip"], .typography a[href$=".ZIP"], .typography .archive {
   padding-left: 22px;
   background: url(../images/icons/page_white_zip.png) no-repeat left 0;
 }
-.typography a[href$=".exe"],
-.typography a[href$=".EXE"],
-.typography .application {
+.typography a[href$=".exe"], .typography a[href$=".EXE"], .typography .application {
   padding-left: 22px;
   background: url(../images/icons/application.png) no-repeat left 0;
 }
-.typography a[href$="http://www."],
-.typography .external-link {
+.typography a[href$="http://www."], .typography .external-link {
   padding-right: 22px;
   background: url(../images/icons/external-link.png) no-repeat right 3px;
 }
@@ -1309,27 +1262,20 @@ input[type="checkbox"][readonly] {
   background-color: transparent;
 }
 
-.control-group.warning > label,
-.control-group.warning .help-block,
-.control-group.warning .help-inline {
+.control-group.warning > label, .control-group.warning .help-block, .control-group.warning .help-inline {
   color: #c09853;
 }
-.control-group.warning input,
-.control-group.warning select,
-.control-group.warning textarea {
+.control-group.warning input, .control-group.warning select, .control-group.warning textarea {
   color: #c09853;
   border-color: #c09853;
 }
-.control-group.warning input:focus,
-.control-group.warning select:focus,
-.control-group.warning textarea:focus {
+.control-group.warning input:focus, .control-group.warning select:focus, .control-group.warning textarea:focus {
   border-color: #a47e3c;
   -webkit-box-shadow: 0 0 6px #dbc59e;
   -moz-box-shadow: 0 0 6px #dbc59e;
   box-shadow: 0 0 6px #dbc59e;
 }
-.control-group.warning .input-prepend .add-on,
-.control-group.warning .input-append .add-on {
+.control-group.warning .input-prepend .add-on, .control-group.warning .input-append .add-on {
   color: #c09853;
   background-color: #fcf8e3;
   border-color: #c09853;
@@ -1445,9 +1391,7 @@ select:focus:required:invalid:focus {
 .input-append {
   margin-bottom: 5px;
 }
-.input-prepend input,
-.input-prepend select,
-.input-prepend .uneditable-input,
+.input-prepend input, .input-prepend select, .input-prepend .uneditable-input,
 .input-append input,
 .input-append select,
 .input-append .uneditable-input {
@@ -1459,9 +1403,7 @@ select:focus:required:invalid:focus {
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
 }
-.input-prepend input:focus,
-.input-prepend select:focus,
-.input-prepend .uneditable-input:focus,
+.input-prepend input:focus, .input-prepend select:focus, .input-prepend .uneditable-input:focus,
 .input-append input:focus,
 .input-append select:focus,
 .input-append .uneditable-input:focus {
@@ -1486,10 +1428,7 @@ select:focus:required:invalid:focus {
   background-color: #eeeeee;
   border: 1px solid #ccc;
 }
-.input-prepend .add-on,
-.input-prepend .btn,
-.input-prepend .Actions .action, .Actions
-.input-prepend .action,
+.input-prepend .add-on, .input-prepend .btn, .input-prepend .Actions .action, .Actions .input-prepend .action,
 .input-append .add-on,
 .input-append .btn,
 .input-append .Actions .action, .Actions
@@ -1505,24 +1444,16 @@ select:focus:required:invalid:focus {
   border-color: #46a546;
 }
 
-.input-prepend .add-on,
-.input-prepend .btn,
-.input-prepend .Actions .action, .Actions
-.input-prepend .action {
+.input-prepend .add-on, .input-prepend .btn, .input-prepend .Actions .action, .Actions .input-prepend .action {
   margin-right: -1px;
 }
-.input-prepend .add-on:first-child,
-.input-prepend .btn:first-child,
-.input-prepend .Actions .action:first-child, .Actions
-.input-prepend .action:first-child {
+.input-prepend .add-on:first-child, .input-prepend .btn:first-child, .input-prepend .Actions .action:first-child, .Actions .input-prepend .action:first-child {
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
 
-.input-append input,
-.input-append select,
-.input-append .uneditable-input {
+.input-append input, .input-append select, .input-append .uneditable-input {
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
@@ -1531,35 +1462,24 @@ select:focus:required:invalid:focus {
   border-right-color: #ccc;
   border-left-color: #eee;
 }
-.input-append .add-on:last-child,
-.input-append .btn:last-child,
-.input-append .Actions .action:last-child, .Actions
-.input-append .action:last-child {
+.input-append .add-on:last-child, .input-append .btn:last-child, .input-append .Actions .action:last-child, .Actions .input-append .action:last-child {
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
 }
 
-.input-prepend.input-append input,
-.input-prepend.input-append select,
-.input-prepend.input-append .uneditable-input {
+.input-prepend.input-append input, .input-prepend.input-append select, .input-prepend.input-append .uneditable-input {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.input-prepend.input-append .add-on:first-child,
-.input-prepend.input-append .btn:first-child,
-.input-prepend.input-append .Actions .action:first-child, .Actions
-.input-prepend.input-append .action:first-child {
+.input-prepend.input-append .add-on:first-child, .input-prepend.input-append .btn:first-child, .input-prepend.input-append .Actions .action:first-child, .Actions .input-prepend.input-append .action:first-child {
   margin-right: -1px;
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
-.input-prepend.input-append .add-on:last-child,
-.input-prepend.input-append .btn:last-child,
-.input-prepend.input-append .Actions .action:last-child, .Actions
-.input-prepend.input-append .action:last-child {
+.input-prepend.input-append .add-on:last-child, .input-prepend.input-append .btn:last-child, .input-prepend.input-append .Actions .action:last-child, .Actions .input-prepend.input-append .action:last-child {
   margin-left: -1px;
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
@@ -1578,13 +1498,7 @@ select:focus:required:invalid:focus {
   border-radius: 14px;
 }
 
-.form-search input,
-.form-search textarea,
-.form-search select,
-.form-search .help-inline,
-.form-search .uneditable-input,
-.form-search .input-prepend,
-.form-search .input-append,
+.form-search input, .form-search textarea, .form-search select, .form-search .help-inline, .form-search .uneditable-input, .form-search .input-prepend, .form-search .input-append,
 .form-inline input,
 .form-inline textarea,
 .form-inline select,
@@ -1737,22 +1651,17 @@ a [class*=" icon-"] {
   font-size: 4/3em;
 }
 
-.btn [class^="icon-"], .Actions .action [class^="icon-"],
-.btn [class*=" icon-"],
-.Actions .action [class*=" icon-"], .Actions
-.action [class*=" icon-"], .nav-tabs [class^="icon-"], .nav-tabs [class*=" icon-"] {
+.btn [class^="icon-"], .Actions .action [class^="icon-"], .btn [class*=" icon-"], .Actions .action [class*=" icon-"], .nav-tabs [class^="icon-"], .nav-tabs [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
   line-height: .9em;
 }
 
-li [class^="icon-"],
-li [class*=" icon-"] {
+li [class^="icon-"], li [class*=" icon-"] {
   display: inline-block;
   width: 1.25em;
   text-align: center;
 }
-li .icon-large:before,
-li .icon-large:before {
+li .icon-large:before, li .icon-large:before {
   /* 1.5 increased font size for icon-large * 1.25 width */
   width: 1.875em;
 }
@@ -1762,12 +1671,10 @@ ul.icons {
   margin-left: 2em;
   text-indent: -0.8em;
 }
-ul.icons li [class^="icon-"],
-ul.icons li [class*=" icon-"] {
+ul.icons li [class^="icon-"], ul.icons li [class*=" icon-"] {
   width: .8em;
 }
-ul.icons li .icon-large:before,
-ul.icons li .icon-large:before {
+ul.icons li .icon-large:before, ul.icons li .icon-large:before {
   /* 1.5 increased font size for icon-large * 1.25 width */
   vertical-align: initial;
 }
@@ -2615,16 +2522,12 @@ ul.icons li .icon-large:before {
   content: "\f200";
 }
 
-#IE7 [class^="icon-"],
-#IE7 [class*=" icon-"], #IE7 .icon {
+#IE7 [class^="icon-"], #IE7 [class*=" icon-"], #IE7 .icon {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
 }
-#IE7 .btn.dropdown-toggle [class^="icon-"], #IE7 .Actions .dropdown-toggle.action [class^="icon-"], .Actions #IE7 .dropdown-toggle.action [class^="icon-"],
-#IE7 .btn.dropdown-toggle [class*=" icon-"],
-#IE7 .Actions .dropdown-toggle.action [class*=" icon-"], .Actions
-#IE7 .dropdown-toggle.action [class*=" icon-"] {
+#IE7 .btn.dropdown-toggle [class^="icon-"], #IE7 .Actions .dropdown-toggle.action [class^="icon-"], .Actions #IE7 .dropdown-toggle.action [class^="icon-"], #IE7 .btn.dropdown-toggle [class*=" icon-"], #IE7 .Actions .dropdown-toggle.action [class*=" icon-"], .Actions #IE7 .dropdown-toggle.action [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
   line-height: 1.4em;
 }
@@ -4566,8 +4469,7 @@ input[type="submit"].btn-mini.action {
 .navbar .navbar-link:hover {
   color: white;
 }
-.navbar .btn, .navbar .Actions .action, .Actions .navbar .action,
-.navbar .btn-group {
+.navbar .btn, .navbar .Actions .action, .Actions .navbar .action, .navbar .btn-group {
   margin-top: 5px;
 }
 .navbar .btn-group .btn, .navbar .btn-group .Actions .action, .Actions .navbar .btn-group .action {
@@ -4585,29 +4487,21 @@ input[type="submit"].btn-mini.action {
 .navbar-form:after {
   clear: both;
 }
-.navbar-form input,
-.navbar-form select,
-.navbar-form .radio,
-.navbar-form .checkbox {
+.navbar-form input, .navbar-form select, .navbar-form .radio, .navbar-form .checkbox {
   margin-top: 5px;
 }
-.navbar-form input,
-.navbar-form select {
+.navbar-form input, .navbar-form select {
   display: inline-block;
   margin-bottom: 0;
 }
-.navbar-form input[type="image"],
-.navbar-form input[type="checkbox"],
-.navbar-form input[type="radio"] {
+.navbar-form input[type="image"], .navbar-form input[type="checkbox"], .navbar-form input[type="radio"] {
   margin-top: 3px;
 }
-.navbar-form .input-append,
-.navbar-form .input-prepend {
+.navbar-form .input-append, .navbar-form .input-prepend {
   margin-top: 6px;
   white-space: nowrap;
 }
-.navbar-form .input-append input,
-.navbar-form .input-prepend input {
+.navbar-form .input-append input, .navbar-form .input-prepend input {
   margin-top: 0;
 }
 
@@ -5724,16 +5618,13 @@ a.label:hover, a.badge:hover {
   display: block;
   line-height: 1;
 }
-.carousel .active,
-.carousel .next,
-.carousel .prev {
+.carousel .active, .carousel .next, .carousel .prev {
   display: block;
 }
 .carousel .active {
   left: 0;
 }
-.carousel .next,
-.carousel .prev {
+.carousel .next, .carousel .prev {
   position: absolute;
   top: 0;
   width: 100%;
@@ -5744,8 +5635,7 @@ a.label:hover, a.badge:hover {
 .carousel .prev {
   left: -100%;
 }
-.carousel .next.left,
-.carousel .prev.right {
+.carousel .next.left, .carousel .prev.right {
   left: 0;
 }
 .carousel .active.left {
@@ -7126,8 +7016,7 @@ ul.nav, ul.dropdown-menu {
 .navbar .nav > li > a {
   padding: 9px 10px 9px 11px;
 }
-.navbar .nav li.dropdown .current.dropdown-toggle,
-.navbar .nav li.open.active .current.dropdown-toggle {
+.navbar .nav li.dropdown .current.dropdown-toggle, .navbar .nav li.open.active .current.dropdown-toggle {
   background-color: #222222;
 }
 .navbar .nav {
