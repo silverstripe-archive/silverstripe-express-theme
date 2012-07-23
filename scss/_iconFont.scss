@@ -1,5 +1,16 @@
-/*  Font Awesome
-    the iconic font designed for use with Twitter Bootstrap
+// This file lets us use fonts as icons, meaning we can scale and colour them as we like.
+// It is dependant on the fontawesome webfont in your fonts directory.
+
+// If you do not wish to use the icons provided here, remove this file, open lib/bootstrap.scss 
+// in the bootstrap module and comment out '@import "font-awesome"'. 
+
+// To use the original bootstrap sprites as icons, comment out ' @import "font-awesome"; ' 
+// in lib/bootstrap.scss, then uncomment ' @import "sprites"; ' and copy the img 
+// directory into your ssexpress theme directory
+
+
+
+/*  Font Awesome: the iconic font designed for use with Twitter Bootstrap
     -------------------------------------------------------
     The full suite of pictographic icons, examples, and documentation
     can be found at: http://fortawesome.github.com/Font-Awesome/
@@ -20,7 +31,7 @@
     Twitter: http://twitter.com/fortaweso_me
     Work: Lead Product Designer @ http://kyruus.com
 
-    */
+*/
 
 @import "compass/css3/font-face";
 $fontAwesomePath: "../font/fontawesome-webfont" !default;

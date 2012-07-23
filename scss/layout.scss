@@ -1,7 +1,7 @@
 /**
  * Layout stylesheet.
  *
- * The rule of thumb is that the styles from here will not be needed for the CMS editor.
+ * The general rule is that the styles from here will not be needed for the CMS editor.
  * Styles related to content editing should go into typography.[s]css.
  */
 
@@ -14,245 +14,107 @@
  //*
 
 
-// Requires bootstrap to be placed in the project directory
+// Import needed scss files. Bootstrap files require the bootstrap module in the themes directory
 @import "compass/support"; //for IE9 SVG gradient support 
-$experimental-support-for-svg: true;
-@import '../../module_bootstrap/lib/bootstrap.scss';
-@import '../../module_bootstrap/lib/responsive.scss';
-@import 'mixins';
-@import 'forms';
-@import 'mobile.scss';
-@import 'sitemap.scss';
-@import 'carousel.scss';
+$experimental-support-for-svg: true; //for IE9 SVG gradient support 
+
+@import '../../module_bootstrap/lib/bootstrap.scss'; //Core bootstrap layout components
+@import '../../module_bootstrap/lib/responsive.scss'; //Core bootstrap responsive components
+@import 'mixins'; //custom mixins
+@import 'forms'; //form specific scss
+@import 'navigation'; //navigation components
+@import 'mobile'; //mobile specific adjustments
+@import 'sitemap'; //sitemap specific scss
+@import 'carousel'; //carousel specific scss
+@import 'results'; //carousel specific scss
 
 
 
 /*****************************
 EXPRESS LAYOUT
 ******************************/
-body {
 
-	#IE7 a.dropdown-toggle{
-	//	padding-right:20px;
-		//position:relative;
-		.showChildren{
-		//	position:absolute;
-		//	right:0;
-			//display:block;
-			margin-top:-3px;
+/*Customise search field */	
+#SearchGroup{
+	float:right;
+	width:200px;
+	.navbar-search .search-query{
+		line-height:1.3em;
+	}
+	form{
+		.field{
+			margin:0;
+		}
+		padding:0;
+		fieldset{
+			margin:0;
+		}
+
+		input.action{
+			display:none;
 		}
 	}
+}
 
-	ul.nav, ul.dropdown-menu{
-		list-style:none;
-		padding-left:0;
+/*HEADER */
+header {
+	h1.brand {
+		font-size: 3em;
+		margin-bottom: 18px;
+		overflow:visible;
+		line-height:1em;
+		padding: 42px 0 38px 105px;
+		background: url(../../../themes/ssexpress/images/logo.png) 0px center no-repeat;
 
-	}
-
-	.noCorners .navbar-inner{
-		@include border-radius(0);
-	}
-
-
-
-	.nav-collapse{
-		position:relative;
-		height:auto;
-
-		 .dropdown-menu{
-			margin-left:0;
-			margin-right:0;
-		
-			li a{
-
-				line-height:1.1em;
-				padding-left:20px;
-			}	
+		a:visited {
+			color: black;
 		}
 	}
+}
+
+/************************ MISC ****************************/
+
+.typography{ //Needed to override typography styles
+
+	/*Adjust breadcrumbs*/
 	ul.breadcrumb{
 		margin:0 0 18px;
 		padding:7px 14px;
 	}
-	.navbar{
-		font-size: 13px;
-		.showChildren{
-			display:inline-block;
-	    	width:20px;
-	    	height:20px;
-	    	text-align:center;  
-	    }
-	    .nav > li > a{
-			padding: 9px 10px 9px 11px;
+
+	/* Hero Unit adjustments */
+	div.hero-unit {
+		padding: 30px;
+
+		h1 {
+			margin-bottom: 15px;
+		}
+		.span4{
+			margin-right:-20px;
 		}
 
-		.nav li.dropdown .current.dropdown-toggle, .nav li.open.active .current.dropdown-toggle {
-			background-color: #222222;
+		.carousel-container {
+			float: right;
+			
 		}
-	}
-
-	
-
-
-	#SearchGroup{
-		float:right;
-		width:200px;
-		.navbar-search .search-query{
-			line-height:1.3em;
-		}
-		form{
-			.field{
-				margin:0;
-			}
-			padding:0;
-			fieldset{
-				margin:0;
-			}
-
-			input.action{
-				display:none;
-			}
-		}
-	}
-
-
-	/* NAVIGATION & HEADER */
-	header {
-		h1.brand {
-			font-size: 3em;
-			margin-bottom: 18px;
-			overflow:visible;
-			line-height:1em;
-			padding: 42px 0 38px 105px;
-			background: url(../../../themes/ssexpress/images/logo.png) 0px center no-repeat;
-
-			a:visited {
-				color: black;
-			}
-		}
-	}
-	/* Dropnav arrow adjustment */
-	.navbar .nav {
-		.hasLink {
-			padding-right: 32px;
-		}
-		.hasLinkArrow {
-			width: 16px;
-			position: absolute;
-			top: 0;
-			right: 0;
-			padding-right: 6px;
-		}
-	}
-	
-	/* Side navigation */
-	.sidebar-nav {
-	    padding: 9px 0;
-	    a:visited{
-	    	/* color:$linkColor; */
-	    }
-
-	    ul.nav-list {	
-	    	list-style:none;    
-	    	padding-left:15px;
-	    	padding-right:15px;
-	    	margin:0;
-	    	.nav-list li { /* third level */
-		    	a {
-		    		padding-left: 30px;
-		    		padding-right: 30px;
-		    	}
-		    	a, .nav-header {
-				    margin-left: -30px;
-				    margin-right: -30px;
-				}
-				.nav-list li {  /* fourth level */
-			    	a {
-			    		padding-left: 45px;
-			    		padding-right: 45px;
-			    	}
-			    	a, .nav-header {
-					    margin-left: -45px;
-					    margin-right: -45px;
-					}
-					.nav-list li { /* fifth level */
-				    	a {
-				    		padding-left: 60px;
-				    		padding-right: 60px;
-				    	}
-				    	a, .nav-header {
-						    margin-left: -60px;
-						    margin-right: -60px;
-						}
-						.nav-list li { /* sixth level */
-					    	a {
-					    		padding-left: 75px;
-					    		padding-right: 75px;
-					    	}
-					    	a, .nav-header {
-							    margin-left: -75px;
-							    margin-right: -75px;
-							}
-					    }
-				    }
-			    }
-		    }
-	    }
-	}
-} //end body tag
-
-
-/* Hero Unit adjustments */
-.typography div.hero-unit {
-	padding: 30px;
-
-	h1 {
-		margin-bottom: 15px;
-	}
-	.span4{
-		margin-right:-20px;
-	}
-
-	.carousel-container {
-		float: right;
-		
 	}
 }
 
-/* Include carousel, and adjust */
-@include carousel;
-.typography .carousel{
-	a{
-		color:#fff;
-		&:visited{
-			color:#fff;
-		}
-	}
-} 
-
-
-
-/* Misc */
-
-/* Headers and Icons */
 h2 {
 	a, a:visited {
 		color: #000;
 	}
 }
 
-
 iframe {
 	border: 0;
 }
 
-p.printShare{
+.page-header .printShare {
+	margin-top: 21px;
 	font-size:0.9em;
 }
 
-.page-header .printShare {
-	margin-top: 21px;
-}
 #layout a img {
 	border: 2px solid $linkColor;
 	margin-left: -2px;
@@ -262,114 +124,8 @@ p.printShare{
 	}
 }
 
-
-#SearchResults {
-	list-style: none;
-	margin-left: 0;
-}
-.resultsHeader{
-	@include clearfix;
-	h2, p{
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-weight:200;
-		font-size:1.3em;
-		line-height:1.1em;
-		margin:0px;
-		padding:3px 0;
-
-	}
-	padding:0 5px;
-	margin:40px 0 0px 0;
-	
-	height:auto;
-	border-bottom: 1px solid $hrBorder;
-	//background: lighten($hrBorder, 5%);
-	//@include border-radius(5px);
-}
-
-.resultsList{
-	article{
-		padding:5px;
-		p{
-			max-width:790px;
-		}
-		&.even{
-			background: lighten($hrBorder, 3%);
-		}
-	}
-}
-p.printShare{
-	font-size:0.9em;
-}
-
-
-/*For news and search results*/
-#layout .resultsHeader{
-	@extend .breadcrumb;
-	@include clearfix;
-	h2, p{
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-weight:200;
-		font-size:1.3em;
-		line-height:1.3em;
-		margin:0px;
-		padding:3px 0;
-
-	}
-	margin:40px 0 10px 0;		
-	height:auto;
-	border-bottom: 1px solid $hrBorder;
-}
-
-
-.resultsList{
-	&.no-indent article{
-		margin-left:-10px;
-	}
-	article{
-		padding:5px 10px;
-		border-bottom: 1px solid lighten($hrBorder,3%);
-		p{
-			max-width:790px;
-			margin:0;
-			padding:5px 0;
-		}
-		h3{
-			line-height:1em;
-			font-size: 1.4em;
-			margin-top:5px;
-		}
-		&.even{
-			background: lighten($hrBorder, 5%);
-			@include border-radius(5px);
-		}
-	}
-}
-p.printShare{
-	font-size:0.9em;
-}
-
-
-.pagination{
-	margin-top:20px;
-	position: relative;
-	float:right;
-	left: -50%;
-	text-align: left;
-	@include clearfix;
-
-	#PageNumbers{
-		line-height:18px;
-		list-style: none;
-		position: relative;
-		left: 50%;
-
-	}
-}
-
-@include sitemap;
-
-.socialLinks{
+/* Facebook and Twitter links */
+.socialLinks{ 
 	overflow:visible;
 	font-size:2em;
 	line-height:1em;
@@ -378,9 +134,10 @@ p.printShare{
 		z-index:5;
 		position:relative;
 		text-shadow: lighten(rgba(#000,0.1), 10%) 1px 1px 0;
-
 	}
 }
+
+/*Helper classes to customise icons*/
 .icon-dark{
 	color: $textColor;
 	&:visited{
@@ -396,46 +153,12 @@ p.printShare{
 }
 
 
-
-
-/* ============================= */
-/* ! Layout for mobile version   */
-/* ============================= */
-
-/* Landscape phones and down */
-@media (max-width: 480px) { 
-	@include media;
-  	zoom:1;
-}
-
-/* Opera mobile high-res  */
-@media handheld, only screen and (max-device-width: 800px){
-	@include media;
-	zoom:1;
-}
- 
-/* Landscape phone to portrait tablet  */
-@media (max-width: 600px) { 
-	@include media;
-	zoom:1;
-}
- 
-/* Portrait tablet to landscape and desktop  */
-@media (min-width: 500px) and (max-width: 600px) { 
-	@include media;
-    zoom:1;
-}
-/* For ipad  */
-@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
-	@include media;
-  	zoom:1;
-}
-
-/* Large mobile */ 
-@media (max-width: 979px){
-	@include media;
-  	zoom:1;
+/* Include carouseland sitemap within layout tag to override typography styles*/
+#layout{ 
+	@include carousel;
+	@include sitemap;
 }
 
 
-
+/*Fixes for all media sizes*/
+@include mediaSizes;

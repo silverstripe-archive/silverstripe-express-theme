@@ -1,0 +1,117 @@
+/*
+* 	Customisations to the styling for main top navigation of sidemenu
+*/
+
+
+/* Customise navigation */
+ul.nav, ul.dropdown-menu{
+	list-style:none;
+	padding-left:0;
+}
+
+.noCorners .navbar-inner{
+	@include border-radius(0);
+}
+
+.nav-collapse{
+	position:relative;
+	height:auto;
+
+	 .dropdown-menu{
+		margin-left:0;
+		margin-right:0;		
+		li a{
+			line-height:1.1em;
+			padding-left:20px;
+		}	
+	}
+}
+
+.navbar{
+	font-size: 13px;
+	.showChildren{
+		#IE7 &{
+			margin-top:-3px;
+		}
+		display:inline-block;
+    	width:20px;
+    	height:20px;
+    	text-align:center;  
+    }
+    .nav > li > a{
+		padding: 9px 10px 9px 11px;
+	}
+
+	.nav li.dropdown .current.dropdown-toggle, 
+	.nav li.open.active .current.dropdown-toggle {
+		background-color: #222222;
+	}
+
+	.nav {
+		/* Dropnav arrow adjustment */
+		.hasLink {
+			padding-right: 32px;
+		}
+		.hasLinkArrow {
+			width: 16px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding-right: 6px;
+		}
+	}
+}
+
+/* Side navigation */
+.sidebar-nav {
+    padding: 9px 0;
+    a:visited{
+    	/* color:$linkColor; */
+    }
+    ul.nav-list {	
+    	list-style:none;    
+    	padding-left:15px;
+    	padding-right:15px;
+    	margin:0;
+    	.nav-list li { /* third level */
+	    	a {
+	    		padding-left: 30px;
+	    		padding-right: 30px;
+	    	}
+	    	a, .nav-header {
+			    margin-left: -30px;
+			    margin-right: -30px;
+			}
+			.nav-list li {  /* fourth level */
+		    	a {
+		    		padding-left: 45px;
+		    		padding-right: 45px;
+		    	}
+		    	a, .nav-header {
+				    margin-left: -45px;
+				    margin-right: -45px;
+				}
+				.nav-list li { /* fifth level */
+			    	a {
+			    		padding-left: 60px;
+			    		padding-right: 60px;
+			    	}
+			    	a, .nav-header {
+					    margin-left: -60px;
+					    margin-right: -60px;
+					}
+					.nav-list li { /* sixth level */
+				    	a {
+				    		padding-left: 75px;
+				    		padding-right: 75px;
+				    	}
+				    	a, .nav-header {
+						    margin-left: -75px;
+						    margin-right: -75px;
+						}
+				    }
+			    }
+		    }
+	    }
+    }
+}

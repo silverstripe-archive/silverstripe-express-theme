@@ -1,5 +1,5 @@
 /**
- * Component type styles for SilverStripe Express.
+ * General mixins to be used in SilverStripe express
  *
  */
 
@@ -53,7 +53,6 @@ $dark-shadow: 0px -1px 0px rgba(0,0,0,0.7);
 	-moz-box-shadow: none !important;
 	box-shadow: none !important;
 }
-
 
 //Mixin to create an inset box shadow
 @mixin boxShadowInset($horizontal, $vertical, $blur, $spread, $color){
@@ -121,5 +120,49 @@ $dark-shadow: 0px -1px 0px rgba(0,0,0,0.7);
 	-moz-transition-duration: $time;
 	-o-transition-duration: $time;
 	transition-duration: $time;	
+}
+
+
+@mixin mediaSizes{
+
+	/* ============================= */
+	/* ! Layout for mobile version   */
+	/* ============================= */
+
+	/* Landscape phones and down */
+	@media (max-width: 480px) { 
+		@include media;
+	  	zoom:1;
+	}
+
+	/* Opera mobile high-res  */
+	@media handheld, only screen and (max-device-width: 800px){
+		@include media;
+		zoom:1;
+	}
+	 
+	/* Landscape phone to portrait tablet  */
+	@media (max-width: 600px) { 
+		@include media;
+		zoom:1;
+	}
+	 
+	/* Portrait tablet to landscape and desktop  */
+	@media (min-width: 500px) and (max-width: 600px) { 
+		@include media;
+	    zoom:1;
+	}
+	/* For ipad  */
+	@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+		@include media;
+	  	zoom:1;
+	}
+
+	/* Large mobile */ 
+	@media (max-width: 979px){
+		@include media;
+	  	zoom:1;
+	}
+
 }
 

@@ -1,13 +1,23 @@
+//	Mixin for adjustments to mobile formatting
+//	Import this file then use '@include media;' to include where you want it
+// 	Generally this should be included within an @media declaration
+// 	eg:
+//  	@media (max-width: 480px) { 
+//			@include media;
+//	  		zoom:1;
+//		}
+//	
+//  Note: This is currently included in the '_mixins.scss' file, within the 
+//  'mediaSizes' mixin
+
 
 @mixin media{
-
 	body {
 		#SearchGroup{
 			float:none;
 			width:100%;
 		}
 	}
-
 
 	#SearchGroup{
 		float:right;
@@ -28,26 +38,21 @@
 				display:none;
 			}
 		}
-	}
-
-	
+	}	
 
 	.nav-collapse{
-				font-size:1.1em;
+		font-size:1.1em;
 		line-height:1.1em;
 
 		li {
-
 			.dropdown-menu{
 				display:none;
 			}
 			.caret{
 				margin-left:10px;
 				border-width: 5px !important;
-				border-width-top:0;			
-
+				border-width-top:0;		
 			}
-
 		}
 
 		li.open{
@@ -75,7 +80,5 @@
 			width:100%;
 		}
 	}
-
-
 
 }

@@ -1,7 +1,16 @@
+//	Mixin for sitemap formatting
+//	Import this file then use '@include sitemap;' to include in your layout scss file
+// 	Include within a more specific tag if you find typography styles overriding these
+// 	eg:
+//  	#layout{
+//			@include sitemap;
+//		}	
+//
+
 @mixin sitemap{
 
-	/*******	Sitemap 	**************/
-	#layout ul.sitemap{
+	/**********		Sitemap 	**************/
+	ul.sitemap{
 		@extend .well;
 		background:#fff;
 		list-style:none;
@@ -168,54 +177,48 @@
 					}				
 				}
 			}
-		}	
-	}
-
-	.page-toggle{
-		text-indent:0;
-		left:0px;
-		top:0px;
-		z-index: 5;
-		position:absolute;
-		display:inline-block;
-		width:40px;
-		height:36px;
-		.button {
-			margin-left:10px;
-			display:block;
-			&:hover{
-				cursor:pointer;
-				.toggleIco{
-					opacity:0.7;
-					#IE8 &{
-						color: $textColor;
+		}
+		.page-toggle{
+			text-indent:0;
+			left:0px;
+			top:0px;
+			z-index: 5;
+			position:absolute;
+			display:inline-block;
+			width:40px;
+			height:36px;
+			.button {
+				margin-left:10px;
+				display:block;
+				&:hover{
+					cursor:pointer;
+					.toggleIco{
+						opacity:0.7;
+						#IE8 &{
+							color: $textColor;
+						}
 					}
 				}
-			}
-			.toggleIco{
-				text-decoration:none;
-				color:#000;
-				margin-top:2px;
-				@extend .icon-plus;	
-				opacity:0.3;
-				height:20px;
-				width:20px;
-				#IE8 &{
-					color: lighten($textColor,30%);
+				.toggleIco{
+					text-decoration:none;
+					color:#000;
+					margin-top:2px;
+					@extend .icon-plus;	
+					opacity:0.3;
+					height:20px;
+					width:20px;
+					#IE8 &{
+						color: lighten($textColor,30%);
+					}
 				}
-			}
-			&.open{
-				.toggleIco{						
-					@extend .icon-minus;
+				&.open{
+					.toggleIco{						
+						@extend .icon-minus;
+					}
 				}
 			}
 		}
 	}
-
-
-
-
-	
 }
 
 

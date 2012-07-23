@@ -1,7 +1,7 @@
 /**
  * Layout stylesheet.
  *
- * The rule of thumb is that the styles from here will not be needed for the CMS editor.
+ * The general rule is that the styles from here will not be needed for the CMS editor.
  * Styles related to content editing should go into typography.[s]css.
  */
 /*
@@ -1603,11 +1603,11 @@ ul.icons li .icon-large:before {
   content: "\f066";
 }
 
-.icon-plus:before, .page-toggle .button .toggleIco:before {
+.icon-plus:before, #layout ul.sitemap .page-toggle .button .toggleIco:before {
   content: "\f067";
 }
 
-.icon-minus:before, .page-toggle .button.open .toggleIco:before {
+.icon-minus:before, #layout ul.sitemap .page-toggle .button.open .toggleIco:before {
   content: "\f068";
 }
 
@@ -2362,10 +2362,10 @@ ul.icons li .icon-large:before {
 #IE7 .icon-resize-small {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf066;&nbsp;');
 }
-#IE7 .icon-plus, #IE7 .page-toggle .button .toggleIco, .page-toggle .button #IE7 .toggleIco {
+#IE7 .icon-plus, #IE7 #layout ul.sitemap .page-toggle .button .toggleIco, #layout ul.sitemap .page-toggle .button #IE7 .toggleIco {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf067;&nbsp;');
 }
-#IE7 .icon-minus, #IE7 .page-toggle .button.open .toggleIco, .page-toggle .button.open #IE7 .toggleIco {
+#IE7 .icon-minus, #IE7 #layout ul.sitemap .page-toggle .button.open .toggleIco, #layout ul.sitemap .page-toggle .button.open #IE7 .toggleIco {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf068;&nbsp;');
 }
 #IE7 .icon-asterisk {
@@ -3060,18 +3060,18 @@ button.close {
 .btn-info,
 .btn-info:hover,
 .btn-inverse,
-#pause .btn, #pause
+#layout #pause .btn, #layout #pause
 .btn,
-#pause .Actions .action, #pause .Actions
+#layout #pause .Actions .action, #layout #pause .Actions
 .action,
-.Actions #pause .action, .Actions #pause
+.Actions #layout #pause .action, .Actions #layout #pause
 .action,
 .btn-inverse:hover,
-#pause .btn:hover, #pause
+#layout #pause .btn:hover, #layout #pause
 .btn:hover,
-#pause .Actions .action:hover, #pause .Actions
+#layout #pause .Actions .action:hover, #layout #pause .Actions
 .action:hover,
-.Actions #pause .action:hover, .Actions #pause
+.Actions #layout #pause .action:hover, .Actions #layout #pause
 .action:hover {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -3089,18 +3089,18 @@ button.close {
 .btn-info:visited,
 .btn-info:hover:visited,
 .btn-inverse:visited,
-#pause .btn:visited, #pause
+#layout #pause .btn:visited, #layout #pause
 .btn:visited,
-#pause .Actions .action:visited, #pause .Actions
+#layout #pause .Actions .action:visited, #layout #pause .Actions
 .action:visited,
-.Actions #pause .action:visited, .Actions #pause
+.Actions #layout #pause .action:visited, .Actions #layout #pause
 .action:visited,
 .btn-inverse:hover:visited,
-#pause .btn:hover:visited, #pause
+#layout #pause .btn:hover:visited, #layout #pause
 .btn:hover:visited,
-#pause .Actions .action:hover:visited, #pause .Actions
+#layout #pause .Actions .action:hover:visited, #layout #pause .Actions
 .action:hover:visited,
-.Actions #pause .action:hover:visited, .Actions #pause
+.Actions #layout #pause .action:hover:visited, .Actions #layout #pause
 .action:hover:visited {
   color: white !important;
 }
@@ -3111,11 +3111,11 @@ button.close {
 .btn-success.active,
 .btn-info.active,
 .btn-inverse.active,
-#pause .active.btn, #pause
+#layout #pause .active.btn, #layout #pause
 .active.btn,
-#pause .Actions .active.action, #pause .Actions
+#layout #pause .Actions .active.action, #layout #pause .Actions
 .active.action,
-.Actions #pause .active.action, .Actions #pause
+.Actions #layout #pause .active.action, .Actions #layout #pause
 .active.action {
   color: rgba(255, 255, 255, 0.75);
 }
@@ -3125,11 +3125,11 @@ button.close {
 .btn-success.active:visited,
 .btn-info.active:visited,
 .btn-inverse.active:visited,
-#pause .active.btn:visited, #pause
+#layout #pause .active.btn:visited, #layout #pause
 .active.btn:visited,
-#pause .Actions .active.action:visited, #pause .Actions
+#layout #pause .Actions .active.action:visited, #layout #pause .Actions
 .active.action:visited,
-.Actions #pause .active.action:visited, .Actions #pause
+.Actions #layout #pause .active.action:visited, .Actions #layout #pause
 .active.action:visited {
   color: rgba(255, 255, 255, 0.75);
 }
@@ -3269,7 +3269,7 @@ button.close {
   background-color: #24748c \9;
 }
 
-.btn-inverse, #pause .btn, #pause .Actions .action, .Actions #pause .action {
+.btn-inverse, #layout #pause .btn, #layout #pause .Actions .action, .Actions #layout #pause .action {
   background-color: #404040;
   background-image: -ms-linear-gradient(top, #555555, #222222);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555555), to(#222222));
@@ -3284,14 +3284,14 @@ button.close {
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-.btn-inverse #IE8, #pause .btn #IE8, #pause .Actions .action #IE8, .Actions #pause .action #IE8 {
+.btn-inverse #IE8, #layout #pause .btn #IE8, #layout #pause .Actions .action #IE8, .Actions #layout #pause .action #IE8 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF555555', endColorstr='#FF222222', GradientType=0);
 }
-.btn-inverse:hover, #pause .btn:hover, #pause .Actions .action:hover, .Actions #pause .action:hover, .btn-inverse:active, #pause .btn:active, #pause .Actions .action:active, .Actions #pause .action:active, .btn-inverse.active, #pause .active.btn, #pause .Actions .active.action, .Actions #pause .active.action, .btn-inverse.disabled, #pause .disabled.btn, #pause .Actions .disabled.action, .Actions #pause .disabled.action, .btn-inverse[disabled], #pause [disabled].btn, #pause .Actions [disabled].action, .Actions #pause [disabled].action {
+.btn-inverse:hover, #layout #pause .btn:hover, #layout #pause .Actions .action:hover, .Actions #layout #pause .action:hover, .btn-inverse:active, #layout #pause .btn:active, #layout #pause .Actions .action:active, .Actions #layout #pause .action:active, .btn-inverse.active, #layout #pause .active.btn, #layout #pause .Actions .active.action, .Actions #layout #pause .active.action, .btn-inverse.disabled, #layout #pause .disabled.btn, #layout #pause .Actions .disabled.action, .Actions #layout #pause .disabled.action, .btn-inverse[disabled], #layout #pause [disabled].btn, #layout #pause .Actions [disabled].action, .Actions #layout #pause [disabled].action {
   background-color: #222222;
   *background-color: #151515;
 }
-.btn-inverse:active, #pause .btn:active, #pause .Actions .action:active, .Actions #pause .action:active, .btn-inverse.active, #pause .active.btn, #pause .Actions .active.action, .Actions #pause .active.action {
+.btn-inverse:active, #layout #pause .btn:active, #layout #pause .Actions .action:active, .Actions #layout #pause .action:active, .btn-inverse.active, #layout #pause .active.btn, #layout #pause .Actions .active.action, .Actions #layout #pause .active.action {
   background-color: #090909 \9;
 }
 
@@ -3477,7 +3477,7 @@ input[type="submit"].btn-mini.action {
 .btn-group.open .btn-info.dropdown-toggle {
   background-color: #2f96b4;
 }
-.btn-group.open .btn-inverse.dropdown-toggle, .btn-group.open #pause .dropdown-toggle.btn, #pause .btn-group.open .dropdown-toggle.btn, .btn-group.open #pause .Actions .dropdown-toggle.action, #pause .Actions .btn-group.open .dropdown-toggle.action, .btn-group.open .Actions #pause .dropdown-toggle.action, .Actions #pause .btn-group.open .dropdown-toggle.action {
+.btn-group.open .btn-inverse.dropdown-toggle, .btn-group.open #layout #pause .dropdown-toggle.btn, #layout #pause .btn-group.open .dropdown-toggle.btn, .btn-group.open #layout #pause .Actions .dropdown-toggle.action, #layout #pause .Actions .btn-group.open .dropdown-toggle.action, .btn-group.open .Actions #layout #pause .dropdown-toggle.action, .Actions #layout #pause .btn-group.open .dropdown-toggle.action {
   background-color: #222222;
 }
 
@@ -3518,11 +3518,11 @@ input[type="submit"].btn-mini.action {
 .btn-info .caret,
 .btn-success .caret,
 .btn-inverse .caret,
-#pause .btn .caret, #pause
+#layout #pause .btn .caret, #layout #pause
 .btn .caret,
-#pause .Actions .action .caret, #pause .Actions
+#layout #pause .Actions .action .caret, #layout #pause .Actions
 .action .caret,
-.Actions #pause .action .caret, .Actions #pause
+.Actions #layout #pause .action .caret, .Actions #layout #pause
 .action .caret {
   border-top-color: white;
   border-bottom-color: white;
@@ -6185,9 +6185,14 @@ a.label:hover, a.badge:hover {
   }
 }
 /**
- * Component type styles for SilverStripe Express.
+ * General mixins to be used in SilverStripe express
  *
  */
+/*
+*	Styling for form related components
+*
+*/
+/* Styling for messages */
 .message {
   padding: 5px;
   margin-top: -5px;
@@ -6280,11 +6285,18 @@ a.label:hover, a.badge:hover {
   box-shadow: 0 0 6px #d59392;
 }
 
+/* 
+*	User forms styling includes a little more than custom forms
+*	so that they look finished without needing to modify any code.
+*	Extend this style to apply userforms styling to your custom forms, 
+*	or modify it to change the look of your userforms
+*/
 #Form_Form {
   background: #fff;
   padding: 0;
 }
 
+/*	General 	*/
 form .FormHeading {
   margin: 0;
   -moz-border-radius-topleft: 3px;
@@ -6302,7 +6314,6 @@ form fieldset > div.field {
 form fieldset > div.field.checkbox {
   margin-left: 19px;
 }
-
 .typography form h1, .typography form h2, .typography form h3 {
   margin: 0;
 }
@@ -6322,6 +6333,15 @@ form fieldset > div.field.checkbox {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFAFAFA', endColorstr='#FFFFFFFF', GradientType=0);
 }
 
+.field {
+  margin: 15px 0;
+}
+
+fieldset {
+  margin: 0;
+}
+
+/*	Label formatting	*/
 label.left {
   font-weight: bold;
   font-size: 1.2em;
@@ -6353,6 +6373,9 @@ label.required {
   max-width: 100%;
 }
 
+/**
+* Form fields formatting
+**/
 textarea {
   width: 100%;
   height: 200px;
@@ -6395,27 +6418,7 @@ select.date, input.text.date, input.file.date {
   line-height: 20px;
 }
 
-div.date {
-  padding-right: 30px;
-}
-div.date label {
-  float: left;
-  margin-right: 10px;
-}
-div.date input {
-  margin-top: -5px;
-  margin-right: 5px;
-}
-div.date img {
-  background: transparent url(../images/icons/sitetree_images/date.png) no-repeat top left;
-  height: 0;
-  overflow: hidden;
-  padding-top: 15px;
-  /* height of icon for screen */
-  width: 15px;
-  /* width of icon for screen */
-}
-
+/*	Checkboxes and radio buttons	*/
 .checkbox label {
   color: #333333;
   font-weight: normal;
@@ -6427,10 +6430,6 @@ div.date img {
   float: left;
   margin-top: 10px;
   margin-left: -20px;
-}
-
-.field {
-  margin: 15px 0;
 }
 
 div.optionset {
@@ -6462,10 +6461,39 @@ form ul.optionset input {
   margin-right: 5px;
 }
 
-fieldset {
-  margin: 0;
+/*	Date styles	*/
+div.date {
+  padding-right: 30px;
+}
+div.date label {
+  float: left;
+  margin-right: 10px;
+}
+div.date input {
+  margin-top: -5px;
+  margin-right: 5px;
+}
+div.date img {
+  background: transparent url(../images/icons/sitetree_images/date.png) no-repeat top left;
+  height: 0;
+  overflow: hidden;
+  padding-top: 15px;
+  /* height of icon for screen */
+  width: 15px;
+  /* width of icon for screen */
 }
 
+.ui-datepicker {
+  width: 15em !important;
+  max-width: 50% !important;
+}
+
+.ui-widget {
+  font-size: 12px !important;
+  line-height: 12px !important;
+}
+
+/*Submit button styling */
 .Actions {
   margin: 0;
   border-top: 1px solid #dcdcdc;
@@ -6495,362 +6523,147 @@ fieldset {
   margin: 0;
 }
 
-.ui-datepicker {
-  width: 15em !important;
-  max-width: 50% !important;
-}
-
-.ui-widget {
-  font-size: 12px !important;
-  line-height: 12px !important;
-}
-
-/*****************************
-EXPRESS LAYOUT
-******************************/
-body {
-  /* NAVIGATION & HEADER */
-  /* Dropnav arrow adjustment */
-  /* Side navigation */
-}
-body #IE7 a.dropdown-toggle .showChildren {
-  margin-top: -3px;
-}
-body ul.nav, body ul.dropdown-menu {
+/*
+* 	Customisations to the styling for main top navigation of sidemenu
+*/
+/* Customise navigation */
+ul.nav, ul.dropdown-menu {
   list-style: none;
   padding-left: 0;
 }
-body .noCorners .navbar-inner {
+
+.noCorners .navbar-inner {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-body .nav-collapse {
+
+.nav-collapse {
   position: relative;
   height: auto;
 }
-body .nav-collapse .dropdown-menu {
+.nav-collapse .dropdown-menu {
   margin-left: 0;
   margin-right: 0;
 }
-body .nav-collapse .dropdown-menu li a {
+.nav-collapse .dropdown-menu li a {
   line-height: 1.1em;
   padding-left: 20px;
 }
-body ul.breadcrumb, body #layout ul.resultsHeader, #layout body ul.resultsHeader {
-  margin: 0 0 18px;
-  padding: 7px 14px;
-}
-body .navbar {
+
+.navbar {
   font-size: 13px;
 }
-body .navbar .showChildren {
+.navbar .showChildren {
   display: inline-block;
   width: 20px;
   height: 20px;
   text-align: center;
 }
-body .navbar .nav > li > a {
+#IE7 .navbar .showChildren {
+  margin-top: -3px;
+}
+.navbar .nav > li > a {
   padding: 9px 10px 9px 11px;
 }
-body .navbar .nav li.dropdown .current.dropdown-toggle, body .navbar .nav li.open.active .current.dropdown-toggle {
+.navbar .nav li.dropdown .current.dropdown-toggle,
+.navbar .nav li.open.active .current.dropdown-toggle {
   background-color: #222222;
 }
-body #SearchGroup {
-  float: right;
-  width: 200px;
+.navbar .nav {
+  /* Dropnav arrow adjustment */
 }
-body #SearchGroup .navbar-search .search-query {
-  line-height: 1.3em;
-}
-body #SearchGroup form {
-  padding: 0;
-}
-body #SearchGroup form .field {
-  margin: 0;
-}
-body #SearchGroup form fieldset {
-  margin: 0;
-}
-body #SearchGroup form input.action {
-  display: none;
-}
-body header h1.brand {
-  font-size: 3em;
-  margin-bottom: 18px;
-  overflow: visible;
-  line-height: 1em;
-  padding: 42px 0 38px 105px;
-  background: url(../../../themes/ssexpress/images/logo.png) 0px center no-repeat;
-}
-body header h1.brand a:visited {
-  color: black;
-}
-body .navbar .nav .hasLink {
+.navbar .nav .hasLink {
   padding-right: 32px;
 }
-body .navbar .nav .hasLinkArrow {
+.navbar .nav .hasLinkArrow {
   width: 16px;
   position: absolute;
   top: 0;
   right: 0;
   padding-right: 6px;
 }
-body .sidebar-nav {
+
+/* Side navigation */
+.sidebar-nav {
   padding: 9px 0;
 }
-body .sidebar-nav a:visited {
+.sidebar-nav a:visited {
   /* color:$linkColor; */
 }
-body .sidebar-nav ul.nav-list {
+.sidebar-nav ul.nav-list {
   list-style: none;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0;
 }
-body .sidebar-nav ul.nav-list .nav-list li {
+.sidebar-nav ul.nav-list .nav-list li {
   /* third level */
 }
-body .sidebar-nav ul.nav-list .nav-list li a {
+.sidebar-nav ul.nav-list .nav-list li a {
   padding-left: 30px;
   padding-right: 30px;
 }
-body .sidebar-nav ul.nav-list .nav-list li a, body .sidebar-nav ul.nav-list .nav-list li .nav-header {
+.sidebar-nav ul.nav-list .nav-list li a, .sidebar-nav ul.nav-list .nav-list li .nav-header {
   margin-left: -30px;
   margin-right: -30px;
 }
-body .sidebar-nav ul.nav-list .nav-list li .nav-list li {
+.sidebar-nav ul.nav-list .nav-list li .nav-list li {
   /* fourth level */
 }
-body .sidebar-nav ul.nav-list .nav-list li .nav-list li a {
+.sidebar-nav ul.nav-list .nav-list li .nav-list li a {
   padding-left: 45px;
   padding-right: 45px;
 }
-body .sidebar-nav ul.nav-list .nav-list li .nav-list li a, body .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-header {
+.sidebar-nav ul.nav-list .nav-list li .nav-list li a, .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-header {
   margin-left: -45px;
   margin-right: -45px;
 }
-body .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li {
+.sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li {
   /* fifth level */
 }
-body .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li a {
+.sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li a {
   padding-left: 60px;
   padding-right: 60px;
 }
-body .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li a, body .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li .nav-header {
+.sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li a, .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li .nav-header {
   margin-left: -60px;
   margin-right: -60px;
 }
-body .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li .nav-list li {
+.sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li .nav-list li {
   /* sixth level */
 }
-body .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li .nav-list li a {
+.sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li .nav-list li a {
   padding-left: 75px;
   padding-right: 75px;
 }
-body .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li .nav-list li a, body .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li .nav-list li .nav-header {
+.sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li .nav-list li a, .sidebar-nav ul.nav-list .nav-list li .nav-list li .nav-list li .nav-list li .nav-header {
   margin-left: -75px;
   margin-right: -75px;
 }
 
-/* Hero Unit adjustments */
-.typography div.hero-unit {
-  padding: 30px;
-}
-.typography div.hero-unit h1 {
-  margin-bottom: 15px;
-}
-.typography div.hero-unit .span4 {
-  margin-right: -20px;
-}
-.typography div.hero-unit .carousel-container {
-  float: right;
-}
-
-/* Include carousel, and adjust */
-/* Carousel Styling */
-.carousel {
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
-}
-.carousel .carousel-caption {
-  right: 2px;
-}
-.carousel .carousel-caption p {
-  font-size: 14px;
-  color: white;
-  line-height: 1.2em;
-}
-.carousel img {
-  width: 100%;
-}
-#layout .carousel a img {
-  border: none;
-}
-.carousel:hover #pause {
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
-  visibility: visible;
-  opacity: 1;
-}
-#IE8 .carousel:hover #pause {
-  display: block;
-}
-
-#pause {
-  visibility: hidden;
-  opacity: 0;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 0;
-  top: 0px;
-  left: 0px;
-  color: #fff;
-  color: rgba(255, 255, 255, 0.8);
-  text-shadow: rgba(26, 26, 26, 0.5) 1px 1px 0;
-}
-#IE8 #pause {
-  display: none;
-}
-#pause .btn, #pause .Actions .action, .Actions #pause .action {
-  z-index: 4;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  border-radius: 40px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 2px solid #fff;
-  position: relative;
-  top: 35%;
-  font-size: 3em;
-  line-height: 1em;
-  width: 70px;
-  height: 70px;
-  padding-top: 15px;
-  opacity: 0.5;
-}
-#pause .btn .icon, #pause .Actions .action .icon, .Actions #pause .action .icon {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  text-decoration: inherit;
-}
-#IE7 #pause .btn, #IE7 #pause .Actions .action, .Actions #IE7 #pause .action {
-  padding-top: 5px;
-  width: 30px;
-  height: 43px;
-}
-#IE7 #pause .btn .icon, #IE7 #pause .Actions .action .icon, .Actions #IE7 #pause .action .icon {
-  zoom: 1;
-}
-#pause .btn .icon-play-js, #pause .Actions .action .icon-play-js, .Actions #pause .action .icon-play-js {
-  padding-left: 3px;
-}
-#IE7 #pause .btn .icon-play-js, #IE7 #pause .Actions .action .icon-play-js, .Actions #IE7 #pause .action .icon-play-js {
-  padding-top: 2px;
-}
-#pause .btn:hover, #pause .Actions .action:hover, .Actions #pause .action:hover {
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
-  opacity: 1;
-}
-
-.carousel-control {
-  z-index: 6;
-}
-.carousel-control:visited {
-  color: white;
-}
-
-.typography .carousel a {
-  color: #fff;
-}
-.typography .carousel a:visited {
-  color: #fff;
-}
-
-/* Misc */
-/* Headers and Icons */
-h2 a, h2 a:visited {
-  color: #000;
-}
-
-iframe {
-  border: 0;
-}
-
-p.printShare {
-  font-size: 0.9em;
-}
-
-.page-header .printShare {
-  margin-top: 21px;
-}
-
-#layout a img {
-  border: 2px solid #0055cc;
-  margin-left: -2px;
-  margin-top: -2px;
-}
-#layout a img:hover {
-  border-color: red;
-}
-
+/*
+*	Mixin for carousel formatting
+*	Import this file then use '@include carousel;' to include in your layout scss file
+* 	Include within a more specific tag if you find typography styles overriding these
+* 	eg:
+*  		#layout{
+*			@include carousel;
+*		}	
+*/
+/* 
+* Styling for results and pagination. 
+* Can be used on search results, news listings, etc 
+*/
 #SearchResults {
   list-style: none;
   margin-left: 0;
 }
 
-.resultsHeader {
-  *zoom: 1;
-  padding: 0 5px;
-  margin: 40px 0 0px 0;
-  height: auto;
-  border-bottom: 1px solid #eeeeee;
-}
-.resultsHeader:before, .resultsHeader:after {
-  display: table;
-  content: "";
-}
-.resultsHeader:after {
-  clear: both;
-}
-.resultsHeader h2, .resultsHeader p {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  font-size: 1.3em;
-  line-height: 1.1em;
-  margin: 0px;
-  padding: 3px 0;
-}
-
-.resultsList article {
-  padding: 5px;
-}
-.resultsList article p {
-  max-width: 790px;
-}
-.resultsList article.even {
-  background: #f6f6f6;
-}
-
-p.printShare {
-  font-size: 0.9em;
-}
-
 /*For news and search results*/
 #layout .resultsHeader {
   *zoom: 1;
+  padding: 0 5px;
   margin: 40px 0 10px 0;
   height: auto;
   border-bottom: 1px solid #eeeeee;
@@ -6895,10 +6708,6 @@ p.printShare {
   border-radius: 5px;
 }
 
-p.printShare {
-  font-size: 0.9em;
-}
-
 .pagination {
   margin-top: 20px;
   position: relative;
@@ -6921,7 +6730,227 @@ p.printShare {
   left: 50%;
 }
 
-/*******	Sitemap 	**************/
+/*****************************
+EXPRESS LAYOUT
+******************************/
+/*Customise search field */
+#SearchGroup {
+  float: right;
+  width: 200px;
+}
+#SearchGroup .navbar-search .search-query {
+  line-height: 1.3em;
+}
+#SearchGroup form {
+  padding: 0;
+}
+#SearchGroup form .field {
+  margin: 0;
+}
+#SearchGroup form fieldset {
+  margin: 0;
+}
+#SearchGroup form input.action {
+  display: none;
+}
+
+/*HEADER */
+header h1.brand {
+  font-size: 3em;
+  margin-bottom: 18px;
+  overflow: visible;
+  line-height: 1em;
+  padding: 42px 0 38px 105px;
+  background: url(../../../themes/ssexpress/images/logo.png) 0px center no-repeat;
+}
+header h1.brand a:visited {
+  color: black;
+}
+
+/************************ MISC ****************************/
+.typography {
+  /*Adjust breadcrumbs*/
+  /* Hero Unit adjustments */
+}
+.typography ul.breadcrumb, .typography #layout ul.resultsHeader, #layout .typography ul.resultsHeader {
+  margin: 0 0 18px;
+  padding: 7px 14px;
+}
+.typography div.hero-unit {
+  padding: 30px;
+}
+.typography div.hero-unit h1 {
+  margin-bottom: 15px;
+}
+.typography div.hero-unit .span4 {
+  margin-right: -20px;
+}
+.typography div.hero-unit .carousel-container {
+  float: right;
+}
+
+h2 a, h2 a:visited {
+  color: #000;
+}
+
+iframe {
+  border: 0;
+}
+
+.page-header .printShare {
+  margin-top: 21px;
+  font-size: 0.9em;
+}
+
+#layout a img {
+  border: 2px solid #0055cc;
+  margin-left: -2px;
+  margin-top: -2px;
+}
+#layout a img:hover {
+  border-color: red;
+}
+
+/* Facebook and Twitter links */
+.socialLinks {
+  overflow: visible;
+  font-size: 2em;
+  line-height: 1em;
+}
+.socialLinks a {
+  overflow: visible;
+  z-index: 5;
+  position: relative;
+  text-shadow: rgba(26, 26, 26, 0.1) 1px 1px 0;
+}
+
+/*Helper classes to customise icons*/
+.icon-dark {
+  color: #333333;
+}
+.icon-dark:visited {
+  color: #333333;
+}
+.icon-dark:hover {
+  color: #004ab3;
+  text-decoration: none;
+}
+
+.icon-small {
+  font-size: 1em;
+}
+
+/* Include carouseland sitemap within layout tag to override typography styles*/
+#layout {
+  /* Carousel Styling */
+  /**********		Sitemap 	**************/
+}
+#layout .carousel {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+#layout .carousel .carousel-caption {
+  right: 2px;
+}
+#layout .carousel .carousel-caption p {
+  font-size: 14px;
+  color: white;
+  line-height: 1.2em;
+}
+#layout .carousel img {
+  width: 100%;
+}
+#layout .carousel a {
+  color: #fff;
+}
+#layout .carousel a:visited {
+  color: #fff;
+}
+#layout .carousel a img {
+  border: none;
+}
+#layout .carousel:hover #pause {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  visibility: visible;
+  opacity: 1;
+}
+#IE8 #layout .carousel:hover #pause {
+  display: block;
+}
+#layout #pause {
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0px;
+  left: 0px;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: rgba(26, 26, 26, 0.5) 1px 1px 0;
+}
+#IE8 #layout #pause {
+  display: none;
+}
+#layout #pause .btn, #layout #pause .Actions .action, .Actions #layout #pause .action {
+  z-index: 4;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  position: relative;
+  top: 35%;
+  font-size: 3em;
+  line-height: 1em;
+  width: 70px;
+  height: 70px;
+  padding-top: 15px;
+  opacity: 0.5;
+}
+#layout #pause .btn .icon, #layout #pause .Actions .action .icon, .Actions #layout #pause .action .icon {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+#IE7 #layout #pause .btn, #IE7 #layout #pause .Actions .action, .Actions #IE7 #layout #pause .action {
+  padding-top: 5px;
+  width: 30px;
+  height: 43px;
+}
+#IE7 #layout #pause .btn .icon, #IE7 #layout #pause .Actions .action .icon, .Actions #IE7 #layout #pause .action .icon {
+  zoom: 1;
+}
+#layout #pause .btn .icon-play-js, #layout #pause .Actions .action .icon-play-js, .Actions #layout #pause .action .icon-play-js {
+  padding-left: 3px;
+}
+#IE7 #layout #pause .btn .icon-play-js, #IE7 #layout #pause .Actions .action .icon-play-js, .Actions #IE7 #layout #pause .action .icon-play-js {
+  padding-top: 2px;
+}
+#layout #pause .btn:hover, #layout #pause .Actions .action:hover, .Actions #layout #pause .action:hover {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  opacity: 1;
+}
+#layout .carousel-control {
+  z-index: 6;
+}
+#layout .carousel-control:visited {
+  color: white;
+}
 #layout ul.sitemap {
   background: #fff;
   list-style: none;
@@ -7100,8 +7129,7 @@ p.printShare {
 #layout ul.sitemap li ul li li li li li li li li li.last, #layout ul.sitemap li ul li li li li li li li li li.first {
   border: none;
 }
-
-.page-toggle {
+#layout ul.sitemap .page-toggle {
   text-indent: 0;
   left: 0px;
   top: 0px;
@@ -7111,20 +7139,20 @@ p.printShare {
   width: 40px;
   height: 36px;
 }
-.page-toggle .button {
+#layout ul.sitemap .page-toggle .button {
   margin-left: 10px;
   display: block;
 }
-.page-toggle .button:hover {
+#layout ul.sitemap .page-toggle .button:hover {
   cursor: pointer;
 }
-.page-toggle .button:hover .toggleIco {
+#layout ul.sitemap .page-toggle .button:hover .toggleIco {
   opacity: 0.7;
 }
-#IE8 .page-toggle .button:hover .toggleIco {
+#IE8 #layout ul.sitemap .page-toggle .button:hover .toggleIco {
   color: #333333;
 }
-.page-toggle .button .toggleIco {
+#layout ul.sitemap .page-toggle .button .toggleIco {
   text-decoration: none;
   color: #000;
   margin-top: 2px;
@@ -7132,37 +7160,11 @@ p.printShare {
   height: 20px;
   width: 20px;
 }
-#IE8 .page-toggle .button .toggleIco {
+#IE8 #layout ul.sitemap .page-toggle .button .toggleIco {
   color: gray;
 }
 
-.socialLinks {
-  overflow: visible;
-  font-size: 2em;
-  line-height: 1em;
-}
-.socialLinks a {
-  overflow: visible;
-  z-index: 5;
-  position: relative;
-  text-shadow: rgba(26, 26, 26, 0.1) 1px 1px 0;
-}
-
-.icon-dark {
-  color: #333333;
-}
-.icon-dark:visited {
-  color: #333333;
-}
-.icon-dark:hover {
-  color: #004ab3;
-  text-decoration: none;
-}
-
-.icon-small {
-  font-size: 1em;
-}
-
+/*Fixes for all media sizes*/
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */

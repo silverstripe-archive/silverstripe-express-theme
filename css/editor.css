@@ -2,6 +2,7 @@
  * This support file is used to style the WYSIWYG editor in the CMS
  */
 .typography {
+  /* Adjust for CMS */
   font-size: 13px;
 }
 .typography table, .typography tr, .typography td {
@@ -14,6 +15,7 @@
  * This stylesheet needs to safely apply to CMS editor. Prefix all entries here
  * with .typography class. If the style is not typography-related, it needs to
  * go into another file - for example layout.[s]css
+ *
  */
 /*
  * Bootstrap v2.0.3

@@ -1,3 +1,10 @@
+/*
+*	Styling for form related components
+*
+*/
+
+
+/* Styling for messages */
 .message{
 	@include message('default');
 	&.error, &.bad, &.required{
@@ -18,18 +25,20 @@
 	@include formValidation($errorText, $errorText, $errorBackground);
 }
 
+/* 
+*	User forms styling includes a little more than custom forms
+*	so that they look finished without needing to modify any code.
+*	Extend this style to apply userforms styling to your custom forms, 
+*	or modify it to change the look of your userforms
+*/
 #Form_Form{
 	@extend .well;
 	background: #fff;
 	padding:0;
-	.field{
-		&.odd{
-
-		}
-	}
 }
 
 
+/*	General 	*/
 form{
 	.FormHeading{
 		margin:0;
@@ -45,9 +54,6 @@ form{
 		}
 	}
 
-}
-
-form{
 	.typography &{
 		h1,h2,h3{
 			margin:0;
@@ -60,7 +66,15 @@ form{
 	}
 }
 
+.field{
+	margin: 15px 0;
+}
+fieldset{
+	margin: 0;
+}
 
+
+/*	Label formatting	*/
 label{
 	&.left{
 		font-weight: bold;
@@ -93,8 +107,9 @@ label{
 	}
 }
 
-
-
+/**
+* Form fields formatting
+**/
 textarea{
 	width:100%;
 	height:200px;
@@ -120,28 +135,7 @@ select, input.text, input.file{
 		line-height:20px;
 	}
 }
-
-div.date{
-	padding-right:30px;
-	label{
-		float:left;
-		margin-right:10px;
-	}
-	input{
-		margin-top:-5px;
-		margin-right:5px;
-	}
-	img{
-		background:transparent url(../images/icons/sitetree_images/date.png) no-repeat top left;
-   		height:0;
-   		overflow:hidden;
-   		padding-top: 15px; /* height of icon for screen */
-   		width: 15px; /* width of icon for screen */
-		
-	}
-}
-
-
+/*	Checkboxes and radio buttons	*/
 .checkbox{
 	label{
 		color: $grayDark;
@@ -156,14 +150,10 @@ div.date{
 		}
 	}
 }
-
-.field{
-	margin: 15px 0;
-}
-
 div.optionset{
 	position: relative;
 }
+
 form ul{
 	&.optionset{
 		label{
@@ -185,35 +175,52 @@ form ul{
 		}
 	}
 }
-fieldset{
-	margin: 0;
-}
 
-.Actions{
-	//@extend .form-actions;
-	margin:0;
-	border-top:1px solid darken(#f5f5f5,10%);
-	// @include gradient-vertical(darken(#f5f5f5,5%), darken(#f5f5f5,10%));
-	@include gradient-vertical(#fff,darken(#ffffff,2%));
-	 padding: 15px 19px;
-	 padding: 15px 19px;
-	 @include roundBottomCorners(3px);
-	 .action{
-	 	@extend .btn;
-	 	@extend .btn-primary;
-	 	padding-left:15px;
-	 	padding-right:15px;
-	 	margin:0;
-	 }
-}
 
-.ui-datepicker{
-	
+/*	Date styles	*/
+div.date{
+	padding-right:30px;
+	label{
+		float:left;
+		margin-right:10px;
+	}
+	input{
+		margin-top:-5px;
+		margin-right:5px;
+	}
+	img{
+		background:transparent url(../images/icons/sitetree_images/date.png) no-repeat top left;
+   		height:0;
+   		overflow:hidden;
+   		padding-top: 15px; /* height of icon for screen */
+   		width: 15px; /* width of icon for screen */
+		
+	}
+}
+.ui-datepicker{	
 	width:15em !important;
 	max-width:50% !important;
 }
 .ui-widget{
 	font-size:12px !important;
 	line-height:12px !important;
+}
 
+
+
+/*Submit button styling */
+.Actions{
+	margin:0;
+	border-top:1px solid darken(#f5f5f5,10%);
+	@include gradient-vertical(#fff,darken(#ffffff,2%));
+	padding: 15px 19px;
+	padding: 15px 19px;
+	@include roundBottomCorners(3px);
+	.action{
+	 	@extend .btn;
+	 	@extend .btn-primary;
+	 	padding-left:15px;
+	 	padding-right:15px;
+	 	margin:0;
+	}
 }

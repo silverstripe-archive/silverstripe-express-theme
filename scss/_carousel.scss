@@ -1,6 +1,17 @@
-@mixin carousel{
+/*
+*	Mixin for carousel formatting
+*	Import this file then use '@include carousel;' to include in your layout scss file
+* 	Include within a more specific tag if you find typography styles overriding these
+* 	eg:
+*  		#layout{
+*			@include carousel;
+*		}	
+*/
+
+
+@mixin carousel{	
 	
-		/* Carousel Styling */
+	/* Carousel Styling */
 	.carousel {
 		overflow:hidden;
 		width: 100%;
@@ -17,7 +28,11 @@
 			width:100%;
 		}
 		a{
-			#layout & img{
+			color:#fff;
+			&:visited{
+				color:#fff;
+			}
+			img{
 				border:none;
 			}
 		}
@@ -94,7 +109,6 @@
 
 	.carousel-control{
 		z-index:6;
-
 		&:visited {
 			color: white;
 		}

@@ -1,0 +1,66 @@
+/* 
+* Styling for results and pagination. 
+* Can be used on search results, news listings, etc 
+*/
+
+#SearchResults {
+	list-style: none;
+	margin-left: 0;
+}
+/*For news and search results*/
+#layout .resultsHeader{
+	@extend .breadcrumb;
+	@include clearfix;
+	h2, p{
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight:200;
+		font-size:1.3em;
+		line-height:1.3em;
+		margin:0px;
+		padding:3px 0;
+
+	}
+	padding:0 5px;
+	margin:40px 0 10px 0;		
+	height:auto;
+	border-bottom: 1px solid $hrBorder;
+}
+
+.resultsList{
+	&.no-indent article{
+		margin-left:-10px;
+	}
+	article{
+		padding:5px 10px;
+		border-bottom: 1px solid lighten($hrBorder,3%);
+		p{
+			max-width:790px;
+			margin:0;
+			padding:5px 0;
+		}
+		h3{
+			line-height:1em;
+			font-size: 1.4em;
+			margin-top:5px;
+		}
+		&.even{
+			background: lighten($hrBorder, 5%);
+			@include border-radius(5px);
+		}
+	}
+}
+
+.pagination{
+	margin-top:20px;
+	position: relative;
+	float:right;
+	left: -50%;
+	text-align: left;
+	@include clearfix;
+	#PageNumbers{
+		line-height:18px;
+		list-style: none;
+		position: relative;
+		left: 50%;
+	}
+}
