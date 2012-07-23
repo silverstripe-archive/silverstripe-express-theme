@@ -1,5 +1,5 @@
 # Config file for compass. 
-# Run "compass watch" on the dir this is in to compile you scss 
+# Run "compass watch" on the dir this file is in, to compile you scss 
 # i.e On a mac: 
 # Open terminal, 
 # cd to your projects themes folder (cd sites/ssexpress/themes/ssexpress)
