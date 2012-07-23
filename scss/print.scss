@@ -1,0 +1,27 @@
+@import 'typography';
+@import 'layout';
+
+div, article{
+	width: 100%; 
+	margin: 0; 
+	float: none;
+}
+.navbar, .icon, .control, .btn, .carousel-control{
+	display:none;
+}
+
+.carousel img{
+	max-width:200px;
+	float:left;
+}
+
+.carousel-caption{
+	clear:both;
+}
+
+.carousel{
+	@include clearAfter;
+	.item{
+		display:block;
+	}
+}
