@@ -5,8 +5,10 @@
 	</aside>
 	<ul class="nav nav-pills">
 		<% loop ChildrenOf(footer) %>
-	  		<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>">
-	  			<a href="$Link" title="Go to the $Title.XML page"  class="$LinkingMode">$MenuTitle.XML</a>
+	  		<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>" >
+	  			<a href="$Link" title="Go to the $Title.XML page"  class="$LinkingMode"<% if AccessKey %> accesskey="$AccessKey"<% end_if %>>
+	  			$MenuTitle.XML
+	  			</a>  			
 	  		</li>
 	    <% end_loop %>
 	</ul>
@@ -23,4 +25,6 @@
 		</a>
 	</h1>
 	<!-- <p><small>$SiteConfig.Title &copy; 2012</small></p> -->
+
 </footer>
+

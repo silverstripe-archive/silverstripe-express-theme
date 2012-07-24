@@ -1,11 +1,8 @@
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
-
-
 			<% include MobileNav %>
-
-			<a class="brand" title="$SiteConfig.Title" href="$BaseHref">$SiteConfig.Title</a>
+			<a class="brand" title="$SiteConfig.Title" href="$BaseHref"<% if AccessKey %> accesskey="$AccessKey"<% end_if %>>$SiteConfig.Title</a>
 			<div class="nav-collapse deviceOnly">
 				<div id="SearchGroup">
 					$SearchForm
