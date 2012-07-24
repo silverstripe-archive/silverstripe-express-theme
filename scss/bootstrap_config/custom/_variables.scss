@@ -43,7 +43,7 @@ $textColor:             $grayDark !default;
 // Links
 // -------------------------
 $linkVisited: 			lighten(#08c,3%)  !default;
-$linkColor:             adjust-hue(darken($linkVisited,3%), 15%) !default;
+$linkColor:             #0464EA  !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
 
@@ -153,7 +153,7 @@ $navbarBackground:                $grayDarker !default;
 $navbarBackgroundHighlight:       $grayDark !default;
 
 $navbarText:                      $grayLight !default;
-$navbarLinkColor:                 $grayLight !default;
+$navbarLinkColor:                 lighten($grayLight,18%) !default;
 $navbarLinkColorHover:            $white !default;
 $navbarLinkColorActive:           $navbarLinkColorHover !default;
 $navbarLinkBackgroundHover:       transparent !default;

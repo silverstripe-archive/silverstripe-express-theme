@@ -1,5 +1,9 @@
-@import 'typography';
-@import 'layout';
+/*
+ Print stylesheet.
+*/
+
+
+@import 'bootstrap_config/custom/mixins';
 
 div, article{
 	width: 100%; 
