@@ -5,6 +5,16 @@
 	    	<!-- <img width="280" height="50" src="http://placehold.it/280x50" alt="$SiteConfig.Title"> -->
 		</a>
 	</h1>
+
+	<% if Translations %>
+		<ul id="lang">
+			<% control Translations %>
+				<li>
+					<a href="$Link" hreflang="$Locale.RFC1766" title="$Title - $Locale.Nice">$Locale.Nice</a>
+				</li>
+			<% end_control %>
+		</ul>
+	<% end_if %>
 </header>
 	
 <div class="navbar noCorners">

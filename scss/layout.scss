@@ -63,9 +63,20 @@ header {
 		line-height:1em;
 		padding: 42px 0 38px 105px;
 		background: url(../../../themes/ssexpress/images/logo.png) 0px center no-repeat;
+		float: left;
 
 		a:visited {
 			color: black;
+		}
+	}
+
+	ul#lang {
+		float: right;
+
+		li {
+			float: left;
+			margin-left: 10px;
+			list-style: none;
 		}
 	}
 }
