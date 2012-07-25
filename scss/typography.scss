@@ -167,4 +167,8 @@ EXPRESS TYPOGRAPHY
 		font-size:0.9em;
 	}
 
+	table{
+		@extend .table;
+	}
+
 }

@@ -289,27 +289,27 @@ EXPRESS TYPOGRAPHY
   border-collapse: collapse;
   border-spacing: 0;
 }
-.typography .table {
+.typography .table, .typography table {
   width: 100%;
   margin-bottom: 18px;
 }
-.typography .table th, .typography .table td {
+.typography .table th, .typography table th, .typography .table td, .typography table td {
   padding: 8px;
   line-height: 18px;
   text-align: left;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
-.typography .table th {
+.typography .table th, .typography table th {
   font-weight: bold;
 }
-.typography .table thead th {
+.typography .table thead th, .typography table thead th {
   vertical-align: bottom;
 }
-.typography .table caption + thead tr:first-child th, .typography .table caption + thead tr:first-child td, .typography .table colgroup + thead tr:first-child th, .typography .table colgroup + thead tr:first-child td, .typography .table thead:first-child tr:first-child th, .typography .table thead:first-child tr:first-child td {
+.typography .table caption + thead tr:first-child th, .typography table caption + thead tr:first-child th, .typography .table caption + thead tr:first-child td, .typography table caption + thead tr:first-child td, .typography .table colgroup + thead tr:first-child th, .typography table colgroup + thead tr:first-child th, .typography .table colgroup + thead tr:first-child td, .typography table colgroup + thead tr:first-child td, .typography .table thead:first-child tr:first-child th, .typography table thead:first-child tr:first-child th, .typography .table thead:first-child tr:first-child td, .typography table thead:first-child tr:first-child td {
   border-top: 0;
 }
-.typography .table tbody + tbody {
+.typography .table tbody + tbody, .typography table tbody + tbody {
   border-top: 2px solid #dddddd;
 }
 .typography .table-condensed th, .typography .table-condensed td {
@@ -356,7 +356,7 @@ EXPRESS TYPOGRAPHY
 .typography .table-striped tbody tr:nth-child(odd) td, .typography .table-striped tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
-.typography .table tbody tr:hover td, .typography .table tbody tr:hover th {
+.typography .table tbody tr:hover td, .typography table tbody tr:hover td, .typography .table tbody tr:hover th, .typography table tbody tr:hover th {
   background-color: #f5f5f5;
 }
 .typography .pull-right {
