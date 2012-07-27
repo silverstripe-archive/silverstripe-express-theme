@@ -1,17 +1,21 @@
 <div id="myCarousel" class="carousel slide">
     <!-- Carousel items -->
     <div class="carousel-inner">
-        <div class="active item"><a href="#" class=""><img src="$themedir/images/banner-images/soup_hero1.jpg" alt="" /></a></div>
-    	<div class="item"><a href="#" class=""><img src="$themedir/images/banner-images/soup_hero2.jpg" alt="" /></a></div>
-        <div class="item">
-            <a href="#" class=""><img src="$themedir/images/banner-images/soup_hero3.jpg" alt="" />
-            <div class="carousel-caption">
-                  <h4>Carousel Caption</h4>
-                  <p>If you have any further information about this image you can add a caption to explain it.</p>
+        <% loop CarouselItems %>
+            <div class="<% if First %>active <% end_if %>item">
+                <% if Link %><a href="$Link.Link"><% end_if %>
+                    $Image.SetRatioSize(670, 503)
+                <% if Caption %>
+                    <div class="carousel-caption">
+                        <% if Title %>
+                            <h4>$Title</h4>
+                        <% end_if %>
+                        <p>$Caption</p>
+                    </div>
+                <% end_if %>
+                <% if Link %></a><% end_if %>
             </div>
-            </a>
-        </div>
-        <div class="item"><a href="#" class=""><img src="$themedir/images/banner-images/soup_hero4.jpg" alt="" /></a></div>
+        <% end_loop %>
     </div>
     <!-- Carousel nav -->
     <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
