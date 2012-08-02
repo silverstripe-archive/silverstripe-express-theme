@@ -118,6 +118,21 @@
 		}
 	}
 
+	.hero-unit.nested{
+		.span4{
+			width:100%;
+		}
+		.row{
+			margin:0;
+		}
+	}
+
+	.carousel-container{
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+
 	.Actions{
 		.action{
 			width:100%;

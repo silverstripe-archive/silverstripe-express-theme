@@ -92,14 +92,17 @@ header {
 	}
 
 	/* Hero Unit adjustments */
-	div.hero-unit {
-		padding: 30px;
-
+	div.hero-unit.nested {
+		padding:0;
 		h1 {
 			margin-bottom: 15px;
 		}
-		.span4{
-			margin-right:-20px;
+		.span4 .content{
+			padding:30px;
+		}
+
+		.span8 .content{
+			padding:30px;
 		}
 
 		.carousel-container {
@@ -162,7 +165,7 @@ iframe {
 }
 
 
-/* Include sitemap within layout tag to override typography styles*/
+/* Include  within layout tag to override typography styles*/
 #layout{ 
 	@include sitemap;
 }
