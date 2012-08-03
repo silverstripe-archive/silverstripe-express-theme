@@ -1499,11 +1499,11 @@ ul.icons li .icon-large:before {
   content: "\f04a";
 }
 
-.icon-play:before, .carousel .flex-pauseplay a.flex-play:before {
+.icon-play:before {
   content: "\f04b";
 }
 
-.icon-pause:before, .carousel .flex-pauseplay a:before {
+.icon-pause:before {
   content: "\f04c";
 }
 
@@ -1527,11 +1527,11 @@ ul.icons li .icon-large:before {
   content: "\f052";
 }
 
-.icon-chevron-left:before, ul.flex-direction-nav a:before {
+.icon-chevron-left:before {
   content: "\f053";
 }
 
-.icon-chevron-right:before, ul.flex-direction-nav a.right:before, ul.flex-direction-nav a.flex-next:before {
+.icon-chevron-right:before {
   content: "\f054";
 }
 
@@ -2284,10 +2284,10 @@ ul.icons li .icon-large:before {
 #IE7 .icon-backward {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04a;&nbsp;');
 }
-#IE7 .icon-play, #IE7 .carousel .flex-pauseplay a.flex-play, .carousel .flex-pauseplay #IE7 a.flex-play {
+#IE7 .icon-play {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04b;&nbsp;');
 }
-#IE7 .icon-pause, #IE7 .carousel .flex-pauseplay a:before, .carousel .flex-pauseplay #IE7 a:before {
+#IE7 .icon-pause {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04c;&nbsp;');
 }
 #IE7 .icon-stop {
@@ -2305,10 +2305,10 @@ ul.icons li .icon-large:before {
 #IE7 .icon-eject {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf052;&nbsp;');
 }
-#IE7 .icon-chevron-left, #IE7 ul.flex-direction-nav a:before, ul.flex-direction-nav #IE7 a:before {
+#IE7 .icon-chevron-left {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf053;&nbsp;');
 }
-#IE7 .icon-chevron-right, #IE7 ul.flex-direction-nav a.right:before, ul.flex-direction-nav #IE7 a.right:before, #IE7 ul.flex-direction-nav a.flex-next:before, ul.flex-direction-nav #IE7 a.flex-next:before {
+#IE7 .icon-chevron-right {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf054;&nbsp;');
 }
 #IE7 .icon-plus-sign {
@@ -3060,11 +3060,19 @@ button.close {
 .btn-info,
 .btn-info:hover,
 .btn-inverse,
-.carousel .flex-pauseplay a, .carousel .flex-pauseplay
-a,
+.carousel #pause .btn, .carousel #pause
+.btn,
+.carousel #pause .Actions .action, .carousel #pause .Actions
+.action,
+.Actions .carousel #pause .action, .Actions .carousel #pause
+.action,
 .btn-inverse:hover,
-.carousel .flex-pauseplay a:hover, .carousel .flex-pauseplay
-a:hover {
+.carousel #pause .btn:hover, .carousel #pause
+.btn:hover,
+.carousel #pause .Actions .action:hover, .carousel #pause .Actions
+.action:hover,
+.Actions .carousel #pause .action:hover, .Actions .carousel #pause
+.action:hover {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -3081,11 +3089,19 @@ a:hover {
 .btn-info:visited,
 .btn-info:hover:visited,
 .btn-inverse:visited,
-.carousel .flex-pauseplay a:visited, .carousel .flex-pauseplay
-a:visited,
+.carousel #pause .btn:visited, .carousel #pause
+.btn:visited,
+.carousel #pause .Actions .action:visited, .carousel #pause .Actions
+.action:visited,
+.Actions .carousel #pause .action:visited, .Actions .carousel #pause
+.action:visited,
 .btn-inverse:hover:visited,
-.carousel .flex-pauseplay a:hover:visited, .carousel .flex-pauseplay
-a:hover:visited {
+.carousel #pause .btn:hover:visited, .carousel #pause
+.btn:hover:visited,
+.carousel #pause .Actions .action:hover:visited, .carousel #pause .Actions
+.action:hover:visited,
+.Actions .carousel #pause .action:hover:visited, .Actions .carousel #pause
+.action:hover:visited {
   color: white !important;
 }
 
@@ -3095,8 +3111,12 @@ a:hover:visited {
 .btn-success.active,
 .btn-info.active,
 .btn-inverse.active,
-.carousel .flex-pauseplay a.active, .carousel .flex-pauseplay
-a.active {
+.carousel #pause .active.btn, .carousel #pause
+.active.btn,
+.carousel #pause .Actions .active.action, .carousel #pause .Actions
+.active.action,
+.Actions .carousel #pause .active.action, .Actions .carousel #pause
+.active.action {
   color: rgba(255, 255, 255, 0.75);
 }
 .btn-primary.active:visited, .Actions .active.action:visited,
@@ -3105,8 +3125,12 @@ a.active {
 .btn-success.active:visited,
 .btn-info.active:visited,
 .btn-inverse.active:visited,
-.carousel .flex-pauseplay a.active:visited, .carousel .flex-pauseplay
-a.active:visited {
+.carousel #pause .active.btn:visited, .carousel #pause
+.active.btn:visited,
+.carousel #pause .Actions .active.action:visited, .carousel #pause .Actions
+.active.action:visited,
+.Actions .carousel #pause .active.action:visited, .Actions .carousel #pause
+.active.action:visited {
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -3245,7 +3269,7 @@ a.active:visited {
   background-color: #24748c \9;
 }
 
-.btn-inverse, .carousel .flex-pauseplay a {
+.btn-inverse, .carousel #pause .btn, .carousel #pause .Actions .action, .Actions .carousel #pause .action {
   background-color: #404040;
   background-image: -ms-linear-gradient(top, #555555, #222222);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555555), to(#222222));
@@ -3260,14 +3284,14 @@ a.active:visited {
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-.btn-inverse #IE8, .carousel .flex-pauseplay a #IE8 {
+.btn-inverse #IE8, .carousel #pause .btn #IE8, .carousel #pause .Actions .action #IE8, .Actions .carousel #pause .action #IE8 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF555555', endColorstr='#FF222222', GradientType=0);
 }
-.btn-inverse:hover, .carousel .flex-pauseplay a:hover, .btn-inverse:active, .carousel .flex-pauseplay a:active, .btn-inverse.active, .carousel .flex-pauseplay a.active, .btn-inverse.disabled, .carousel .flex-pauseplay a.disabled, .btn-inverse[disabled], .carousel .flex-pauseplay a[disabled] {
+.btn-inverse:hover, .carousel #pause .btn:hover, .carousel #pause .Actions .action:hover, .Actions .carousel #pause .action:hover, .btn-inverse:active, .carousel #pause .btn:active, .carousel #pause .Actions .action:active, .Actions .carousel #pause .action:active, .btn-inverse.active, .carousel #pause .active.btn, .carousel #pause .Actions .active.action, .Actions .carousel #pause .active.action, .btn-inverse.disabled, .carousel #pause .disabled.btn, .carousel #pause .Actions .disabled.action, .Actions .carousel #pause .disabled.action, .btn-inverse[disabled], .carousel #pause [disabled].btn, .carousel #pause .Actions [disabled].action, .Actions .carousel #pause [disabled].action {
   background-color: #222222;
   *background-color: #151515;
 }
-.btn-inverse:active, .carousel .flex-pauseplay a:active, .btn-inverse.active, .carousel .flex-pauseplay a.active {
+.btn-inverse:active, .carousel #pause .btn:active, .carousel #pause .Actions .action:active, .Actions .carousel #pause .action:active, .btn-inverse.active, .carousel #pause .active.btn, .carousel #pause .Actions .active.action, .Actions .carousel #pause .active.action {
   background-color: #090909 \9;
 }
 
@@ -3453,7 +3477,7 @@ input[type="submit"].btn-mini.action {
 .btn-group.open .btn-info.dropdown-toggle {
   background-color: #2f96b4;
 }
-.btn-group.open .btn-inverse.dropdown-toggle, .btn-group.open .carousel .flex-pauseplay a.dropdown-toggle, .carousel .flex-pauseplay .btn-group.open a.dropdown-toggle {
+.btn-group.open .btn-inverse.dropdown-toggle, .btn-group.open .carousel #pause .dropdown-toggle.btn, .carousel #pause .btn-group.open .dropdown-toggle.btn, .btn-group.open .carousel #pause .Actions .dropdown-toggle.action, .carousel #pause .Actions .btn-group.open .dropdown-toggle.action, .btn-group.open .Actions .carousel #pause .dropdown-toggle.action, .Actions .carousel #pause .btn-group.open .dropdown-toggle.action {
   background-color: #222222;
 }
 
@@ -3494,8 +3518,12 @@ input[type="submit"].btn-mini.action {
 .btn-info .caret,
 .btn-success .caret,
 .btn-inverse .caret,
-.carousel .flex-pauseplay a .caret, .carousel .flex-pauseplay
-a .caret {
+.carousel #pause .btn .caret, .carousel #pause
+.btn .caret,
+.carousel #pause .Actions .action .caret, .carousel #pause .Actions
+.action .caret,
+.Actions .carousel #pause .action .caret, .Actions .carousel #pause
+.action .caret {
   border-top-color: white;
   border-bottom-color: white;
   opacity: 0.75;
@@ -5147,7 +5175,7 @@ a.label:hover, a.badge:hover {
 #layout .carousel a img {
   border: none;
 }
-.carousel:hover .flex-pauseplay {
+.carousel:hover #pause {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
@@ -5155,10 +5183,12 @@ a.label:hover, a.badge:hover {
   visibility: visible;
   opacity: 1;
 }
-#IE8 .carousel:hover .flex-pauseplay {
+#IE8 .carousel:hover #pause {
   display: block;
 }
-.carousel .flex-pauseplay {
+.carousel #pause {
+  visibility: hidden;
+  opacity: 0;
   text-align: center;
   width: 100%;
   position: absolute;
@@ -5167,13 +5197,11 @@ a.label:hover, a.badge:hover {
   color: #fff;
   color: rgba(255, 255, 255, 0.8);
   text-shadow: rgba(26, 26, 26, 0.5) 1px 1px 0;
-  visibility: hidden;
-  opacity: 0;
 }
-#IE8 .carousel .flex-pauseplay {
+#IE8 .carousel #pause {
   display: none;
 }
-.carousel .flex-pauseplay a {
+.carousel #pause .btn, .carousel #pause .Actions .action, .Actions .carousel #pause .action {
   z-index: 4;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
@@ -5184,7 +5212,6 @@ a.label:hover, a.badge:hover {
   box-sizing: border-box;
   border: 2px solid #fff;
   position: relative;
-  display: block;
   font-size: 3em;
   line-height: 1em;
   width: 70px;
@@ -5192,29 +5219,28 @@ a.label:hover, a.badge:hover {
   padding-top: 15px;
   opacity: 0.5;
 }
-.carousel .flex-pauseplay a:before {
+.carousel #pause .btn .icon, .carousel #pause .Actions .action .icon, .Actions .carousel #pause .action .icon {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
   display: inline-block;
   text-decoration: inherit;
-  display: block;
 }
-#IE7 .carousel .flex-pauseplay a {
+#IE7 .carousel #pause .btn, #IE7 .carousel #pause .Actions .action, .Actions #IE7 .carousel #pause .action {
   padding-top: 5px;
   width: 30px;
   height: 43px;
 }
-#IE7 .carousel .flex-pauseplay a .icon {
+#IE7 .carousel #pause .btn .icon, #IE7 .carousel #pause .Actions .action .icon, .Actions #IE7 .carousel #pause .action .icon {
   zoom: 1;
 }
-.carousel .flex-pauseplay a .icon-play-js {
+.carousel #pause .btn .icon-play-js, .carousel #pause .Actions .action .icon-play-js, .Actions .carousel #pause .action .icon-play-js {
   padding-left: 3px;
 }
-#IE7 .carousel .flex-pauseplay a .icon-play-js {
+#IE7 .carousel #pause .btn .icon-play-js, #IE7 .carousel #pause .Actions .action .icon-play-js, .Actions #IE7 .carousel #pause .action .icon-play-js {
   padding-top: 2px;
 }
-.carousel .flex-pauseplay a:hover {
+.carousel #pause .btn:hover, .carousel #pause .Actions .action:hover, .Actions .carousel #pause .action:hover {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
@@ -5252,18 +5278,14 @@ a.label:hover, a.badge:hover {
   left: 100%;
 }
 
-.typography ul.flex-direction-nav {
-  list-style: none !important;
-  margin: 0;
-}
-ul.flex-direction-nav a {
+.carousel-control {
   position: absolute;
   top: 40%;
   left: 15px;
   width: 40px;
   height: 40px;
   margin-top: -20px;
-  font-size: 3em;
+  font-size: 60px;
   font-weight: 100;
   line-height: 30px;
   color: white;
@@ -5277,30 +5299,17 @@ ul.flex-direction-nav a {
   filter: alpha(opacity=50);
   z-index: 6;
 }
-ul.flex-direction-nav a:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  text-decoration: inherit;
-  display: block;
-  padding-top: 8px;
-  margin-left: -3px;
-}
-ul.flex-direction-nav a.right, ul.flex-direction-nav a.flex-next {
+.carousel-control.right {
   left: auto;
   right: 15px;
 }
-ul.flex-direction-nav a.right:before, ul.flex-direction-nav a.flex-next:before {
-  margin-left: 2px;
-}
-ul.flex-direction-nav a:hover {
+.carousel-control:hover {
   color: white;
   text-decoration: none;
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
-ul.flex-direction-nav a:visited {
+.carousel-control:visited {
   color: white;
 }
 
