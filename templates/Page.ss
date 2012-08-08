@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="$get_current_locale">
 <head>
 		
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
@@ -65,6 +65,9 @@
 			 })();
 
 		</script>
+	<% end_if %>
+	<% if SiteConfig.AddThisProfileID %>
+		<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=$SiteConfig.AddThisProfileID"></script>
 	<% end_if %>
 <!--[if lt IE 7]></div> <![endif]-->
 <!--[if IE 7]></div><![endif]-->
