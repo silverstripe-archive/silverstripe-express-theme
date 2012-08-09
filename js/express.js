@@ -5,12 +5,12 @@
 
 
 	    /*************************  Dynamic sticky nav   *********************************/
-		$('.navbar').scrollspy();
+
 
 		 // fix sub nav on scroll
 	    var $win = $(window), 
 	    	$nav = $('.navbar'), 
-	    	navTop = $('.navbar').length && $('.navbar').offset().top - 40, 
+	    	navTop = $('.navbar').length && $('.navbar').offset().top, 
 	    	isFixed = 0;
 
 	    	processScroll();
@@ -28,9 +28,11 @@
 	      if (scrollTop >= navTop && !isFixed) {
 	        isFixed = 1;
 	        $nav.addClass('navbar-fixed-top');
-	      } else if (scrollTop <= navTop && isFixed) {
+	        $('#layout').addClass('fixed-padding');
+	      } else if (scrollTop < navTop && isFixed) {
 	        isFixed = 0;
 	        $nav.removeClass('navbar-fixed-top');
+	        $('#layout').removeClass('fixed-padding');
 	      }
 	    }
 	    /*************************/
