@@ -2,6 +2,11 @@
 	<aside class="socialLinks pull-right">
 		<a title="Follow us on Twitter" href="http://www.twitter.com" target="_blank" class="icon-dark icon-small icon-twitter-sign"></a>
 		<a title="Join us on Facebook" href="http://www.facebook.com" target="_blank" class="icon-dark icon-small icon-facebook-sign"></a>
+		<% if $RSSLink %>
+			<a title="Subscribe to updates" href="$RSSLink" target="_blank" class="icon-dark icon-small icon-rss"></a>
+		<% else_if $DefaultRSSLink %>
+			<a title="Subscribe to updates" href="$DefaultRSSLink" target="_blank" class="icon-dark icon-small icon-rss"></a>
+		<% end_if %>
 	</aside>
 	<ul class="nav nav-pills">
 		<% loop ChildrenOf(footer) %>
