@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="$get_current_locale">
+<html class="no-js" lang="$ContentLocale">
 <head>
 		
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
