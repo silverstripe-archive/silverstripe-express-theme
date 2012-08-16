@@ -22,7 +22,7 @@
   <div class="navbar-inner">
     <div class="container">
     <% include MobileNav %>	
-      <div class="nav-collapse">
+      <div class="nav-collapse collapse">
 		  	<div id="SearchGroup">
 				$SearchForm
 			</div>	
