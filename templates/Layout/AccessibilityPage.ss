@@ -31,14 +31,18 @@
 			<% end_if %>
 			
 		<% end_loop %>
-		<% loop ChildrenOf(footer) %>
-			<% if $AccessKey %>
-				<tr>
-					<td>$AccessKey</td>
-					<td><a href="$Link">$Title</a></td>
-				</tr>	
-			<% end_if %>	
-		<% end_loop %>
+		<% if Footer %>
+			<% with Footer %>
+				<% loop Children %>
+					<% if $AccessKey %>
+						<tr>
+							<td>$AccessKey</td>
+							<td><a href="$Link">$Title</a></td>
+						</tr>
+					<% end_if %>
+				<% end_loop %>
+			<% end_with %>
+		<% end_if %>
 		<tr>
 			<td>/</td>
 			<td><a href="http://newzealand.govt.nz">newzealand.govt.nz</a></td>
