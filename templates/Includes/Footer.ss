@@ -1,8 +1,14 @@
 <footer class="container">
-	<aside class="socialLinks pull-right">
-		<a title="Follow us on Twitter" href="http://www.twitter.com" target="_blank" class="icon-dark icon-small icon-twitter-sign"></a>
-		<a title="Join us on Facebook" href="http://www.facebook.com" target="_blank" class="icon-dark icon-small icon-facebook-sign"></a>
-	</aside>
+	<% if SiteConfig.FacebookURL || SiteConfig.TwitterUsername %>
+		<aside class="socialLinks pull-right">
+			<% if SiteConfig.TwitterUsername %>
+				<a title="Follow us on Twitter" href="http://www.twitter.com/$SiteConfig.TwitterUsername" target="_blank" class="icon-dark icon-small icon-twitter-sign"></a>
+			<% end_if %>
+			<% if SiteConfig.FacebookURL %>
+				<a title="Join us on Facebook" href="http://www.facebook.com/$SiteConfig.FacebookURL" target="_blank" class="icon-dark icon-small icon-facebook-sign"></a>
+			<% end_if %>
+		</aside>
+	<% end_if %>
 	<% if Footer %>
 		<ul class="nav nav-pills">
 			<% with Footer %>
