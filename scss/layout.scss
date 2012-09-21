@@ -105,7 +105,11 @@ header {
 
 		.carousel-container {
 			float: right;
-			
+
+			.carousel-caption h4,
+			.carousel-caption p {
+				color: $white;
+			}
 		}
 	}
 }
