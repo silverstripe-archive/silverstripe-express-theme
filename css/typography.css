@@ -456,7 +456,7 @@ EXPRESS TYPOGRAPHY
 }
 .typography a.external-link {
   padding-right: 20px;
-  background: url(../images/icons/external-link.png) no-repeat right 3px;
+  background: url(../../../themes/ssexpress/images/icons/external-link.png) no-repeat right 3px;
 }
 .typography a img {
   border: none;
@@ -480,19 +480,19 @@ EXPRESS TYPOGRAPHY
 .typography a[href$=".PDF"],
 .typography .pdf {
   padding-left: 22px;
-  background: url(../images/icons/page_white_acrobat.png) no-repeat left 0;
+  background: url(../../../themes/ssexpress/images/icons/page_white_acrobat.png) no-repeat left 0;
 }
 .typography a[href$=".doc"],
 .typography a[href$=".DOC"],
 .typography .doc {
   padding-left: 22px;
-  background: url(../images/icons/page_word.png) no-repeat left 0;
+  background: url(../../../themes/ssexpress/images/icons/page_word.png) no-repeat left 0;
 }
 .typography a[href$=".xls"],
 .typography a[href$=".XLS"],
 .typography .xls {
   padding-left: 22px;
-  background: url(../images/icons/page_excel.png) no-repeat left 0;
+  background: url(../../../themes/ssexpress/images/icons/page_excel.png) no-repeat left 0;
 }
 .typography a[href$=".gz"],
 .typography a[href$=".GZ"],
@@ -502,18 +502,18 @@ EXPRESS TYPOGRAPHY
 .typography a[href$=".ZIP"],
 .typography .archive {
   padding-left: 22px;
-  background: url(../images/icons/page_white_zip.png) no-repeat left 0;
+  background: url(../../../themes/ssexpress/images/icons/page_white_zip.png) no-repeat left 0;
 }
 .typography a[href$=".exe"],
 .typography a[href$=".EXE"],
 .typography .application {
   padding-left: 22px;
-  background: url(../images/icons/application.png) no-repeat left 0;
+  background: url(../../../themes/ssexpress/images/icons/application.png) no-repeat left 0;
 }
 .typography a[href$="http://www."],
 .typography .external-link {
   padding-right: 22px;
-  background: url(../images/icons/external-link.png) no-repeat right 3px;
+  background: url(../../../themes/ssexpress/images/icons/external-link.png) no-repeat right 3px;
 }
 .typography img.right {
   float: right;
