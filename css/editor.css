@@ -407,7 +407,7 @@ EXPRESS TYPOGRAPHY
 .typography .table tbody tr:hover td, .typography table tbody tr:hover td,
 .typography .table tbody tr:hover th,
 .typography table tbody tr:hover th {
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
 }
 .typography .pull-right {
   float: right;
