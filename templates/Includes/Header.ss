@@ -1,7 +1,7 @@
 <header class="container">
 	<h1 class="brand">
 		<a title="$SiteConfig.Title" href="$BaseHref"<% if AccessKey %> accesskey="$AccessKey"<% end_if %>>
-			<img src="$themeDir/images/logo.png" width="105px" height="119px" />
+			<img src="$themeDir/images/logo.png" width="105" height="119" />
 			$SiteConfig.Title
 	    	<!-- <img width="280" height="50" src="http://placehold.it/280x50" alt="$SiteConfig.Title"> -->
 		</a>
