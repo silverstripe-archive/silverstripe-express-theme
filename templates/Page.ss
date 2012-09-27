@@ -34,8 +34,8 @@
 <body data-spy="scroll">
 <!--[if lte IE 6]><div id="IE6"> <![endif]-->
 <!--[if lte IE 7]><div id="IE7"> <![endif]-->
-<!--[if lte IE 8]><div id="IE8">  <![endif]-->
-<!--[if lte IE 9]><div id="IE9">  <!--<![endif]-->
+<!--[if lte IE 8]><div id="IE8"> <![endif]-->
+<!--[if lte IE 9]><div id="IE9"> <![endif]-->
 
 	<%-- You can use either NavbarFixedTop or Header but not both --%>
 	<%-- include NavbarFixedTop --%>
@@ -72,7 +72,7 @@
 <!--[if lt IE 7]></div> <![endif]-->
 <!--[if IE 7]></div><![endif]-->
 <!--[if IE 8]></div><![endif]-->
-<!--[if IE 9]></div><!--<![endif]-->
+<!--[if IE 9]></div><![endif]-->
 
 
 </body>
