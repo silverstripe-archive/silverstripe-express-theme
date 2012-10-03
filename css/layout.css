@@ -5423,7 +5423,7 @@ a.label:hover, a.badge:hover {
     -webkit-transform: translate3d(0, 0, 0);
   }
 
-  .page-header h1 small {
+  .page-header h1 small, .page-header header .brand small, header .page-header .brand small {
     display: block;
     line-height: 18px;
   }
@@ -6378,10 +6378,10 @@ form fieldset > div.field {
 form fieldset > div.field.checkbox {
   margin-left: 19px;
 }
-.typography form h1, .typography form h2, .typography form h3 {
+.typography form h1, .typography form header .brand, header .typography form .brand, .typography form h2, .typography form h3 {
   margin: 0;
 }
-.typography form h1.FormHeading, .typography form h2.FormHeading, .typography form h3.FormHeading {
+.typography form h1.FormHeading, .typography form header .FormHeading.brand, header .typography form .FormHeading.brand, .typography form h2.FormHeading, .typography form h3.FormHeading {
   background-color: #fcfcfc;
   background-image: -ms-linear-gradient(top, #fafafa, white);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(white));
@@ -6393,7 +6393,7 @@ form fieldset > div.field.checkbox {
   border-bottom: 1px solid #eeeeee;
   border-top: 1px solid gainsboro;
 }
-.typography form h1.FormHeading #IE8, .typography form h2.FormHeading #IE8, .typography form h3.FormHeading #IE8 {
+.typography form h1.FormHeading #IE8, .typography form header .FormHeading.brand #IE8, header .typography form .FormHeading.brand #IE8, .typography form h2.FormHeading #IE8, .typography form h3.FormHeading #IE8 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFAFAFA', endColorstr='#FFFFFFFF', GradientType=0);
 }
 
@@ -6750,6 +6750,9 @@ ul.nav, ul.dropdown-menu {
   padding: 5px 10px;
   border-bottom: 1px solid #f6f6f6;
 }
+.resultsList article.first {
+  padding-top: 0;
+}
 .resultsList article p {
   max-width: 790px;
   margin: 0;
@@ -6814,14 +6817,16 @@ EXPRESS LAYOUT
 }
 
 /*HEADER */
-header h1.brand {
+header .brand {
   font-size: 3em;
+  font-weight: bold;
   margin-bottom: 18px;
   overflow: visible;
   line-height: 1em;
   float: left;
+  margin-top: 0.67em;
 }
-header h1.brand a:visited {
+header .brand a:visited {
   color: black;
 }
 header ul#lang {
@@ -6834,6 +6839,47 @@ header ul#lang li {
 }
 
 /************************ MISC ****************************/
+#layout .linkSet ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+#layout .linkSet ul li {
+  margin: 0;
+  padding: 0;
+}
+#layout .linkSet ul li.odd a {
+  background: #fbfbfb;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+#layout .linkSet ul li.odd a:hover {
+  border-top: 1px solid #e0f5fe;
+  border-bottom: 1px solid #e0f5fe;
+}
+#layout .linkSet ul li a {
+  display: block;
+  padding: 15px 0 15px 5px;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+#layout .linkSet ul li a:hover {
+  padding-left: 15px;
+  text-decoration: none;
+  background-color: #f9fdff;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
 .typography {
   /*Adjust breadcrumbs*/
   /* Hero Unit adjustments */
@@ -6845,7 +6891,7 @@ header ul#lang li {
 .typography div.hero-unit.nested {
   padding: 0;
 }
-.typography div.hero-unit.nested h1 {
+.typography div.hero-unit.nested h1, .typography div.hero-unit.nested header .brand, header .typography div.hero-unit.nested .brand {
   margin-bottom: 15px;
 }
 .typography div.hero-unit.nested .span4 .content {

@@ -56,13 +56,15 @@ EXPRESS LAYOUT
 
 /*HEADER */
 header {
-	h1.brand {
+	.brand {
+		@extend h1;
 		font-size: 3em;
+		font-weight:bold;
 		margin-bottom: 18px;
 		overflow:visible;
 		line-height:1em;
 		float: left;
-
+		margin-top: 0.67em;
 		a:visited {
 			color: black;
 		}
@@ -80,6 +82,46 @@ header {
 }
 
 /************************ MISC ****************************/
+
+#layout .linkSet{
+	ul{
+		list-style:none;
+		padding:0;
+		margin:0;
+		margin-bottom:20px;
+		li{
+			margin:0;
+			padding:0;
+			&.odd{
+				a{
+					background: lighten($hrBorder, 5%);
+					border-top:1px solid $grayLighter;
+					border-bottom:1px solid $grayLighter;
+					&:hover{
+						border-top:1px solid lighten($blue, 50%);
+						border-bottom:1px solid lighten($blue, 50%);
+					}
+				}
+			}
+			a{
+				display:block;
+				padding:15px 0 15px 5px;			
+				@include duration(0.5s);
+				font-size:1.1em;
+				line-height:1.4em;
+				border-top:1px solid transparent;
+				border-bottom:1px solid transparent;
+				&:hover{
+					padding-left:15px;
+					text-decoration:none;
+					background-color:lighten($blue, 55%);
+					@include duration(0.5s);
+				}
+			}
+		}
+	}
+}
+
 
 .typography{ //Needed to override typography styles
 
