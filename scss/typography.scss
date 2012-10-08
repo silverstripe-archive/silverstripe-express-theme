@@ -37,16 +37,16 @@ EXPRESS TYPOGRAPHY
 	p {
 		margin-bottom: 18px;
 		font-size:1.1em;
-		line-height:1.1em;
+		line-height:1.2em;
 	}
 	/* Highlighting for search results titles and content snippets. */
 	span.highlight {
 		background: yellow;
 	}
 	a {
-		&.external-link {
+		&.external {
 			padding-right: 20px;
-			background: url(../../../themes/ssexpress/images/icons/external-link.png) no-repeat right 3px;
+			@extend .icon-external-link;
 		}
 		img{
 			border:none;
@@ -68,6 +68,11 @@ EXPRESS TYPOGRAPHY
 	    		content: "— ";
 	    	}
 		}
+	}
+
+	.fileExt{
+		color:lighten($gray,5%);
+		font-size:0.8em;
 	}
 
 	/*** LINK ICONS ***/
@@ -106,10 +111,9 @@ EXPRESS TYPOGRAPHY
 		background: url(../../../themes/ssexpress/images/icons/application.png) no-repeat left 0;
 	}
 	
-	a[href$="http://www."],
-	.external-link {
-		padding-right: 22px;
-		background: url(../../../themes/ssexpress/images/icons/external-link.png) no-repeat right 3px;
+	a[href$="http://"],
+	.external {
+		padding-right: 22px;		
 	}
 	
 	
