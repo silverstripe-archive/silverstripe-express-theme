@@ -2,6 +2,7 @@
 	<!-- Carousel items -->
 	<div class="carousel-inner">
 		<% loop CarouselItems %>
+			<% if not Archived %>
 			<div class="<% if First %>active <% end_if %>item">
 				<a<% if Link %> href="$Link.Link"<% end_if %>>
 					$Image.SetRatioSize(670, 503)
@@ -15,6 +16,7 @@
 					<% end_if %>
 				</a>
 			</div>
+			<% end_if %>
 		<% end_loop %>
 	</div>
 	<!-- Carousel nav -->
