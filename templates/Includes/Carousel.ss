@@ -5,7 +5,7 @@
 			<% if not Archived %>
 			<div class="<% if First %>active <% end_if %>item">
 				<a<% if Link %> href="$Link.Link"<% end_if %>>
-					$Image.SetRatioSize(670, 503)
+					$Image.CroppedImage(670, 503)
 					<% if Caption %>
 						<div class="carousel-caption">
 							<% if Title %>
