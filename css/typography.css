@@ -68,11 +68,8 @@
 
     */
 @font-face {
-  font-family: "FontAwesome";
-  src: url('fonts/../../font/fontawesome-webfont.eot');
-  src: url('fonts/../../font/fontawesome-webfont.eot?#iefix') format('eot'), url('fonts/../../font/fontawesome-webfont.woff') format('woff'), url('fonts/../../font/fontawesome-webfont.ttf') format('truetype'), url('fonts/../../font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'FontAwesome';
+  src: url("../../../themes/ssexpress/font/fontawesome-webfont.eot?") format("eot"), url("../../../themes/ssexpress/font/fontawesome-webfont.woff") format("woff"), url("../../../themes/ssexpress/font/fontawesome-webfont.svg") format("svg"), url("../../../themes/ssexpress/font/fontawesome-webfont.ttf") format("truetype");
 }
 
 /*  Font Awesome styles
@@ -671,7 +668,7 @@ ul.icons li .icon-large:before {
   content: "\f08d";
 }
 
-.icon-external-link:before, .typography a.external:before {
+.icon-external-link:before {
   content: "\f08e";
 }
 
@@ -1391,7 +1388,7 @@ ul.icons li .icon-large:before {
 #IE7 .icon-pushpin {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf08d;&nbsp;');
 }
-#IE7 .icon-external-link, #IE7 .typography a.external, .typography #IE7 a.external {
+#IE7 .icon-external-link {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf08e;&nbsp;');
 }
 #IE7 .icon-signin {
@@ -2030,9 +2027,6 @@ EXPRESS TYPOGRAPHY
 .typography span.highlight {
   background: yellow;
 }
-.typography a.external {
-  padding-right: 20px;
-}
 .typography a img {
   border: none;
 }
@@ -2088,10 +2082,6 @@ EXPRESS TYPOGRAPHY
 .typography .application {
   padding-left: 22px;
   background: url(../../../themes/ssexpress/images/icons/application.png) no-repeat left 0;
-}
-.typography a[href$="http://"],
-.typography .external {
-  padding-right: 22px;
 }
 .typography img.right {
   float: right;

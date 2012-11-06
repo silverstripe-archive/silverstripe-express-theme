@@ -23,17 +23,15 @@
     */
 
 @import "compass/css3/font-face";
-$fontAwesomePath: "../../font/fontawesome-webfont" !default;
+$fontAwesomePath: "../../../themes/ssexpress/font/fontawesome-webfont" !default;
 
-@include font-face(
-    'FontAwesome',
-    font-files(
-        "#{$fontAwesomePath}.woff", woff,
-        "#{$fontAwesomePath}.ttf", truetype,
-        "#{$fontAwesomePath}.svg#FontAwesomeRegular", svg),
-    '#{$fontAwesomePath}.eot',
-    normal,
-    normal);
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('#{$fontAwesomePath}.eot?') format('eot'),
+  url('#{$fontAwesomePath}.woff') format('woff'),
+  url('#{$fontAwesomePath}.svg') format('svg'),
+  url('#{$fontAwesomePath}.ttf') format('truetype');
+} 
 
 /*  Font Awesome styles
     ------------------------------------------------------- */

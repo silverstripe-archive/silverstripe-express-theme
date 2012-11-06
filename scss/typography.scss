@@ -45,8 +45,8 @@ EXPRESS TYPOGRAPHY
 	}
 	a {
 		&.external {
-			padding-right: 20px;
-			@extend .icon-external-link;
+//			padding-right: 20px;
+//			@extend .icon-external-link;
 		}
 		img{
 			border:none;
@@ -113,7 +113,7 @@ EXPRESS TYPOGRAPHY
 	
 	a[href$="http://"],
 	.external {
-		padding-right: 22px;		
+//		padding-right: 22px;
 	}
 	
 	
