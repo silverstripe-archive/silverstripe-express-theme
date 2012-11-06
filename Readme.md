@@ -1,5 +1,5 @@
 # Express Theme
-This theme is designed to wrok with Silverstripe Express, found here:
+This theme is designed to work with Silverstripe Express, found here:
 
 https://github.com/silverstripe-droptables/silverstripe-installer (branch: ssexpress)
 
