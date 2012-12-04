@@ -23,9 +23,19 @@
 		</ul>
 	<% end_if %>
 	<div class="pull-right">
-		<a href="$SiteConfig.FooterLogoLink" accesskey="/"> 
-			<img src="$SiteConfig.FooterLogo.URL" width="$SiteConfig.FooterLogo.Width" height="$SiteConfig.FooterLogo.Height" alt="$SiteConfig.FooterLogoDescription" title="$SiteConfig.FooterLogoDescription" />
-		</a>
+		<% if SiteConfig.FooterLogo %>
+			<% if SiteConfig.FooterLogoLink %>
+				<a href="$SiteConfig.FooterLogoLink" accesskey="/">
+			<% end_if %>
+				<img src="$SiteConfig.FooterLogo.URL" width="$SiteConfig.FooterLogo.Width" height="$SiteConfig.FooterLogo.Height"<% if SiteConfig.FooterLogoDescription %> alt="$SiteConfig.FooterLogoDescription" title="$SiteConfig.FooterLogoDescription"<% end_if %> />
+			<% if SiteConfig.FooterLogoLink %>
+				</a>
+			<% end_if %>
+		<% else %>
+			<a href="http://newzealand.govt.nz/" accesskey="/">
+				<img src="http://newzealand.govt.nz/img/logo-btext-wbg.gif" width="150" height="40" alt="newzealand.govt.nz - connecting you to New Zealand central &amp; local government services" title="newzealand.govt.nz - connecting you to New Zealand central &amp; local government services" />
+			</a>
+		<% end_if %>
 	</div>
 	
 	<h1>
