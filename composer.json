@@ -1,0 +1,11 @@
+{
+	"name": "silverstripe/express-theme",
+	"description": "The SilverStripe Express default theme",
+	"type": "silverstripe-theme",
+	"require": {
+		"composer/installers": "*",
+		"silverstripe/cms": ">=3.0",
+		"silverstripe/framework": ">=3.0",
+		"silverstripe/express": "*"
+	}
+}
