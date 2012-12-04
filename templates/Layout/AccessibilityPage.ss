@@ -9,48 +9,26 @@
 		</header>
 		$Breadcrumbs
 		$Content
-
-
-
 		<table class="table table-striped table-bordered">
-		<thead>
-		<tr>
-			<th>Key</th> 
-			<th>Page</th>
-		</tr>
-		</thead>
-		<tbody>
-
-		<% loop Menu(1) %>
-
-			<% if $AccessKey %>
-			<tr>
-				<td>$AccessKey</td>
-				<td><a href="$Link">$Title</a></td>
-			</tr>
-			<% end_if %>
-			
-		<% end_loop %>
-		<% if Footer %>
-			<% with Footer %>
-				<% loop Children %>
-					<% if $AccessKey %>
-						<tr>
-							<td>$AccessKey</td>
-							<td><a href="$Link">$Title</a></td>
-						</tr>
-					<% end_if %>
+			<thead>
+				<tr>
+					<th>Key</th> 
+					<th>Page</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% loop AccessKeys %>
+					<tr>
+						<td>$AccessKey</td>
+						<td><a href="$Link">$Title</a></td>
+					</tr>
 				<% end_loop %>
-			<% end_with %>
-		<% end_if %>
-		<tr>
-			<td>/</td>
-			<td><a href="http://newzealand.govt.nz">newzealand.govt.nz</a></td>
-		</tr>
-		</tbody>
+				<tr>
+					<td>/</td>
+					<td><a href="http://newzealand.govt.nz">newzealand.govt.nz</a></td>
+				</tr>
+			</tbody>
 		</table>
-
-
 		$Form
 		$PageComments
 	</section>
