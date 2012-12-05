@@ -1162,7 +1162,7 @@ legend + .control-group {
     */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../../../themes/ssexpress/font/fontawesome-webfont.eot?") format("eot"), url("../../../themes/ssexpress/font/fontawesome-webfont.woff") format("woff"), url("../../../themes/ssexpress/font/fontawesome-webfont.svg") format("svg"), url("../../../themes/ssexpress/font/fontawesome-webfont.ttf") format("truetype");
+  src: url("../../../themes/express/font/fontawesome-webfont.eot?") format("eot"), url("../../../themes/express/font/fontawesome-webfont.woff") format("woff"), url("../../../themes/express/font/fontawesome-webfont.svg") format("svg"), url("../../../themes/express/font/fontawesome-webfont.ttf") format("truetype");
 }
 
 /*  Font Awesome styles
@@ -6535,7 +6535,7 @@ div.date input {
   margin-right: 5px;
 }
 div.date img {
-  background: transparent url(../../../themes/ssexpress/images/icons/sitetree_images/date.png) no-repeat top left;
+  background: transparent url(../../../themes/express/images/icons/sitetree_images/date.png) no-repeat top left;
   height: 0;
   overflow: hidden;
   padding-top: 15px;

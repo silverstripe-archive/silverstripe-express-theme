@@ -69,7 +69,7 @@
     */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../../../themes/ssexpress/font/fontawesome-webfont.eot?") format("eot"), url("../../../themes/ssexpress/font/fontawesome-webfont.woff") format("woff"), url("../../../themes/ssexpress/font/fontawesome-webfont.svg") format("svg"), url("../../../themes/ssexpress/font/fontawesome-webfont.ttf") format("truetype");
+  src: url("../../../themes/express/font/fontawesome-webfont.eot?") format("eot"), url("../../../themes/express/font/fontawesome-webfont.woff") format("woff"), url("../../../themes/express/font/fontawesome-webfont.svg") format("svg"), url("../../../themes/express/font/fontawesome-webfont.ttf") format("truetype");
 }
 
 /*  Font Awesome styles
@@ -2053,19 +2053,19 @@ EXPRESS TYPOGRAPHY
 .typography a[href$=".PDF"],
 .typography .pdf {
   padding-left: 22px;
-  background: url(../../../themes/ssexpress/images/icons/page_white_acrobat.png) no-repeat left 0;
+  background: url(../../../themes/express/images/icons/page_white_acrobat.png) no-repeat left 0;
 }
 .typography a[href$=".doc"],
 .typography a[href$=".DOC"],
 .typography .doc {
   padding-left: 22px;
-  background: url(../../../themes/ssexpress/images/icons/page_word.png) no-repeat left 0;
+  background: url(../../../themes/express/images/icons/page_word.png) no-repeat left 0;
 }
 .typography a[href$=".xls"],
 .typography a[href$=".XLS"],
 .typography .xls {
   padding-left: 22px;
-  background: url(../../../themes/ssexpress/images/icons/page_excel.png) no-repeat left 0;
+  background: url(../../../themes/express/images/icons/page_excel.png) no-repeat left 0;
 }
 .typography a[href$=".gz"],
 .typography a[href$=".GZ"],
@@ -2075,13 +2075,13 @@ EXPRESS TYPOGRAPHY
 .typography a[href$=".ZIP"],
 .typography .archive {
   padding-left: 22px;
-  background: url(../../../themes/ssexpress/images/icons/page_white_zip.png) no-repeat left 0;
+  background: url(../../../themes/express/images/icons/page_white_zip.png) no-repeat left 0;
 }
 .typography a[href$=".exe"],
 .typography a[href$=".EXE"],
 .typography .application {
   padding-left: 22px;
-  background: url(../../../themes/ssexpress/images/icons/application.png) no-repeat left 0;
+  background: url(../../../themes/express/images/icons/application.png) no-repeat left 0;
 }
 .typography img.right {
   float: right;

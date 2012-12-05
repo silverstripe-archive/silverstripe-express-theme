@@ -2,7 +2,7 @@
 # Run "compass watch" on the dir this file is in, to compile you scss 
 # i.e On a mac: 
 # Open terminal, 
-# cd to your projects themes folder (cd sites/ssexpress/themes/ssexpress)
+# cd to your projects themes folder (cd sites/mynewsite/themes/express)
 # type: compass watch
 # For more info: http://compass-style.org/help/tutorials/command-line/
 

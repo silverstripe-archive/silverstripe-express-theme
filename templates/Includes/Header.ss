@@ -4,7 +4,7 @@
 			<% if SiteConfig.Logo %>
 				$SiteConfig.Logo
 			<% else %>
-				<img src="themes/ssexpress/images/logo.png" width="105px" height="119px" />
+				<img src="themes/express/images/logo.png" width="105px" height="119px" />
 			<% end_if %>
 			$SiteConfig.Title
 		</a>
