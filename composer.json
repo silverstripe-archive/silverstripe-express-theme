@@ -1,5 +1,5 @@
 {
-	"name": "silverstripe/express-theme",
+	"name": "silverstripe-themes/express",
 	"description": "The SilverStripe Express default theme",
 	"type": "silverstripe-theme",
 	"require": {
