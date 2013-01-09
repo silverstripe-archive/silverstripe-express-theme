@@ -1,205 +1,336 @@
-// CAROUSEL
-// --------
+/*
+*	Note: Replaced Bootstraps carousel with a more adaptable carousel.
+*	SCSS adapted from flexslider CSS, and bootstrap
+*	For api details: http://www.woothemes.com/flexslider/
+*
+*	jQuery FlexSlider v2.0
+*	http://www.woothemes.com/flexslider/
+*
+*	Copyright 2012 WooThemes
+*	Free to use under the GPLv2 license.
+*	http://www.gnu.org/licenses/gpl-2.0.html
+*
+*	Contributing author: Tyler Smith (@mbmufffin)
+*/
 
-// Updates for SASS:
-//  - replace @ with $
-//  - replace . with @include for mixins
+/* Browser Resets */
 
-.carousel-inner {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
+	outline: none; 
 }
 
-.carousel {
-  position: relative;
-  line-height: 1;
-  overflow:hidden;
-  width: 100%;
-  margin: 0 auto;
+.slides, .flex-control-nav, .flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 
-  .item {
-    display: none;
-    position: relative;
-    @include transition(.6s ease-in-out left);
-  }
+.slideBG{
+	background-color:#DEE5EA;
+}
 
-  // Account for jankitude on images
-  .item img {
-    display: block;
-    line-height: 1;
-    width:100%;
-  }
-  a{
-    color:#fff;
-    &:visited{
-      color:#fff;
-    }
-    #layout & img{
-      border:none;
-    }
-  }
-  &:hover{
-    #pause{
-      #IE8 &{
-        display:block;
-      }
-      @include duration(1s);
-      
-      visibility:visible;
-      opacity:1;
-    }
-  }
+.flexslider {
+	margin: 0;
+	padding: 0;
+	a{
+		border:0;
+	}
+	.slides {
+		list-style:none;
+		height:100%;
+		background-color:#DEE5EA;
+		margin:0;
+		overflow:hidden;
+		position:relative;
+		> li {
+			position:relative;
+			display: none;
+			-webkit-backface-visibility: hidden;
+		}
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+}
 
-  #pause{
-    #IE8 &{
-      display:none;
-    }
-    visibility:hidden;
-    opacity:0;
-    .btn{ 
-      .icon{
-        font-family: FontAwesome;
-        font-weight: normal;
-        font-style: normal;
-        display: inline-block;
-        text-decoration: inherit;
-      }
-      z-index:4; 
-      @extend .btn-inverse;
-      @include border-radius(40px);
-      @include box-sizing(border-box);
-      border:2px solid #fff;
-      position:relative;
-      
-      font-size:3em;
-      line-height:1em;
-      width:70px;
-      height:70px;
-      padding-top:15px;
-      opacity:0.5;
-      #IE7 &{
-        .icon{
-          zoom:1;
-        }
-        padding-top:5px;
-        width:30px;
-        height:43px;
-      }
-      .icon-play-js{
-        padding-left:3px;
-        #IE7 &{
-          padding-top:2px;
-        }
-      }
-      &:hover{
-        @include duration(1s);
-        opacity:1;
-      }
-    }
-    text-align:center;
-    width:100%;
-    position:absolute; 
-    z-index:0; 
-    top:35%;
-    color:#fff;
-    color:rgba(#fff,0.8);
-    text-shadow: lighten(rgba(#000,0.5), 10%) 1px 1px 0;
-  }
+.flex-pauseplay span {
+	text-transform: capitalize;
+}
 
-  .active,
-  .next,
-  .prev { display: block; }
+/* Clearfix for the .slides element */
 
-  .active {
-    left: 0;
-  }
+.slides:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
 
-  .next,
-  .prev {
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
+html[xmlns] .slides {
+	display: block;
+}
 
-  .next {
-    left: 100%;
-  }
-  .prev {
-    left: -100%;
-  }
-  .next.left,
-  .prev.right {
-    left: 0;
-  }
+* .slides {
+	height: 1%; 
+}
 
-  .active.left {
-    left: -100%;
-  }
-  .active.right {
-    left: 100%;
-  }
+.no-js li:first-child {
+	display: block; 
+}
 
+/* FlexSlider Theming
+*********************************/
+
+.flexslider {
+	margin: 0;
+	position: relative;
+	zoom: 1; 
+}
+
+.flex-viewport {
+	max-height: 2000px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	transition: all 1s ease; 
+}
+
+.loading .flex-viewport {
+	max-height: 300px; 
+}
+
+.flexslider .slides {
+	zoom: 1;
+}
+
+/* Pages navigation option */
+.flex-control-paging a {
+	cursor: pointer;
+	&:hover {
+		background: #333;
+		background: rgba(0, 0, 0, 0.7); 
+	}
+	&.flex-active {
+		background: #000;
+		background: rgba(0, 0, 0, 0.9);
+		cursor: default; 
+	} 
+}
+
+/* Thumbnail nav option */
+.flex-control-thumbs {
+	margin: 5px 0 0;
+	position: static;
+	overflow: hidden;
+	li {
+		width: 25%;
+		float: left;
+		margin: 0;
+	}
+	img {
+		width: 100%;
+		display: block;
+		opacity: .7;
+		cursor: pointer;
+		&:hover {
+			opacity: 1; 
+		} 
+	}
+	.flex-active {
+		opacity: 1;
+		cursor: default; 
+	} 
+}
+
+
+.flexslider {
+	line-height: 1em;
+	margin: 0 auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+	&:hover{
+		.flex-pauseplay{
+			@include duration(1s);
+			visibility:visible;
+			opacity:1;
+			#IE8 &{
+				display:block;
+			}
+		}
+	}
+	.flex-pauseplay{
+		color:#fff;
+		color:rgba(#fff,0.8);
+		left:45%;
+		opacity:0;
+		position:absolute;
+		text-align:center;
+		text-shadow: lighten(rgba(#000,0.5), 10%) 1px 1px 0;
+		top:35%;
+		visibility:hidden;
+		z-index:0; 
+		#IE8 &{
+			display:none;
+		}
+		a{
+			@extend .icon;
+			@extend .btn-inverse;
+			@include border-radius(40px);
+			@include box-sizing(border-box);
+			border:2px solid #fff;
+			display: inline-block;
+			font: {
+				family: FontAwesome;
+				weight: normal;
+				style: normal;
+				size:3em;
+			}
+			height:70px;
+			line-height:1em;
+			opacity:0.5;
+			padding-top:17px;
+			position:relative;
+			text-decoration: inherit;
+			width:70px;
+			z-index:4;
+			#IE7 &{
+				height:43px;
+				padding-top:10px;
+				width:50px;
+				zoom:1;
+			}
+			&.flex-play{
+				padding-left:2px;
+				#IE7 &{
+					padding-left:0px;
+				}
+			}
+			&:hover{
+				@include duration(1s);
+				text-decoration:none;
+				opacity:1;
+			}
+		}
+	}
+	.active,
+	.next,
+	.prev { 
+		display: block;
+	}
+
+	.active {
+		left: 0;
+	}
 }
 
 // Left/right controls for nav
 // ---------------------------
 
-.carousel-control {
-  position: absolute;
-  top: 40%;
-  left: 15px;
-  width: 40px;
-  height: 40px;
-  margin-top: -20px;
-  font-size: 60px;
-  font-weight: 100;
-  line-height: 30px;
-  color: $white;
-  text-align: center;
-  background: $grayDarker;
-  border: 3px solid $white;
-  @include border-radius(23px);
-  @include opacity(50);
-  z-index:6;
-  // we can't have this transition here
-  // because webkit cancels the carousel
-  // animation if you trip this while
-  // in the middle of another animation
-  // ;_;
-  // .transition(opacity .2s linear);
+.carousel-container ul.flex-direction-nav {
+	left: 15px;
+	margin:0;
+	padding:0;
+	position: absolute;
+	right: 15px;
+	top: 40%;
+	li{
+		list-style:none;
+		margin-left:0;
+	}
+	a{
+		@include border-radius(23px);
+		@include opacity(50);
+		background: $grayDarker;
+		border: 3px solid $white;
+		color: $white;
+		height: 40px;
+		float:left;
+		font-size: 60px;
+		font-weight: 100;
+		line-height: 30px;
+		margin-top: -20px;
+		text-align: center;
+		width: 40px;
+		z-index:6;
+		// we can't have this transition here
+		// because webkit cancels the carousel
+		// animation if you trip this while
+		// in the middle of another animation
+		// ;_;
+		// .transition(opacity .2s linear);
 
-  // Reposition the right one
-  &.right {
-    left: auto;
-    right: 15px;
-  }
+		// Reposition the right one
+		&.flex-next {
+			float:right;
+			#IE7 &{
+				margin-top:-38px;
+			}
+		}
 
-  // Hover state
-  &:hover {
-    color: $white;
-    text-decoration: none;
-    @include opacity(90);
-  }
-  &:visited {
-      color: white;
-  }
+		// Hover state
+		&:hover {
+			@include opacity(90);
+			color: $white;
+			text-decoration: none;
+		}
+		&:visited {
+			color: white;
+		}
+	}
 }
 
 // Caption for text below images
 // -----------------------------
 
 .carousel-caption {
-  position: absolute;
-  left: 0;
-  right: 2px;
-  bottom: 0;
-  padding: 10px 15px 5px;
-  background: $grayDark;
-  background: rgba(0,0,0,.75);
-  h4, p{
-        font-size: 14px;
-        color: white;
-        line-height: 1.2em;
-  }
+	background: $grayDark;
+	background: rgba(0,0,0,.75);
+	bottom: 0;
+	padding: 10px 15px 5px;
+	position: absolute;
+	left: 0;
+	right: 0px;
+	h4, p{
+		color: white;
+		font-size: 14px;
+		line-height: 1.2em;
+	}
+}
+
+
+@media screen and (max-width: 860px) {
+	.flex-direction-nav {
+		.flex-prev {
+			opacity: 1;
+			left: 0; 
+		}
+		.flex-next {
+			opacity: 1;
+			right: 0;
+		}
+	}
+	.flex-pauseplay{
+
+	}
+}
+
+@media (max-width: 480px) {
+	.carousel-container ul.flex-direction-nav {
+		top:35%;
+	}
+	.flexslider {
+		.flex-pauseplay{
+			left:40%;
+			top:30%;
+			a{
+				font-size:2em;
+				height:50px;
+				width:50px;
+				padding-top:13px;
+			}
+		}
+	}
 }

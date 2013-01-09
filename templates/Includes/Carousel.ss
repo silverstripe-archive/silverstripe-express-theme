@@ -1,28 +1,35 @@
 <% if CarouselItems %>
-	<div id="myCarousel" class="carousel slide">
+	<div id="myCarousel" class="flexslider">
 		<!-- Carousel items -->
-		<div class="carousel-inner">
+		<div class="controls"></div>
+		<div class="slideBG">
+		<ul class="slides">
 			<% loop CarouselItems %>
-				<% if not Archived %>
-				<div class="<% if First %>active <% end_if %>item">
-					<a<% if Link %> href="$Link.Link"<% end_if %>>
+			<% if not Archived %>
+				<li class="<% if First %>active <% end_if %>item">
+					<% if Link %><a href="$Link.Link"><% end_if %>
+					   <div class="imageWrap">
 						$Image.CroppedImage(670, 503)
-						<% if Caption %>
-							<div class="carousel-caption">
-								<% if Title %>
-									<h4>$Title</h4>
-								<% end_if %>
-								<p>$Caption</p>
+						</div>
+					<% if Link %>	</a><% end_if %>
+					<% if Caption %>
+						<div class="extra">
+							<a href="#" class="captionTrigger" title="More info"><span></span></a>
+							<% if Link %><a class="link" title="Follow" href="$Link.Link"></a><% end_if %>
+						</div>
+						<div class="carousel-caption">
+							<div class="text-wrap">
+							<% if Title %>
+								<h4>$Title</h4>
+							<% end_if %>
+							<p>$Caption</p>
 							</div>
-						<% end_if %>
-					</a>
-				</div>
-				<% end_if %>
+						</div>
+					<% end_if %>
+				</li>
+			<% end_if %>
 			<% end_loop %>
-		</div>
-		<!-- Carousel nav -->
-		<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-		<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-		<div id="pause"><div class="btn"><span class="icon">&#xf04c;</span></div></div>
+		</ul>  
+		</div> 
 	</div>
 <% end_if %>
