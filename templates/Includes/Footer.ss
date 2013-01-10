@@ -14,7 +14,7 @@
 			<% with Footer %>
 				<% loop Children %>
 					<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>">
-						<a href="$Link" title="Go to the $Title.XML page"  class="$LinkingMode"<% if AccessKey %> accesskey="$AccessKey"<% end_if %>>
+						<a href="$Link" title="Go to the $Title.XML page"  class="$LinkingMode">
 							$MenuTitle.XML
 						</a>
 					</li>
@@ -45,3 +45,4 @@
 	</h1>
 	<p><small>$SiteConfig.Title &copy; 2012</small></p>
 </footer>
+<% include AccessKeys %>

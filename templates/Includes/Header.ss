@@ -1,6 +1,6 @@
 <header class="container">	
 	<<% if ClassName=="HomePage" %>h1<% else %>div<% end_if %> class="brand">
-		<a title="$SiteConfig.Title" href="$BaseHref"<% if AccessKey %> accesskey="$AccessKey"<% end_if %>>
+		<a title="$SiteConfig.Title" href="$BaseHref">
 			<% if SiteConfig.Logo %>
 				$SiteConfig.Logo
 			<% else %>
