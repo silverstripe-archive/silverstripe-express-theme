@@ -7179,9 +7179,22 @@ iframe {
 /* ============================= */
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  body {
+    padding: 0;
+  }
   body #SearchGroup {
     float: none;
     width: 100%;
+  }
+
+  header, .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #SearchGroup {
@@ -7256,9 +7269,22 @@ iframe {
 }
 /* Opera mobile high-res  */
 @media handheld, only screen and (max-device-width: 800px) {
+  body {
+    padding: 0;
+  }
   body #SearchGroup {
     float: none;
     width: 100%;
+  }
+
+  header, .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #SearchGroup {
@@ -7333,9 +7359,22 @@ iframe {
 }
 /* Landscape phone to portrait tablet  */
 @media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
   body #SearchGroup {
     float: none;
     width: 100%;
+  }
+
+  header, .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #SearchGroup {
@@ -7410,9 +7449,22 @@ iframe {
 }
 /* Portrait tablet to landscape and desktop  */
 @media (min-width: 500px) and (max-width: 600px) {
+  body {
+    padding: 0;
+  }
   body #SearchGroup {
     float: none;
     width: 100%;
+  }
+
+  header, .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #SearchGroup {
@@ -7487,9 +7539,22 @@ iframe {
 }
 /* For ipad  */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    padding: 0;
+  }
   body #SearchGroup {
     float: none;
     width: 100%;
+  }
+
+  header, .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #SearchGroup {
@@ -7564,9 +7629,22 @@ iframe {
 }
 /* Large mobile */
 @media (max-width: 979px) {
+  body {
+    padding: 0;
+  }
   body #SearchGroup {
     float: none;
     width: 100%;
+  }
+
+  header, .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #SearchGroup {
