@@ -42,6 +42,18 @@
   box-sizing: border-box;
 }
 
+/* CSS3 Two Tone borders - IE9+ */
+/* Fix for responsive images - use on IMG tag */
+/* Mobile icons for retina display */
+/** 
+ * Mixin divides width of parent between children. It requires the parent to 
+ * have a size class representing the number of children (eg: class="size_3"). 
+ * It will take this and divide the width by that number of elements.
+ *
+ * Note: In silverstripe templates you can use $Count on a set of items you 
+ * are about to loop throught to get the total number. EG:
+ * <ul class="size_{$Menu.Count}">
+ */
 article,
 aside,
 details,
@@ -5364,6 +5376,18 @@ a.label:hover, a.badge:hover {
   box-sizing: border-box;
 }
 
+/* CSS3 Two Tone borders - IE9+ */
+/* Fix for responsive images - use on IMG tag */
+/* Mobile icons for retina display */
+/** 
+ * Mixin divides width of parent between children. It requires the parent to 
+ * have a size class representing the number of children (eg: class="size_3"). 
+ * It will take this and divide the width by that number of elements.
+ *
+ * Note: In silverstripe templates you can use $Count on a set of items you 
+ * are about to loop throught to get the total number. EG:
+ * <ul class="size_{$Menu.Count}">
+ */
 .hidden {
   display: none;
   visibility: hidden;

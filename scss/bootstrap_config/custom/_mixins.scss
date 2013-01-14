@@ -970,11 +970,16 @@
  * are about to loop throught to get the total number. EG:
  * <ul class="size_{$Menu.Count}">
  */
-@mixin divide_width($from:1, $to:10){
+@mixin divide_width($from:1, $to:10, $old-browser: false){
   @for $i from $from through $to {
     &.size_#{$i} {
       li{
         width: 100% / $i;
+         @if $old-browser{
+          #IE8 &{
+            width: floor(100% / $i);
+          }
+        }
       }
     } 
   }
