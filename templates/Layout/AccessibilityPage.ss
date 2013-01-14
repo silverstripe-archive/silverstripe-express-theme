@@ -9,6 +9,7 @@
 		</header>
 		$Breadcrumbs
 		$Content
+		<% if AccessKeys %>
 		<table class="table table-striped table-bordered">
 			<thead>
 				<tr>
@@ -29,6 +30,7 @@
 				</tr>
 			</tbody>
 		</table>
+		<% end_if %>
 		$Form
 		$PageComments
 	</section>
