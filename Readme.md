@@ -1,10 +1,9 @@
 # Express Theme
-This theme is based on twitter's bootstrap, and designed to work with 
-Silverstripe Express, found here:
+This theme is based on Twitter's Bootstrap, and designed to work with SilverStripe Express, found here:
 
 https://github.com/silverstripe-labs/silverstripe-express
 
-If is not intended to be a completed theme in and of itself, but to provide you with the tools and ui features to quickly build a website on the SilverStripe platform.
+It is not intended to be a completed theme in and of itself, but to provide you with the tools and ui features to quickly build a website on the SilverStripe platform.
 
 You can choose to work either with the SCSS files (recommended), or with the CSS. You will need to grab the module bootstrap and place it in the root of your themes directory.
 
@@ -20,7 +19,7 @@ For more information on how to use SCSS, and full API documentation see:
 http://sass-lang.com/
 
 ## Bootstrap
-Twitter Bootstrap is a free collection of tools for creating websites and web applications. It contains HTML and CSS-based design templates for typography, forms, buttons, charts, navigation and other interface components, as well as optional JavaScript extensions. Bootstrap was originally written in Less, but has been ported to SCSS. Express uses the SCSS port of Bootstrap. More information on the twitter bootstrap api can be found here:
+Twitter Bootstrap is a free collection of tools for creating websites and web applications. It contains HTML and CSS-based design templates for typography, forms, buttons, charts, navigation and other interface components, as well as optional JavaScript extensions. Bootstrap was originally written in Less, but has been ported to SCSS. Express uses the SCSS port of Bootstrap. More information on the Twitter bootstrap api can be found here:
 
 http://twitter.github.com/bootstrap/
 
