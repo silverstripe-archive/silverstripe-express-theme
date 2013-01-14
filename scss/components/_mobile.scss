@@ -56,10 +56,20 @@
 
 @mixin media{
 	body {
+		padding:0;
 		#SearchGroup{
 			float:none;
 			width:100%;
 		}
+	}
+	header, .container{
+		padding-left:20px;
+		padding-right:20px;
+	}
+
+	.navbar-fixed-top, .navbar-fixed-bottom{
+		margin-left:0;
+		margin-right:0;
 	}
 
 	#SearchGroup{
