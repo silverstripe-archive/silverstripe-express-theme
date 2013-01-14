@@ -1,5 +1,10 @@
-(function($) {
-	$(document).ready(function() {
-		// Hello there! You can add in any of your site-specific code here.
-	});
-})(jQuery);
+/*jslint browser: true*/
+/*global $, jQuery*/
+
+$(function() {
+	"use strict";
+
+	// Hello there! You can add in any of your site-specific code here.
+
+});
+
