@@ -171,15 +171,6 @@ iframe {
 	font-size:0.9em;
 }
 
-#layout a img {
-	border: 2px solid $linkColor;
-	margin-left: -2px;
-	margin-top: -2px;
-	&:hover {
-		border-color: red;
-	}
-}
-
 /* Facebook and Twitter links */
 .socialLinks{ 
 	overflow:visible;
