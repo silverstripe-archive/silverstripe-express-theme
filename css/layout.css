@@ -2067,7 +2067,7 @@ ul.icons li .icon-large:before {
 }
 
 #IE7 [class^="icon-"],
-#IE7 [class*=" icon-"], #IE7 .icon {
+#IE7 [class*=" icon-"], #IE7 .icon, #IE7 .flexslider .flex-pauseplay a, .flexslider .flex-pauseplay #IE7 a {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
@@ -3068,13 +3068,9 @@ button.close {
 .btn-info,
 .btn-info:hover,
 .btn-inverse,
-.carousel #pause .btn,
-.carousel #pause .Actions .action,
-.Actions .carousel #pause .action,
+.flexslider .flex-pauseplay a,
 .btn-inverse:hover,
-.carousel #pause .btn:hover,
-.carousel #pause .Actions .action:hover,
-.Actions .carousel #pause .action:hover {
+.flexslider .flex-pauseplay a:hover {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -3090,13 +3086,9 @@ button.close {
 .btn-info:visited,
 .btn-info:hover:visited,
 .btn-inverse:visited,
-.carousel #pause .btn:visited,
-.carousel #pause .Actions .action:visited,
-.Actions .carousel #pause .action:visited,
+.flexslider .flex-pauseplay a:visited,
 .btn-inverse:hover:visited,
-.carousel #pause .btn:hover:visited,
-.carousel #pause .Actions .action:hover:visited,
-.Actions .carousel #pause .action:hover:visited {
+.flexslider .flex-pauseplay a:hover:visited {
   color: white !important;
 }
 
@@ -3106,9 +3098,7 @@ button.close {
 .btn-success.active,
 .btn-info.active,
 .btn-inverse.active,
-.carousel #pause .active.btn,
-.carousel #pause .Actions .active.action,
-.Actions .carousel #pause .active.action {
+.flexslider .flex-pauseplay a.active {
   color: rgba(255, 255, 255, 0.75);
 }
 .btn-primary.active:visited, .Actions .active.action:visited,
@@ -3117,9 +3107,7 @@ button.close {
 .btn-success.active:visited,
 .btn-info.active:visited,
 .btn-inverse.active:visited,
-.carousel #pause .active.btn:visited,
-.carousel #pause .Actions .active.action:visited,
-.Actions .carousel #pause .active.action:visited {
+.flexslider .flex-pauseplay a.active:visited {
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -3258,7 +3246,7 @@ button.close {
   background-color: #24748c \9;
 }
 
-.btn-inverse, .carousel #pause .btn, .carousel #pause .Actions .action, .Actions .carousel #pause .action {
+.btn-inverse, .flexslider .flex-pauseplay a {
   background-color: #404040;
   background-image: -ms-linear-gradient(top, #555555, #222222);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555555), to(#222222));
@@ -3273,14 +3261,14 @@ button.close {
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-.btn-inverse #IE8, .carousel #pause .btn #IE8, .carousel #pause .Actions .action #IE8, .Actions .carousel #pause .action #IE8 {
+.btn-inverse #IE8, .flexslider .flex-pauseplay a #IE8 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF555555', endColorstr='#FF222222', GradientType=0);
 }
-.btn-inverse:hover, .carousel #pause .btn:hover, .carousel #pause .Actions .action:hover, .Actions .carousel #pause .action:hover, .btn-inverse:active, .carousel #pause .btn:active, .carousel #pause .Actions .action:active, .Actions .carousel #pause .action:active, .btn-inverse.active, .carousel #pause .active.btn, .carousel #pause .Actions .active.action, .Actions .carousel #pause .active.action, .btn-inverse.disabled, .carousel #pause .disabled.btn, .carousel #pause .Actions .disabled.action, .Actions .carousel #pause .disabled.action, .btn-inverse[disabled], .carousel #pause [disabled].btn, .carousel #pause .Actions [disabled].action, .Actions .carousel #pause [disabled].action {
+.btn-inverse:hover, .flexslider .flex-pauseplay a:hover, .btn-inverse:active, .flexslider .flex-pauseplay a:active, .btn-inverse.active, .flexslider .flex-pauseplay a.active, .btn-inverse.disabled, .flexslider .flex-pauseplay a.disabled, .btn-inverse[disabled], .flexslider .flex-pauseplay a[disabled] {
   background-color: #222222;
   *background-color: #151515;
 }
-.btn-inverse:active, .carousel #pause .btn:active, .carousel #pause .Actions .action:active, .Actions .carousel #pause .action:active, .btn-inverse.active, .carousel #pause .active.btn, .carousel #pause .Actions .active.action, .Actions .carousel #pause .active.action {
+.btn-inverse:active, .flexslider .flex-pauseplay a:active, .btn-inverse.active, .flexslider .flex-pauseplay a.active {
   background-color: #090909 \9;
 }
 
@@ -3458,7 +3446,7 @@ input[type="submit"].btn.btn-mini,
 .btn-group.open .btn-info.dropdown-toggle {
   background-color: #2f96b4;
 }
-.btn-group.open .btn-inverse.dropdown-toggle, .btn-group.open .carousel #pause .dropdown-toggle.btn, .carousel #pause .btn-group.open .dropdown-toggle.btn, .btn-group.open .carousel #pause .Actions .dropdown-toggle.action, .carousel #pause .Actions .btn-group.open .dropdown-toggle.action, .btn-group.open .Actions .carousel #pause .dropdown-toggle.action, .Actions .carousel #pause .btn-group.open .dropdown-toggle.action {
+.btn-group.open .btn-inverse.dropdown-toggle, .btn-group.open .flexslider .flex-pauseplay a.dropdown-toggle, .flexslider .flex-pauseplay .btn-group.open a.dropdown-toggle {
   background-color: #222222;
 }
 
@@ -3499,9 +3487,7 @@ input[type="submit"].btn.btn-mini,
 .btn-info .caret,
 .btn-success .caret,
 .btn-inverse .caret,
-.carousel #pause .btn .caret,
-.carousel #pause .Actions .action .caret,
-.Actions .carousel #pause .action .caret {
+.flexslider .flex-pauseplay a .caret {
   border-top-color: white;
   border-bottom-color: white;
   opacity: 0.75;
@@ -5117,43 +5103,156 @@ a.label:hover, a.badge:hover {
   border-top: 1px solid #e5e5e5;
 }
 
-.carousel-inner {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
+/*
+*	Note: Replaced Bootstraps carousel with a more adaptable carousel.
+*	SCSS adapted from flexslider CSS, and bootstrap
+*	For api details: http://www.woothemes.com/flexslider/
+*
+*	jQuery FlexSlider v2.0
+*	http://www.woothemes.com/flexslider/
+*
+*	Copyright 2012 WooThemes
+*	Free to use under the GPLv2 license.
+*	http://www.gnu.org/licenses/gpl-2.0.html
+*
+*	Contributing author: Tyler Smith (@mbmufffin)
+*/
+/* Browser Resets */
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
+  outline: none;
 }
 
-.carousel {
-  position: relative;
-  line-height: 1;
+.slides, .flex-control-nav, .flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slideBG {
+  background-color: #DEE5EA;
+}
+
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+.flexslider a {
+  border: 0;
+}
+.flexslider .slides {
+  list-style: none;
+  height: 100%;
+  background-color: #DEE5EA;
+  margin: 0;
   overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
-}
-.carousel .item {
-  display: none;
   position: relative;
-  -webkit-transition: 0.6s ease-in-out left;
-  -moz-transition: 0.6s ease-in-out left;
-  -ms-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
-  transition: 0.6s ease-in-out left;
 }
-.carousel .item img {
+.flexslider .slides > li {
+  position: relative;
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+.flexslider .slides img {
+  width: 100%;
   display: block;
-  line-height: 1;
+}
+
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+html[xmlns] .slides {
+  display: block;
+}
+
+* .slides {
+  height: 1%;
+}
+
+.no-js li:first-child {
+  display: block;
+}
+
+/* FlexSlider Theming
+*********************************/
+.flexslider {
+  margin: 0;
+  position: relative;
+  zoom: 1;
+}
+
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+.flexslider .slides {
+  zoom: 1;
+}
+
+/* Pages navigation option */
+.flex-control-paging a {
+  cursor: pointer;
+}
+.flex-control-paging a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+.flex-control-paging a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default;
+}
+
+/* Thumbnail nav option */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+}
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+
+.flexslider {
+  line-height: 1em;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
   width: 100%;
 }
-.carousel a {
-  color: #fff;
-}
-.carousel a:visited {
-  color: #fff;
-}
-#layout .carousel a img {
-  border: none;
-}
-.carousel:hover #pause {
+.flexslider:hover .flex-pauseplay {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
@@ -5161,26 +5260,25 @@ a.label:hover, a.badge:hover {
   visibility: visible;
   opacity: 1;
 }
-#IE8 .carousel:hover #pause {
+#IE8 .flexslider:hover .flex-pauseplay {
   display: block;
 }
-.carousel #pause {
-  visibility: hidden;
-  opacity: 0;
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  z-index: 0;
-  top: 35%;
+.flexslider .flex-pauseplay {
   color: #fff;
   color: rgba(255, 255, 255, 0.8);
+  left: 45%;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
   text-shadow: rgba(26, 26, 26, 0.5) 1px 1px 0;
+  top: 35%;
+  visibility: hidden;
+  z-index: 0;
 }
-#IE8 .carousel #pause {
+#IE8 .flexslider .flex-pauseplay {
   display: none;
 }
-.carousel #pause .btn, .carousel #pause .Actions .action, .Actions .carousel #pause .action {
-  z-index: 4;
+.flexslider .flex-pauseplay a {
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   border-radius: 40px;
@@ -5189,123 +5287,137 @@ a.label:hover, a.badge:hover {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   border: 2px solid #fff;
-  position: relative;
-  font-size: 3em;
-  line-height: 1em;
-  width: 70px;
-  height: 70px;
-  padding-top: 15px;
-  opacity: 0.5;
-}
-.carousel #pause .btn .icon, .carousel #pause .Actions .action .icon, .Actions .carousel #pause .action .icon {
+  display: inline-block;
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
-  display: inline-block;
+  font-size: 3em;
+  height: 70px;
+  line-height: 1em;
+  opacity: 0.5;
+  padding-top: 17px;
+  position: relative;
   text-decoration: inherit;
+  width: 70px;
+  z-index: 4;
 }
-#IE7 .carousel #pause .btn, #IE7 .carousel #pause .Actions .action, .Actions #IE7 .carousel #pause .action {
-  padding-top: 5px;
-  width: 30px;
+#IE7 .flexslider .flex-pauseplay a {
   height: 43px;
-}
-#IE7 .carousel #pause .btn .icon, #IE7 .carousel #pause .Actions .action .icon, .Actions #IE7 .carousel #pause .action .icon {
+  padding-top: 10px;
+  width: 50px;
   zoom: 1;
 }
-.carousel #pause .btn .icon-play-js, .carousel #pause .Actions .action .icon-play-js, .Actions .carousel #pause .action .icon-play-js {
-  padding-left: 3px;
+.flexslider .flex-pauseplay a.flex-play {
+  padding-left: 2px;
 }
-#IE7 .carousel #pause .btn .icon-play-js, #IE7 .carousel #pause .Actions .action .icon-play-js, .Actions #IE7 .carousel #pause .action .icon-play-js {
-  padding-top: 2px;
+#IE7 .flexslider .flex-pauseplay a.flex-play {
+  padding-left: 0px;
 }
-.carousel #pause .btn:hover, .carousel #pause .Actions .action:hover, .Actions .carousel #pause .action:hover {
+.flexslider .flex-pauseplay a:hover {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
+  text-decoration: none;
   opacity: 1;
 }
-.carousel .active,
-.carousel .next,
-.carousel .prev {
+.flexslider .active,
+.flexslider .next,
+.flexslider .prev {
   display: block;
 }
-.carousel .active {
+.flexslider .active {
   left: 0;
-}
-.carousel .next,
-.carousel .prev {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.carousel .next {
-  left: 100%;
-}
-.carousel .prev {
-  left: -100%;
-}
-.carousel .next.left,
-.carousel .prev.right {
-  left: 0;
-}
-.carousel .active.left {
-  left: -100%;
-}
-.carousel .active.right {
-  left: 100%;
 }
 
-.carousel-control {
-  position: absolute;
-  top: 40%;
+.carousel-container ul.flex-direction-nav {
   left: 15px;
-  width: 40px;
-  height: 40px;
-  margin-top: -20px;
-  font-size: 60px;
-  font-weight: 100;
-  line-height: 30px;
-  color: white;
-  text-align: center;
-  background: #222222;
-  border: 3px solid white;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  top: 40%;
+}
+.carousel-container ul.flex-direction-nav li {
+  list-style: none;
+  margin-left: 0;
+}
+.carousel-container ul.flex-direction-nav a {
   -webkit-border-radius: 23px;
   -moz-border-radius: 23px;
   border-radius: 23px;
   opacity: 0.5;
   filter: alpha(opacity=50);
+  background: #222222;
+  border: 3px solid white;
+  color: white;
+  height: 40px;
+  float: left;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  margin-top: -20px;
+  text-align: center;
+  width: 40px;
   z-index: 6;
 }
-.carousel-control.right {
-  left: auto;
-  right: 15px;
+.carousel-container ul.flex-direction-nav a.flex-next {
+  float: right;
 }
-.carousel-control:hover {
-  color: white;
-  text-decoration: none;
+#IE7 .carousel-container ul.flex-direction-nav a.flex-next {
+  margin-top: -38px;
+}
+.carousel-container ul.flex-direction-nav a:hover {
   opacity: 0.9;
   filter: alpha(opacity=90);
+  color: white;
+  text-decoration: none;
 }
-.carousel-control:visited {
+.carousel-container ul.flex-direction-nav a:visited {
   color: white;
 }
 
 .carousel-caption {
-  position: absolute;
-  left: 0;
-  right: 2px;
-  bottom: 0;
-  padding: 10px 15px 5px;
   background: #333333;
   background: rgba(0, 0, 0, 0.75);
+  bottom: 0;
+  padding: 10px 15px 5px;
+  position: absolute;
+  left: 0;
+  right: 0px;
 }
 .carousel-caption h4, .carousel-caption p {
-  font-size: 14px;
   color: white;
+  font-size: 14px;
   line-height: 1.2em;
 }
 
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 0;
+  }
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .carousel-container ul.flex-direction-nav {
+    top: 35%;
+  }
+
+  .flexslider .flex-pauseplay {
+    left: 40%;
+    top: 30%;
+  }
+  .flexslider .flex-pauseplay a {
+    font-size: 2em;
+    height: 50px;
+    width: 50px;
+    padding-top: 13px;
+  }
+}
 .pull-right {
   float: right;
 }
@@ -6916,15 +7028,6 @@ iframe {
 .page-header .printShare {
   margin-top: 21px;
   font-size: 0.9em;
-}
-
-#layout a img {
-  border: 2px solid #0464ea;
-  margin-left: -2px;
-  margin-top: -2px;
-}
-#layout a img:hover {
-  border-color: red;
 }
 
 /* Facebook and Twitter links */
