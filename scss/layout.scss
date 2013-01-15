@@ -8,14 +8,15 @@
 
  //* *** ATTENTION SCSS DEVELOPER ***
  //*
- //* If you are working with SCSS, please do not import other top-level stylesheets here such
- //* as typography.scss. We want to be able to generate clean CSS for the third-party dev to
- //* work with directly, without duplication of css in the generated files!
+ //* If you are working with SCSS, please do not import other top-level 
+ //* stylesheets here such as typography.scss. We want to be able to generate 
+ //* clean CSS for the third-party dev to work with directly, without duplication 
+ //* of css in the generated files!
  //*
 
 
 // Import needed scss files. Bootstrap files require the bootstrap module in the themes directory
-@import "compass/support"; //for IE9 SVG gradient support 
+@import "compass/support"; //import an external compass library for IE9 SVG gradient support 
 $experimental-support-for-svg: true; //for IE9 SVG gradient support 
 
 @import 'bootstrap_config/bootstrap.scss'; //Core bootstrap layout components
