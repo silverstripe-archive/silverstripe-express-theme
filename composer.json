@@ -6,7 +6,7 @@
 		"composer/installers": "*",
 		"silverstripe/cms": ">=3.0",
 		"silverstripe/framework": ">=3.0",
-		"silverstripe/express": "dev-master",
+		"silverstripe/express": ">=1.1",
 		"silverstripe-themes/module_bootstrap": "dev-ssexpress"
 	},
 	"extra": {
