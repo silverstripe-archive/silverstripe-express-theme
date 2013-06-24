@@ -5,12 +5,12 @@
 		</a>
 		<% if MenuChildren %>
 			<ul class="dropdown-menu">
-				<% control MenuChildren %>
+				<% loop MenuChildren %>
 					<li>
 						<a href="$Link" title="Go to the $Title.XML page">$MenuTitle.XML</a>
 					</li>
-				<% end_control %>
+				<% end_loop %>
 			</ul>
 		<% end_if %>
-	</li>       		
+	</li>
 <% end_loop %>
