@@ -4,8 +4,8 @@
 	"type": "silverstripe-theme",
 	"require": {
 		"composer/installers": "*",
-		"silverstripe/cms": ">=3.0",
-		"silverstripe/framework": ">=3.0",
+		"silverstripe/cms": "~3.0",
+		"silverstripe/framework": "~3.0",
 		"silverstripe/express": "dev-master",
 		"silverstripe-themes/module_bootstrap": "dev-ssexpress"
 	},
