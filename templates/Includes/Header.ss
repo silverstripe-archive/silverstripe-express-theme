@@ -12,11 +12,11 @@
 
 	<% if Translations %>
 		<ul id="lang">
-			<% control Translations %>
+			<% loop Translations %>
 				<li>
 					<a href="$Link" hreflang="$Locale.RFC1766" title="$Title - $Locale.Nice">$Locale.Nice</a>
 				</li>
-			<% end_control %>
+			<% end_loop %>
 		</ul>
 	<% end_if %>
 </header>
